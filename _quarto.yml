@@ -1,0 +1,62 @@
+project:
+  type: book
+
+book:
+  title: "Labmanual General Biology II"
+  subtitle: "BI104 | Spring 2024 | Saint Anselm College"
+  author: "Shannon J O'Leary"
+  date: today
+  chapters:
+    - index.qmd
+    
+    - part: A_Biomes.qmd
+#     chapters: 
+#       - A01_climate.qmd
+#       - A02_biomes.qmd
+
+    
+    - part: B_ecol-succession.qmd
+#     chapters:
+#       - B01_
+    
+    - part: C_bioassays.qmd
+#     chapters:
+#       - C01_
+
+    
+    - part: D_lichens.qmd
+#     chapters: 
+#       - D01
+
+    - part: E_Exp-Design-Analysis.qmd
+#     chapters: 
+#       - D01
+
+    - part: Z_supplements.qmd
+      chapters:
+        - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: sandstone
+    toc: true
+    toc-depth: 2
+    toc-location: left
+    code-fold: false
+    code-overflow: scroll
+    code-copy: hover
+    number-sections: true
+    anchor-sections: true
+    embed-resources: true
+  # pdf:
+  #   documentclass: scrreprt
+
+reference-location: margin
+citation-location: margin
+fig-cap-location: margin
+tbl-cap-location: margin
+
+
+

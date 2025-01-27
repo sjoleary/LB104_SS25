@@ -1,0 +1,11 @@
+# Scientific Method & Experimental Design {#sec-scientific-method--experimental-design}
+
+**After completing this unit, you should be able to**
+
+-   Outline the scientific method as an iterative process of observation, hypothesis formation, experimentation, data collection & analysis, and conclusion drawing.
+-   Use spreadsheets to enter and manage data.
+-   Describe the key components of experimental design to ensure conclusions are reliable.
+-   Generate and interpret descriptive statistics summarizing distribution, central tendency and variability of a data set.
+-   Execute and interpret a statistical to determine the probability that results are result of sampling error and do not represent reality.
+
+Over the course of the semester you will be introduced to fundamental principles of scientific method and experimental design and start to built a basic tool kit of data analysis skills. Additionally, you will develop your scientific writing skills as you compile a report on each of the three projects we will work on. We will complete various activities in parallel to your first research projects as you develop these skills.

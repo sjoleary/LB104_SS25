@@ -1,0 +1,16 @@
+# **Linking Lichen and Urban Landscapes** {#sec-lichens-as-bioindicators}
+
+After completing this unit, you should be able to
+
+-   describe how bioindicator organisms can be used to assess land-use change, air pollution and other environmental impacts.
+-   describe how data gathered from multiple large-scale monitoring efforts (e.g. National Ecological Observatory Network (NEON), National Land Cover Data (NLCD), air quality (US EPA)) can be combined to investigate ecological questions at different spatial scales.
+-   use insights from large-scale monitoring efforts to formulate a hypotheses at a local scale.
+-   describe how abiotic and biotic factors impact the presence, abundance and distribution of lichen on local and regional scales.
+-   describe how to make abiotic and biotic measurements in a field setting.
+-   describe different methods for species identification and morpho-species classification.
+
+In this unit we will explore Urban Ecology. Specifically we will take a look at how abiotic and biotic factors impact the presence, abundance, and distribution of lichens in diverse landscapes at various scales.
+
+## Acknowledgements
+
+This Unit is based on the Lichen EREN module and contains modified versions of their distributed materials.

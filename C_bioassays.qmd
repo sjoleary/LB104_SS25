@@ -1,0 +1,9 @@
+# Salt, Seeds, and Germination Success (?) {#sec-bioassay}
+
+After completing this unit, you should be able to
+
+-   Describe the process of formulating a question and testable hypothesis based on a (set of) observations.
+-   Describe key principles of experimental design, including the difference between dependent, independent, and controlled/confounding variables, the importance of controls, replicates, and adequate sample sizes.
+-   Report your results and interpret them in the context of your stated hypothesis.
+
+In this unit we will dive into how anthropogenic factors such as the construction of roads and the resulting run-off can impact local ecosystems.
