@@ -1,0 +1,226 @@
+# Atmospheric & Ocean circulation exploration {#sec-biomes}
+
+```{r}
+#| label: set-up
+#| include: false
+
+# set options
+knitr::opts_chunk$set(tidy = FALSE)
+options(htmltools.dir.version = FALSE)
+
+```
+
+The movement of heat and energy across Earth’s surface is a fundamental driver of climate and biome distribution. The equator receives more solar energy than higher latitudes, creating a heat imbalance that drives atmospheric and ocean circulation. These circulation systems work together to redistribute this excess heat, shaping global climate patterns and influencing the location and characteristics of biomes.
+
+In this series of activities, you will explore the principal patterns and drivers of atmospheric and ocean circulation and investigate their role in maintaining Earth’s energy balance. Using an interactive map, you will identify the key mechanisms behind the redistribution of heat and consider how these processes affect regional climates and ecosystems.
+
+These activities will focus on the following key questions:
+
+-   How do atmospheric and ocean circulation systems redistribute excess heat from the equator to the poles?
+-   What are the principal patterns and drivers of atmospheric circulation?
+-   What are the principal patterns and drivers of surface ocean currents?
+
+Through this exploration, you will further develop your understanding of how large-scale physical processes shape the diversity of life on Earth by influencing the global distribution of climates and biomes.
+
+## Activity 1: Exploring Atmospheric circulation
+
+### Familiarize yourself with "latitude terminology"
+
+::: column-page
+![World map showing major latitudinal bands](images/World_map.png){#fig-world-map}
+:::
+
+Our planet is frequently divided into three broad latitudinal sections based on their proximity to the equator.
+
+1.  The **tropics** or **low latitudes** ranging from 30°S to 30°N, including the Equator at 0° latitude, the Tropic of Cancer (around 23.5°N) and the Tropic of Capricorn (around 23.5°S)
+2.  The **temperate regions** or **mid-latitudes** comprise two bands ranging from 30°N to 60°N and 30°S to 60°S
+3.  The **polar regions** or **high latitudes** comprise regions North of 60°N and South of 60°S, including the Arctic and Antarctic Circles (around 66.33°)
+
+Frequently, two additional sections are added as
+
+1.  The **subtropics** ranging from approx 20° to 40°N/S, i.e. the areas just north and south of the Tropic of Cancer and the Tropic of Capricorn.
+2.  The **subpolar regions** ranging from approx. 50° to 70°N/S i.e. the areas just north and south of the Arctic and Antarctic Circles.
+
+::: {.callout-tip title="Give it a try"}
+Mark each of these five latitudinal bands in the world map above (@fig-world-map). This terminology will be helpful as you describe your findings as you explore the interactive visualization of ocean and atmospheric circulation.
+:::
+
+### Orient yourself on the the visualization tool
+
+Open the \[Ocean and Atmospheric visualization tool\](<https://earth.nullschool.net/>) and orient yourself to its functionality.
+
+-   Click & drag to rotate the planet
+-   Swipe trackpad/scroll mouse to zoom in/out
+-   Current view: Wind direction = white streaks, speed = length of streaks + color underneath
+-   Click on globe to get lat/long + wind speed
+
+::: {.callout-tip title="Give it a try"}
+Together with your partner explore the current view (remember you are currently seeing surface winds)
+
+-   Where are we (lat/long)? 
+-   What is wind speed + direction? 
+-   Where is it slowest near us? Where is it fastest?
+-   Where can you find air flowing to a point (looks like water flowing into a drain)? Check out the entire globe (both hemispheres?) What differences do you notice?
+:::
+
+::: {.callout-caution title="Your Answer Here"}
+\[Take some notes\]
+:::
+
+### Explore the air temperature (re)distribution
+
+::: {.callout-tip title="Give it a try"}
+Change the overlay to **Temperature**:
+
+-   Click on `earth`
+-   select overlay `Temp`
+-   click `earth` to hide panel again.
+
+Now explore the heat distribution on our planet and discuss them with your partner:
+
+-   Identify lines of fixed latitude (horizontal) where temperature changes.
+-   What are general (prevailing wind patterns) near interfaces where warm and cold air temperatures are next to each other? Look at both large scale (bands along lat) and small tongues where they have opposite temp on either side
+:::
+
+::: {.callout-caution title="Your Answer Here"}
+\[Take some notes\]
+:::
+
+### Identify drivers of atmospheric circulation
+
+::: {.callout-tip title="Give it a try"}
+Use the controller menu to switch to `Air` and `MLSP` overlay. (Mean Sea Level Air Pressure, force air exerts on the surface) and note the color coding: black = low (\<600hPa), white (\>1030hPa)
+
+Identify the ITCZ (Intertropical Convergence Zone)
+
+-   Find low pressure broad band near equator (this is the ITCZ)
+-   Does air flow in or out of this area? 
+-   Does air rise or fall into areas of low pressure?
+
+Look for other patterns on the globe:
+
+-   Can you find other areas of low pressure? General pattern?
+-   Air flowing in or out of these areas?
+-   What is the pattern of air movement in band vs spots?
+-   Clockwise? Counterclockwise?
+-   Compare high pressure spots near low pressure spots?
+:::
+
+::: {.callout-caution title="Your Answer Here"}
+\[Take some notes\]
+:::
+
+## Activity 2: Oceanic circulation
+
+Over 70% of our planet's surface is covered by oceans. At the beginning of the semester we said that the Atmosphere and Hydrosphere (Oceans) are free to exchange heath, mass, and momentum. Similarly, you have learned that large bodies of water as well as other geographic features (e.g. mountains) regionally modify climate. Let's take a look at what parallels we see of ocean and atmospheric circulation patterns, as well as where we can see unexpected climate patterns that demonstrate how the atmosphere and hydrosphere impact each other.
+
+### Get an overview of ocean circulation
+
+::: {.callout-tip title="Give it a try"}
+Change the overlay to ocean currents and sea surface temperature (SST) and observe general patterns on the globe:
+
+-   What patterns do you notice at the equator?
+-   What patterns do you notice at about 30-40 degrees?
+-   What patterns do you notice around Antarctica?
+:::
+
+::: {.callout-caution title="Your Answer Here"}
+\[Take some notes\]
+:::
+
+### Explore Patterns and Drivers of ocean circulation
+
+::: {.callout-tip title="Give it a try"}
+Change the globe settings to show ocean currents (“currents”) + current velocity (“Currents”); dark blue (low velocity) to red (high velocity). Remember , this is displaying surface currents, i.e. bulk movement of water near ocean surface; water flows differently depending on depth
+
+-   Where do you find highest + lowest velocities?
+-   How does current velocity and direction at equator compare to areas right above/below?
+-   Check out Equator and Antarctica
+-   While zoomed in at the equator and/or Antarctica, switch to air - how do they compare? What does that tell us about surface currents?
+:::
+
+::: {.callout-caution title="Your Answer Here"}
+\[Take some notes\]
+:::
+
+::: {.callout-tip title="Give it a try"}
+Reset the settings to oceans (currents/current velocity settings).
+
+-   Check out the Atlantic: What happens to the high velocity current on/near the equator as it approaches South America?
+-   What pattern of velocity/direction of current can you identify along the coast of North America?
+-   What do you think is driving these?
+:::
+
+::: {.callout-caution title="Your Answer Here"}
+\[Take some notes\]
+:::
+
+## A climate zone is a section of earth's surface defined by its mean annual temperature and total annual precipitation along with monthly/seasonal variations and extremes
+
+Weather is a snapshot of atmospheric conditions at a specific time point and location and can be broken down into readily measurable, discrete characteristics including temperature, precipitation, wind speed/direction, cloud coverage, and air pressure. By contrast, climate a statistical "portrait" on a long-term time scale[^a01_climate-1]. To describe the climate of a specific location, scientists determine long-term averages and identify the extremes for a specific place, region, or an entire planet based on a single or multiple measuring stations.
+
+[^a01_climate-1]: Typically, averages are calculated over at least 30 years to describe climate.
+
+In 1884, the German-Russian botanist and climatologist[^a01_climate-2] **Wladimir Köppen** published a climate classification scheme that is still widely used today with some modifications from the original definitions. These climate zones are defined by their mean annual temperature and total annual precipitation along with monthly/seasonal variations and extremes and roughly form latitudinal bands. For larger continents the **oceans** and **mountain ranges** will impact patterns temperature and precipitation and result in regional differences.
+
+[^a01_climate-2]: Even though we have distinct definitions for **climate zones** vs **biomes** you will notice in today's lab that these concepts are tightly linked, with climate being the primary determinant of biomes - though Köppen identifed climate zones based on his experience as a botanist and used characteristic types of vegetation to help identify climate zones.
+
+-   Group A: **tropical climates** are characterized by high levels of precipitation and every month having an average temperature of \>18°C.
+-   Group B: **arid climates** are primarily defined by very low levels of precipitation and include hot deserts (subtropics, average annual temperature \>18°C) and cold deserts (coldest month average temperature \>0°C).
+-   Group C: **temperate climates** are primarily defined by moderate temperatures with the coldest month having average temperatures between 0°C - 18°C and at least one month with an average temperature \>10°C and can include both regions with one dry/wet season or no significant difference between seasons in terms of precipitation. Overall, they have a wider variation of temperature and precipitation compared to tropical and arid climates.
+-   Group D: **continental climates** are colder compared to temperate climates and have a wider range of temperatures with at least one month with average temperatures \<0°C and at least one month \>10°C though precipitation patterns are similar to temperature climates, where depending on the regions there may be a pattern of wet/dry season or no dry season.
+-   Group E: Includes **polar** and **alpine climates**[^a01_climate-3] that feature the coldest temperatures with an average temperature \<10°C and low levels of precipitation.
+
+[^a01_climate-3]: If you increasing in **altitude** and **latitude** you will a similar experience of decreasing temperature though for different regions.
+
+A **climatogram** or **climograph** is a graphical summary of monthly long-term averages of temperature and precipitation and are a useful tool to describe the climate of a given location.
+
+![Climatograph for Manchester, NH. This graph is labeled both for the metric system (degrees Celsius and millimeters) and the English system (degrees Fahrenheit and inches), as budding scientists, we will be using the metric system for lab but you'll be able to refer back to this figure as a point of orientation to units you are more familiar with.](images/climate-graph_MHT.png){#fig-climograph}
+
+Climatograms have double x-axis that allows them to depict to data sets in one graph. For example, @fig-climograph summarizes the average monthly patterns for temperature on the left x-axis using a line graph (red line) and the precipitation as a bar chart on the right x-axis.
+
+::: {.callout-tip title="Give it a try"}
+Use the climograph for Manchester to answer the following questions about Manchester's climate.
+
+-   Maximum average monthly temperature: ....... (hottest month: .......)
+-   Minimum average monthly temperature: ....... (coldest month: .......)
+-   Average annual temperature: .......
+-   Maximum monthly precipitation: ....... (wettest month: .......)
+-   Minimum monthly precipitation: ....... (driest month: .......)
+-   Total annual precipitation: .......
+:::
+
+::: {.callout-tip title="Give it a try"}
+Based on the climograph, argue which climate zone you would expect Manchester, NH to fall into.
+:::
+
+::: {.callout-caution title="Your Answer Here"}
+\[Take some notes\]
+:::
+
+## Global climate patterns are largely determined by input of solar energy
+
+The curved shape of Earth's surface results in latitudinal variation in the amount of solar energy received at earth's surface, warming the atmosphere, land, and oceans.
+
+-   The **Tropic of Cancer** and the **Tropic of Capricorn** are the northern and southern circles of latitude[^a01_climate-4] at which the sun can be directly overhead[^a01_climate-5].
+-   The **Arctic** and **Antarctic Circle**[^a01_climate-6] are the northern and southern most latitudes at which during the June and December solstice the sun dues not rise/does not set all. Currently, these are located at approx. 66.33°N/S.
+
+[^a01_climate-4]: Due to the wobble in earth's axis the exact location changes over time, currently it is at about 23.4°
+
+[^a01_climate-5]: This occurs at the June (Northern) and December (Southern) **solstice** at which point the planet reaches its maximum tilt towards the sun.
+
+[^a01_climate-6]: Collectively, these are referred to as the polar circles
+
+Additionally, the tilt of earth's axis relative to its axis means that throughout a year the different locations on earth's surface differ in whether they are tilted towards or away from the planet and thus the incoming angle of solar energy, resulting in seasonal variation of the climate. At the equator, this effect is negligible but the increases towards the poles.
+
+The differences in the amount of energy received at earth's surface result in a temperature gradient with highest temperatures at the equator that decrease moving north and south towards the pols. In turn, these temperature differences drive global patterns of atmospheric circulation and precipitation.
+
+-   High levels of evaporation at the equator result in warm, wet air masses rising and flowing towards the pols, creating a low pressure zone (Intertropical convergence zone, ITCZ). As the air rises, it cools, releasing most of the water vapor and resulting in high levels of precipitation in the tropics.
+-   Around 30°N/S, the dry air has cooled and now sinks towards earth's surface, creating a high pressure zone with some of the air flowing back to the equator and some of it towards the poles along the surface. In both cases, the dry air absorbs most of the moisture thus creating the arid climates found in the subtropics, forming a band of deserts north and south of the tropics.
+-   At the poles, cold air descends, creating a high pressure zone, with air flowing towards the mid-latitudes at the earth's surface. Around 60°N/S, this air meets air flowing away from the equator. This creates another low pressure zone with air masses rising, cooling and releasing precipitation and resulting in dry air flowing towards the poles/equator.
+
+In short, there are three cells of overturning air circulation that create alternating patterns of low pressure zones associated with high levels of precipitation and high pressure associated with low levels of precipitation.
+
+::: {.callout-tip title="Give it a try"}
+Complete the sketch summarizing major patterns of air circulation and precipitation to include lines representing incoming solar energy. Indicate differences in the angle at which the energy is received and highlight areas that receive the most/least amount of energy creating a latitudinal gradient in temperature.
+:::

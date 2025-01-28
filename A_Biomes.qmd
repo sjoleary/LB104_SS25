@@ -2,8 +2,14 @@
 
 After completing this unit, you should be able to
 
--   
+-   Define what climate zones and biomes are.
 
-In this unit we will explore climate zones and how they shape terrestrial biomes.
+-   Explain how latitudinal variation of solar input shapes global patterns of temperature, air circulation, and precipitation.
 
-##  {#sec-}
+-   Describe the primary factors and underlying mechanisms determining the distribution of climate zones.
+
+-   Recognize distinguishing characteristics of major biomes.
+
+-   Organize biomes by increasing/decreasing temperature and amounts of total annual precipitation.
+
+In this unit we will explore the mechanisms creating climate zones and how inverstigate how they shape terrestrial biomes.

@@ -1,0 +1,104 @@
+# Biome Exploration {#sec-circulation}
+
+```{r}
+#| label: set-up
+#| include: false
+
+# set options
+knitr::opts_chunk$set(tidy = FALSE)
+options(htmltools.dir.version = FALSE)
+
+```
+
+Earth's surface is home to a diverse range of biomes, each characterized by unique environmental conditions and ecosystems. These biomes result from a combination of temperature, precipitation (climate zones), and geographic factors, such as altitude and proximity to water bodies. Understanding the distribution of biomes helps explain the global patterns of biodiversity and the adaptations of organisms to their environments.
+
+In this activity, you will examine the principal biomes found on Earth and investigate the climatic factors driving their distribution. You will determine how biomes can be organized based on characteristic patterns of temperature, precipitation, and altitude, and identify the distinctive plant and animal species that define each biome.
+
+The activity will focus on the following key questions:
+
+-   What are the principal climate zones/biomes found on Earth?
+-   What are the primary factors and their underlying mechanisms determining the distribution of climate zones?
+-   How can we describe/organize biomes in terms of their characteristic patterns of temperature, precipitation, and altitude?
+-   What is the characteristic plant and animal vegetation of each biome?
+
+Through this exploration, you will gain insights into the intricate relationships between climate, geography, and biodiversity and how these interactions shape the our planet.
+
+## Biomes are broad geographic zones with characteristic plants (and animals) adapted to different climate patterns
+
+In the broadest sense, biomes are large-scale categories of ecosystems. For example, even if there might be distinct combinations of plants and animals found in tropical forests in Africa, compared to those in South America or Southeast Asia, they are still are characterized by tall dominant trees and an overall very high diversity of plants animals.
+
+You would also notice that all of these tropical forests share a similar climate characterized by high temperatures with little variation throughout the year, a very high total annual amount of precipitation with a high variation - typically tropical forests have only two seasons, one of which is extremely rainy. This is because climate is the key abiotic factor determining where terrestrial biomes are found. This means that we can generally predict the type of biome we would expect to find based off of three major factors:
+
+1.  mean annual **temperature** and monthly/seasonal variation
+2.  total annual **precipitation** and monthly/seasonal variation
+3.  **Altitude** (Elevation)
+
+::: {.callout-tip title="Consider this"}
+Many biomes form latitudinal(ish) bands along Earth's north-south axis. For example, tropical rain forests form a "green belt" encircling the equator. Briefly, explain why.
+:::
+
+.
+
+::: {.callout-caution title="Your Answer Here"}
+\[Take some notes\]
+:::
+
+.
+
+::: {.callout-tip title="Consider this"}
+For most biomes temperature and precipitation are the two primary determining factors. Briefly argue why altitude can play a key role in shaping the abiotic conditions of a biome.
+:::
+
+.
+
+::: {.callout-caution title="Your Answer Here"}
+\[Take some notes\]
+:::
+
+## Introduction to the BiomeViewer
+
+-   Go to the [Interactive Biome Viewer](http://media.hhmi.org/biointeractive/biomeviewer_web/index.html)
+-   Globe can be moved by clicking and dragging, it can be flattened by toggling the little "grid globe" icon in the top left corner.
+-   Default view is color-coded list of biomes corresponding to the map, hovering over each biome will give a brief definition.
+-   Using the arrow buttons in the biome bar allows you to explore global patterns of anthromes, temperature, precipitation, and terrain
+-   clicking on a location on the map will pull up a box with a climatogram of that location, clicking on the more button in the bottom of that box will open a full screen panel with panels including a description, climatogram, and details on wildlife. The `X` in the top right corner will bring you back to the globe/map view
+
+## Biome Exploration
+
+::: {.callout-tip title="Give it a try"}
+Work with a partner/your group to explore each of the terrestrial biomes. Your Section/Group has been assigned a whiteboard on Canvas that is pre-populated for you to summarize information on each biome, including climatograms and general descriptions.
+
+-   Find at least three locations for your biome. Whenever possible include at least one location from each hemisphere and from different continents.
+-   For each location, take a screen shot of the climatogram and paste it onto the whiteboard. Below, indicate the location (city, country), continent, and hemisphere.
+-   With a partner, compare the descriptions of each specific location to write a general description for the biome overall.
+    -   Note typical vegetation and animals, identify patterns across your locations to determine what is “typical”/how much variation there is.
+    -   Classify as widespread or more rare (found in multiple countries? Continents? Hemispheres?)
+    -   Classify your biomes based on latitude as tropical, temperate, subpolar, or polar (see ).
+    -   Classify your biomes based on temperature/precipitation as tropical, arid, temperate, continental, or polar/alpine.
+:::
+
+.
+
+::: {.callout-tip title="Give it a try"}
+Once you have added climatograms for all locations gather your group for a discussion.
+
+Compare locations within and across biomes and classify them as having high, moderate, or low annual values for temperature/precipitation and as having high, moderate, or low annual variation of temperature/precipitation.
+:::
+
+.
+
+::: {.callout-tip title="Give it a try"}
+In the center of your biome whiteboard is a pyramid. Gather your group for a discussion on how biomes are organized within broad latitudinal zones of decreasing average temperature by decreasing levels of precipitation.
+
+-   Summarize the information you have gathered from your biome exploration to fill in the biome pyramid.
+-   Use the biome pyramid you sketched and compare and contrast what happens to the vegetation within each latitudinal band as precipitation decrease. Consider whether this patterns repeats within each latitudinal band or if they differ; if so discuss why that might be.
+-   Use the biome pyramid you sketched and compare and contrast what happens to the vegetation along the left side of the pyramid as temperature decreases; discuss what could be driving this pattern.
+:::
+
+.
+
+::: {.callout-tip title="Consider this"}
+-   The tundra is sometimes referred to as a "very cold desert". Discuss whether you think this is an appropriate description.
+-   At 5,895. (\> 19,300ft), Mt. Kilimajaro located in Tanzania is the highest mountain on the African continent and the highest free-standing mountain in the world. The base of the mountain is found in the savannah, as you would expect based on its latitude. However, as you hike up the mountain you would cross through forests before reaching the tree line to cross into the alpine biome found near the summit. Briefly outline, which you can experience so many different biomes without really changing your latitudinal position.
+-   Global mean temperatures have already increased by \> 1.2°C compared to before the industrial revolution. Models based on "business as usual scenarios" project that temperatures will increase by 3-4°C by the end of the century. An expected effect of this warming trend is so-called biome shifts. Briefly explain why you expect these shifts to be along altitudinal/latitudinal gradients and argue which biome you would expect to occur in regions that currently are arctic tundra under these circumstances.
+:::

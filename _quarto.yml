@@ -10,9 +10,9 @@ book:
     - index.qmd
     
     - part: A_Biomes.qmd
-#     chapters: 
-#       - A01_climate.qmd
-#       - A02_biomes.qmd
+      chapters: 
+        - A01_climate.qmd
+        - A02_biomes.qmd
 
     
     - part: B_ecol-succession.qmd
@@ -32,7 +32,7 @@ book:
 #     chapters: 
 #       - D01
 
-    - part: Z_supplements.qmd
+    - part: Z_Appendix.qmd
       chapters:
         - references.qmd
 
