@@ -1,12 +1,13 @@
-# Marvelous World of Milk Microbes {#sec-ecological-succession}
+# Marvelous World of Milk Microbes {#sec-marvelous-world-of-milk-microbes}
 
 After completing this unit, you should be able to
 
 -   describe the general process of ecological succession and formulate a testable hypothesis about changes in the microbial community of spoiled milk.
--   distinguish between quantitative and qualitative data.
 -   apply microscopy techniques to distinguish between bacterial shapes, yeasts and molds.
--   use a pH meter to determine pH
+-   use a pH meter to determine pH of a liquid.
+-   record observations of environmental changes in milk.
 -   inoculate culture pretri dishes and make smear slides by heat fixing and staining bacteria.
+-   distinguish between quantitative and qualitative data.
 -   collect, analyze and interpret qualitative data on microbe community composition.
 
-In this unit we will explore the ecological succession in different milks.
+In this unit we will explore the ecological succession in the microbe communities growing in unrefridgerated, aged milk and compare differences and similarities across different milk types.

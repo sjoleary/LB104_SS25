@@ -16,20 +16,21 @@ book:
 
     
     - part: B_ecol-succession.qmd
-      chapters:
-        - B01_exp-design.qmd
-        - B02_methods.qmd
-        - B03_data-collection.qmd
-        
+#     chapters:
+#       - B01_
     
     - part: C_bioassays.qmd
+#     chapters:
+#       - C01_
 
     
     - part: D_lichens.qmd
-
+#     chapters: 
+#       - D01
 
     - part: E_Exp-Design-Analysis.qmd
-
+#     chapters: 
+#       - D01
 
     - part: Z_Appendix.qmd
       chapters:

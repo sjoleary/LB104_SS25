@@ -1,0 +1,44 @@
+# Generate your data {#sec-generate-your-data}
+
+After completing this set of activities, you should be able to:
+
+-   Apply laboratory techniques to inoculate culture petri plates for each milk treatment.
+-   Apply laboratory techniques to make a smear slide by heat fixing and staining bacteria from milk culture plates.
+
+## Inoculate your plate
+
+Since we are interested in microbes that grow in milk specifically, we will be using a culture medium designed specifically for testing milk. The medium is called TGY agar, a name that is a shorthand for its constituent parts: Tryptone casein (protein), Glucose (carbohydrate), Yeast extract (source of vitamins), and agar (a solidifying agent).  TGY is a jelly-like nutrient that is designed specifically to grow milk microbes as it includes all the major macromolecules discussed earlier that are found in milk.
+
+::: {.callout-warning title="Heads up"}
+Together with your lab partner you will be assigned to culture microbes from the different milk treatments. Be sure to check with your lab instructor for which treatment has been assigned to your group.
+
+Make sure you have watch your lab instructor demo the lawn technique to create a microbial lawn on your plate before you get started.
+:::
+
+Inoculate TGY agar plate with the cultures for the milk type you have been assigned to via lawn technique:
+
+-   Use a sterile swab to transfer several drops of milk culture to one edge of a sterile TGY plate\
+    (be sure to transfer from both the liquid and solid portions of the milk culture)
+-   Using the same swab, spread the milk to create a microbial lawn over about one-third of the plate
+-   Again using the same swab, pull down several wavy streaks of the microbes from this lawn
+-   Dispose of the used swab in a red autoclave bag
+-   Seal culture plates with parafilm, note your group’s initials and milk treatment with a sharpie
+
+The plates will be incubated by the instructor at room temperature for several days, then moved to refrigeration until next week’s lab time.
+
+## Prepare microscope slide of colony microbes
+
+1.  Create a slide smear
+
+    -   On a clean slide, add a small drop of water (this must later air dry, so keep the drop *small*).
+    -   Using a fresh toothpick, scrape a small portion of bacteria from your culture plate and mix the scraping in the drop of water on the slide.
+    -   Use the toothpick to spread the bacteria-water mixture into a thin film, dab up extra moisture, then allow slide to air dry. Do not begin heat fixation until slide is [dry]{.underline} or the water will boil and damage bacteria.
+
+2.  Heat “fix” the bacteria: Hold the dried slide with a clothespin and pass it over a propane torch flame 3 times at a 45 degree angle. This should warm the slide, but not cook the bacteria; slide should never be too hot to touch
+
+3.  Stain the bacteria
+
+    -   Place slide on the support in staining tub and apply a few drops of safranin stain to the smear
+    -   Leave the stain to set for 2 minutes
+    -   Wash the stain off with a gentle stream of water from a squirt bottle so that the stain goes into the staining tub
+    -   Blot the stained slide gently with a paper towel (do not rub hard or bacteria will be removed)

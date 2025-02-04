@@ -1,0 +1,212 @@
+# Ask an interesting question {#sec-a}
+
+After completing this set of activities, you should be able to:
+
+-   apply microscopy techniques to distinguish between bacterial shapes, yeasts, and molds.
+-   inoculate culture petri plates to grow bacterial communities.
+-   Write a testable hypothesis statement as to the expected changes in the microbe community as milk ages, and the expected differences between the milk treatments.
+
+## Introduction {#sec-introduction}
+
+### Ecological Succession
+
+Succession is a well-documented ecological phenomenon that we will discuss during out Community Ecology modeule in lecture. As a reminder, ecological succession is defined as a transition in species composition within a community following a disturbance or during the establishment of a community in an uninhabited environment. This sequential change in species composition in successional communities is in response to ongoing physical changes in the environment. These physical environmental changes are often brought about by the very species that composed earlier successional stages. As one community grows, it modifies the environment, and a different community develops as a result.
+
+::: {.callout-tip title="Consider this"}
+During our biome exploration we talked about how the climate (abiotic factors) play a key role in determining which plants can grow in specific locations. Discuss the idea that the ecological community "modifies the environment":
+
+-   how do biological organisms change the abiotic component of ecosystems? examples?
+-   how does this change how we should think about ecosystems as static versus dynamic?
+-   how does this change how we should think about population dynamics over time?
+-   how might this relate to life history strategies and in which types of ecosystems they are successful?
+:::
+
+### Milk Nutrients and Spoilage {#sec-milk-nutrients-and-spoilage}
+
+Milk is a highly nutritious food containing important macromolecules: carbohydrates (lactose, a milk sugar), proteins (casein, commonly referred to as curd), and lipids (butterfat). This high level of nutrition makes milk an excellent medium for the growth of bacteria and other microbes. To minimize the risk of spoilage, milk is pasteurized. Pasteurization is a process by which milk is heated to a specific temperature for a set period of time to kill harmful bacteria. Pasteurizing milk does not sterilize it (sterilizing kills all bacteria) but merely destroys the pathogenic bacteria, leaving many bacteria that will multiply very slowly at refrigerator temperatures. However, if left at room temperature, the surviving bacteria will quickly grow and bring about milk spoilage.
+
+::: {.callout-tip title="Consider this"}
+In this example what is the biological community we are observing? What is the disturbance/catastrophic event that triggers ecological succession?
+:::
+
+::: {.callout-note title="Answer" collapse="true"}
+The microbes would be the ecological community, pasteurization would be the disturbance event that dramatically alters the community by removing some population altogether and decimating others. It creates a "system restart".
+:::
+
+### Milk Microbes {#sec-milk-microbes}
+
+Our next few weeks of lab will examine microbial succession in milk, so let’s first define what we mean by"microbe" or microorganism.
+
+Simply stated, microbes are organisms that are too small to be seen without using a microscope. For the purposes of this lab, microbes include three broad groups of biological taxa:
+
+-   bacteria (type of prokaryote)
+-   yeasts (unicellular fungi),
+-   molds (multicellular fungi).
+
+These three types of microbes can be distinguished by their
+
+-   size
+-   cell type (prokaryotic v. eukaryotic)
+-   whether they are unicellular or multicellular.
+
+![Yeast and bacteria cells at 400x magnification.](images/yeast-bacteria.png){#fig-bact-yeast fig-alt="larger yeast cells with organelles visible and much smaller irregular shaped bacterial cells." fig-align="left"}
+
+The first comparison to make is between bacteria and yeast (@fig-bact-yeast). Superficially, they appear similar in that they are both microscopic and unicellular. However, there are a couple important differences. Recall from your first semester of General Biology that Bacteria are **prokaryotes**, which means that they have the smallest cells and lack organelles. Yeasts are single-celled fungi and like other eukaryotes they have generally larger cells that contain organelles, such as a nucleus and mitochondria. Comparing @fig-bact-yeast and @fig-mold-yeast shows just how much of a size difference there is between the two at 400x magnification.
+
+![Mold and yeast in a petri dish.](images/fuzzy-mold.png){#fig-mold-yeast}
+
+The other important comparison to make is between colonies of bacteria and yeast compared to mold (@fig-mold-yeast). As a ***multicellular*** fungus, mold is easy to distinguish from the ***unicellular*** bacteria or yeast under a microscope. Even without magnification, molds are easily identified by their "fuzzy" appearance, which is due to their body morphology of long, filamentous strands growing over top each other.
+
+Let's take a closer look at the type of microbes you will encounter during this lab.
+
+::: {.callout-tip title="Give it a try"}
+Together with your partner, get yourself set up with a microscope. Then, for each of the groups of microbes indicated below obtain and examine the indicated specimen to create a set of sketches with labeled key features and annotations of your observations. You will use these as a reference to identify microbes present in your spoiled milk later on, so make sure that you are familiar with the key features.
+
+You will submit your drawings as part of your post-lab assignment. You can sketch them on paper and take pictures, or for you high-tech digital notetakers sketch them on a tablet and expor them as a png or jpg. Remember to include a title, magnification etc in your images.
+
+If you are using an iPhone very likely your default output is HEIC which is an apple-specific high efficiency file format. They are great if you are keeping pictures on your phone - not so great when you are sharing them, especially cross platform. You can make a small change on your iphone options to create a readily shareable and outside-of-apple-products-usable file format.
+
+1.  Open the Camera section in the Settings app
+
+2.  Under Formats, select "most compatible" instead of "high efficiency"
+
+Now, when you take a new photo or video it will be saved as JPEG instead of HEIF/HEIC.
+:::
+
+**Fungal Mold**
+
+1.  Without magnification, **visually examine** the mold colony of *Penicillium camemberti.*[^b01_exp-design-1]
+2.  Under low magnification using a dissection microscope **sketch** a portion of the mold colony and **label** fungal hyphae (thin filamentous body).
+3.  Annotate your sketch in the right hand margin or neatly below your labels to describe key characteristics and observations.
+
+[^b01_exp-design-1]: Species Note: We won’t see *P. camemberti* in our spoiled milk experiment, but the species is a good example of fungal mold that grows on dairy. This species creates the flavorful “rind” on soft-ripened cheeses such as Camembert and Brie.
+
+**Bacteria shapes: bacilli (rods), cocci (spheres), and spirilla (spirals)**
+
+1.  Make sure you have had a demo on proper use and clean-up of oil immersion before getting started.
+2.  With a compound microscope, **examine** prepared slide #380 of bacterial shapes using the oil immersion technique for highest magnification.
+3.  **Sketch** examples of the three different bacterial forms, **labelling** each.
+4.  Annotate your sketch in the right hand margin or neatly below your labels to describe key characteristics and observations (e.g. size of cells relative to each other, other observations).
+
+**Yeast cells**
+
+1.  Using a compound microscope, **examine** prepared slide #378 of yeast *Candida albicans*[^b01_exp-design-2].
+2.  **Sketch** several yeast cells.
+3.  Label and annotate your sketch in the right hand margin or neatly below your labels to describe key characteristics and observations (e.g. list features that distinguish yeast cells from bacterial cells for easy reference on how to distinguish them).
+
+[^b01_exp-design-2]: Species Note: We also won’t see *C. albicans* in our spoiled milk experiment, but the species is a good example of a common yeast. The species lives naturally in small amounts in all human bodies. When the yeast overgrows it causes infections, such as thrush (oral bumps) or vaginal yeast infections.
+
+### Succession in Milk {#sec-succession-in-milk}
+
+Biologists have discovered that, as pasteurized milk ages, changing conditions in the milk bring about a predictable, orderly succession of microbial communities. As anyone who has opened a bottle of spoiled milk will know, there are a couple distinctive physical attributes of spoiled milk - a strong sour odor is produced and the liquid coagulates into semisolid chunks (a process called curdling) - all in all, a very unpleasant experience. These physical changes are caused by various microbes in the milk. These microbes have been well-studied and the following facts will be useful as you write your hypothesis statement during lab class as to the expected changes in the microbe community as milk ages.
+
+1.  Refrigerated, unspoiled milk has a pH of \~6.5
+2.  *Streptococcus* (round-shaped cocci) and *Lactobacillus* (rod-shaped bacilli) bacteria naturally occur in milk and survive pasteurization
+3.  *Streptococcus* and *Lactobacillus* both ferment lactose sugar into lactic acid and acetic acid
+4.  *Streptococcus* bacteria thrive in milk with pH \> 5.5
+5.  *Lactobacillus* bacteria grow in milk with pH \> 4.5
+6.  Two common bacteria that always manage to get into milk from the environment, *Pseudomonas* and *Achromobacter* (both rod-shaped bacilli), digest butterfat and produce a putrid smell
+7.  An acidic environment causes casein to solidify, or curd
+8.  Yeasts and molds grow well in acidic environments
+
+## Experimental Design {#sec-methods}
+
+### The big research question {#sec-the-big-research-question}
+
+Every scientific study is focused on a very specific question or hypothesis that is tested using an experiment or field study designed to generate a data set to answer that specific question (objective of that study). That answer then contributes to our overall understanding of the "big research question"
+
+::: {.callout-tip title="Consider this"}
+Discuss with your partner what you think the "big research question" is that this experiment could contribute to.
+
+-   How can you frame the importance of this experiment?
+-   What is context that is needed to understand the question/results?
+-   How does this contribute to the body of knowledge around that subject?
+:::
+
+::: {.callout-caution title="Your Answer Here"}
+\[Take some notes\]
+:::
+
+::: {.callout-note title="Answer" collapse="true"}
+Our big question is ecological succession. You could also frame this experiment from a perspective of food safety. Understanding what microbes grow at room temperature and how they change the environmental parameters of milk is an important component of understanding the process of food spoilage. As the microbe change the milk, it is not longer safe for consumption (nor does it taste/smell good!).
+:::
+
+Now it's time to get specific: We will be comparing the ecological succession of microbes at different ages for whole milk, chocolate milk, buttermilk, and oat milk that has been left at room temperature for up to 8 days and comparing the changes in environmental conditions.
+
+::: {.callout-tip title="Consider this"}
+We will document both the changes in the microbial community over time as well as how the physical parameters changed. Together with your partner discuss how you will determine the change in the microbial community over time (what is your "method" to generate a data set). Then discuss what physical parameters we can measure to determine how they change over time.
+
+Remember you are not only limited to quantitative data, you can also use qualitative data.
+:::
+
+::: {.callout-caution title="Your Answer Here"}
+\[Take some notes\]
+:::
+
+::: {.callout-note title="Answer" collapse="true"}
+We will document changes in consistency, smell (odor), glucose content, and pH.
+:::
+
+### Formulate your hypotheses {#sec-formulate-your-hypotheses}
+
+Now it's time to identify the hypotheses that you and your partner will test.
+
+::: {.callout-tip title="Give it a try"}
+Have a discussion with your partner to identify two clearly worded and testable hypotheses for this first lab unit
+
+You should include different milk types as well as account for both the microbial community and environmental parameters.
+
+Use the information from the facts listed in the succession in milk paragraph to inform your hypothesis. Additionally, you can look up differences in the milk types in general and the nutrition labels from the milks used here to inform your hypotheses and explain your reasoning.
+
+Use the **if-then-because** format below to develop your hypothesis.
+:::
+
+::: {.callout-caution title="Your Answer Here"}
+**Hypothesis 1:**
+
+**IF** (connect with an expected/observed pattern that interests your group):
+
+...
+
+**THEN** (suggest a relationship that might explain or follow this pattern)
+
+...
+
+**BECAUSE** (explain your reasoning)
+
+...
+
+The last part (the "because" part is the **hypotheses** that you are planning to test with the data set you will be gathering. Double check that we will be gathering the data that you will need.
+:::
+
+::: {.callout-caution title="Your Answer Here"}
+**Hypothesis 2:**
+
+**IF** (connect with an expected/observed pattern that interests your group):
+
+...
+
+**THEN** (suggest a relationship that might explain or follow this pattern)
+
+...
+
+**BECAUSE** (explain your reasoning)
+
+...
+
+The last part (the "because" part is the **hypotheses** that you are planning to test with the data set you will be gathering. Double check that we will be gathering the data that you will need. This means that your hypothesis should not be just a single sentence.
+:::
+
+Now that we have a hypothesis our next step is to design and execute an experiment to generate a data set that will allow us to test that hypothesis.
+
+::: {.callout-tip title="Consider this"}
+With your partner, look back over your hypothesis. Identify the following:
+
+-   independent variable (**explanatory variable**)
+-   dependent variable (**response variable**)
+-   positive and/or negative **control**
+:::
+
+::: {.callout-caution title="Your Answer Here"}
+\[Take some notes\]
+:::

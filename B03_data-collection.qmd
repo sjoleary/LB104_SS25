@@ -1,0 +1,162 @@
+# Collect your data {#sec-collect-your-data}
+
+After completing this set of activities, you should be able to:
+
+-   Distinguish between data and results
+-   Distinguish between quantitative and qualitative data
+-   Observe and record observations of environmental changes in different milk types
+-   Calibrate and use a pH meter
+-   Determine the presence of reducing sugars (glucose, lactose) using Benedict's solution
+-   Collect qualitative data on microbe community composition in the different milk treatments
+
+## Distinguish between data and results
+
+In the process of scientific inquiry, it is important to distinguish between **data** and **results. Data are the raw inputs, while results are the processed outputs that help draw conclusions.** In other words, the difference lies in the level of processing and interpretation:
+
+-   **Data** refers to raw, unprocessed observations, measurements, or facts collected during an experiment or study. Data can be qualitative (e.g., descriptions, images) or quantitative (e.g., numbers, measurements).
+
+-   **Results** are the analyzed and interpreted form of data. This may involve summarizing data through statistical analysis, creating visual representations (e.g., graphs, tables), or identifying patterns and trends. Results help answer the research question.
+
+::: {.callout-important title="Heads up"}
+For this lab we will be collecting **qualitative data.** For example, we will determine presence/absence of microbes in the different milk treatments. By contrast, for **quantitative data** we would be counting the number of individuals or determining the density to allow us to compare relative abundance of the different microbe types.
+
+We will divide the data collection across the different groups for efficiency and will create a shared data set that you will be able to use to test your hypothesis.
+:::
+
+.
+
+::: {.callout-tip title="Consider this"}
+You are going to test for the presence of reducing sugar's using Benedict's solution. You will document the color change using photos.
+
+Discuss with your partner whether those photos are **data** or **results**.
+:::
+
+.
+
+::: {.callout-caution title="Your Answer Here"}
+\[Take some notes\]
+:::
+
+.
+
+::: {.callout-note title="Answer" collapse="true"}
+The images themselves are **data**, while any summary, categorization, or conclusions drawn from them would be **results**.
+
+-   Images of color changes from a qualitative glucose test would be considered **data** because they are raw observations collected during the experiment. These images capture the direct, unprocessed evidence of the test results.
+
+-   However, if you analyze those images—such as assigning color categories (e.g., "low," "moderate," "high glucose") or interpreting them based on a color chart—then the **interpreted findings** would be considered **results**.
+:::
+
+## Compare and contrast the milk types
+
+::: {.callout-tip title="Consider this"}
+We are comparing whole milk, chocolate milk, buttermilk and oat milk. You can view the nutrition labels on our shared slidedeck in your Section's google folder. All of these milks, including the oat milk were pasteurized.
+
+Together with your partner compare and contrast these different milk types to identify shared characteristics as well as key differences among them. Consider things like how they are produced and how that creates different environments.
+:::
+
+.
+
+::: {.callout-caution title="Your Answer Here"}
+\[Take some notes\]
+:::
+
+## Collect data on the environmental changes in milk types
+
+### Determine changes in odor and consistency
+
+::: {.callout-tip title="Give it a try"}
+Together with your partner observe and record the odor and consistency for all milk types and ages. This is qualitative data, so you need to be descriptive. For your later analysis and presentation of your results it can be helpful to create a consistent set of terms to make it easier to identify similarities and (degrees) of differences among the different treatment. Together with your partner, come up with a "lexicon" of terms.
+:::
+
+.
+
+| Milk Type | Milk Age | odor | consistency |
+|-----------|----------|------|-------------|
+|           |          |      |             |
+|           |          |      |             |
+|           |          |      |             |
+|           |          |      |             |
+|           |          |      |             |
+|           |          |      |             |
+|           |          |      |             |
+|           |          |      |             |
+|           |          |      |             |
+|           |          |      |             |
+|           |          |      |             |
+|           |          |      |             |
+|           |          |      |             |
+|           |          |      |             |
+|           |          |      |             |
+|           |          |      |             |
+
+Changes in microbial communities for different milk types and ages. {#tbl-organisms}
+
+### Determine changes in pH
+
+::: {.callout-tip title="Give it a try"}
+Follow the instructions on how to calibrate and use the pH meters to determine the pH of the milk treatments assigned to you and enter them in the shared spreadsheet.
+
+**Remember to use the DI-water squirt bottle to rinse the pH probe between milks.** This is really important because we want to avoid cross contamination.
+
+We will have at least two groups measure the pH level for each treatment independently. Discuss with your partner why this is important.
+:::
+
+### Determine changes in glucose level
+
+::: {.callout-tip title="Give it a try"}
+Determine the glucose levels for the milk treatments assigned to you and your partner. Again, we want to have at least two groups perform the test.
+
+1.  Use the scissors to cut a strip of parafilm and the cut it into small squares that are large enough to cover the top of your test tube.
+2.  Use a sharpie to label your test tubes.
+3.  Add 1ml Benedict's solution to each of your test tubes.
+4.  Add 1ml of your milk treatment. Especially with the aged milks you can get some clogging in the pipette tip, be careful not to have the liquid snap up into the pipette, also make sure you are getting 1 ml.
+5.  Place the parafilm on top of the test tube and invert several times to mix.
+6.  Take a picture of the mixture.
+7.  Very carefully, use the tongs to hold the tube in the water bath until you see a color change (2-3 minutes).
+8.  Take the test tube out and take a second picture documenting the color change.
+9.  Upload the before and after picture to our shared slide deck.
+
+If you are using an iPhone very likely your default output is HEIC which is an apple-specific high efficiency file format. They are great if you are keeping pictures on your phone - not so great when you are sharing them, especially cross platform. You can make a small change on your iphone options to create a readily shareable and outside-of-apple-products-usable file format.
+
+1.  Open the Camera section in the Settings app
+2.  Under Formats, select "most compatible" instead of "high efficiency"
+
+Now, when you take a new photo or video it will be saved as JPEG instead of HEIF/HEIC.
+:::
+
+## Identify the microbial community in the different milk treatments
+
+Observe and record microbes present in each milk type by examining your culture plate and bacterial smear slide.
+
+-   Under compound microscope, examine bacterial smears for presence of different shapes/types: bacilli, cocci, or yeasts (use oil immersion technique for higher magnification, if needed).
+-   Under dissecting scope, examine culture plates for bacterial colony types, yeasts, or molds.
+
+Remember to take 1-2 representative pictures of your slide and add it to our shared slide deck to make it straightforward for each group to describe the differences in the milk treatments.
+
+::: {.callout-tip title="Give it a try"}
+Use {#tbl-organisms} to describe the organisms present in each milk treatment.
+
+Remember this is qualitative data. The simplest determination would be presence and absence of the different microbe types. Together with your partner, discuss how you can classify and document changes in composition of the microbial community in terms of relative abundance. Then compare your slides and those of your classmates to describe the organisms present.
+:::
+
+| Milk Type | Milk Age | organisms present |
+|-----------|----------|-------------------|
+|           |          |                   |
+|           |          |                   |
+|           |          |                   |
+|           |          |                   |
+|           |          |                   |
+|           |          |                   |
+|           |          |                   |
+|           |          |                   |
+|           |          |                   |
+|           |          |                   |
+|           |          |                   |
+|           |          |                   |
+|           |          |                   |
+|           |          |                   |
+|           |          |                   |
+|           |          |                   |
+
+: Changes in microbial communities for different milk types and ages. {#tbl-organisms}
