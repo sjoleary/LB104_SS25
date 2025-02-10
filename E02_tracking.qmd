@@ -1,0 +1,213 @@
+# Field observations of animal tracks {#sec-field-observations}
+
+After completing this set of activities, you should be able to:
+
+-   Observe, sketch, and annotate animal tracks.
+-   Describe wildlife prints & tracks in terms of straddle, stride/leap.
+-   Distinguish characteristic types of gaits (perfect/imperfect walking, bounding, hopping & leaping).
+
+## Introduction
+
+### Prints and Tracks
+
+**Tracks** are comprised of individual **prints** (the impression made by one foot). Make a sketch in the margin to indicate total width, total length, metacarpal pad width, and claw length of a print or use the figure below to indicate how you measure these. Negative space is really important when comparing prints.
+
+::: {.callout-tip title="Give it a try"}
+Compare these prints of different animals and see if you can find **C**, and different styled **X** shapes in the negative space.
+:::
+
+![Comparison of print shapes](images/diff-prints.png)
+
+Animal tracks are not just defined by individual **prints**, but also by their **positioning and pattern**—this tells us about the animal’s **gait** (the way it moves).
+
+::: {.callout-tip title="Give it a try"}
+Define the terms **stride**/**leap** and **straddle.** Then make a small sketch indicating how to measure these components of a track.
+:::
+
+::: {.callout-note title="Answer" collapse="true"}
+**Stride (or Leap):** The distance between two successive prints made by the same foot. This tells us how far an animal moves with each step or jump.\
+**How to Measure:**
+
+-   Find two consecutive prints made by the same foot (e.g., right front foot to the next right front foot).
+-   Measure the distance from the heel of the first print to the heel of the second print.
+-   For bounding, hopping, or leaping gaits, this is sometimes called a leap instead of a stride.
+
+**Straddle:** The width between the left and right tracks of an animal’s trail. Straddle indicates how much an animal’s legs spread apart while walking.\
+**How to Measure:**
+
+-   Find a straight section of a trackway.
+-   Measure the perpendicular distance between the outer edges of the left and right prints.
+-   Narrow straddle: Tracks are close together (e.g., fox, deer)/Wide straddle: Tracks are spaced far apart (e.g., raccoon, bear).
+:::
+
+### Know Your Gaits
+
+Let's make sure you are familiar with the typical traits we expect to see. Below are the common gaits you are likely to see[^e02_tracking-1]:
+
+[^e02_tracking-1]: ProTip: Learn the "language" of tracks... when you are asked to annotate your sketches these are the types of descriptors you should use.
+
+#### Walking Gaits
+
+**Example Animals:** Deer, foxes, bobcats, raccoons
+
+**Characteristics:**
+
+-   Prints appear in a straight line or slightly staggered.
+-   Each foot moves independently in a 4-step pattern.
+-   **Perfect Walkers** (e.g., foxes, bobcats) place their hind foot directly in the print of the front foot (this conserves energy in deep snow).
+-   **Imperfect Walkers** (e.g., raccoons, bears) have a slight offset between front and back feet.
+
+**How to Identify:** Look for a steady, rhythmic pattern with evenly spaced prints.
+
+::: {.callout-tip title="Give it a try"}
+Make a sketch of tracks from a perfect and imperfect walker.
+:::
+
+#### **Bounding Gaits**
+
+**Example Animals:** Weasels, fishers, mink
+
+**Characteristics:**
+
+-   The animal leaps forward with both front feet landing together, followed by the back feet landing near or in the same spot.
+-   Tracks appear in sets of two or four closely spaced prints.
+-   Typical of animals with long, flexible bodies that use bounding to move quickly.
+
+**How to Identify:** Look for side-by-side front paw prints followed by hind paws landing close together.
+
+::: {.callout-tip title="Give it a try"}
+Make a sketch of tracks from a bounder.
+:::
+
+#### **Hopping and Leaping Gaits**
+
+**Example Animals:** Rabbits, squirrels
+
+**Characteristics:**
+
+-   Hind feet land ahead of the front feet, creating a "Y" or staggered pattern.
+-   The larger hind feet provide power for the jump, while the smaller front feet land first.
+-   Often seen in prey animals escaping predators.
+
+**How to Identify:** Look for two small front prints followed by two large hind prints positioned ahead of them.
+
+::: {.callout-tip title="Give it a try"}
+Make a sketch of tracks from a leaper/hopper.
+:::
+
+## Methods
+
+On our hike, keep an eye out for prints - then follow it. A single print won’t tell you much, but a pattern of multiple tracks can reveal how an animal moves and why. Use the track finder key to identify them. Remember, track size and gait together help determine the species. Consider snow depth as for example, deep snow may alter the expected gait.
+
+Remember, in the field we are on a buddy system - keep an eye out for each other and make sure everyone is safe. Don't wander off on your own and please don't return to campus or leave lab before having checked in (well out) with a lab instructor so we know we haven't left anyone out in the snow.
+
+Sketch the prints & tracks you saw on the trail. Your sketches should be **accurate and detailed** to help with species identification as well as record the context in which you found the sketch. This includes labeling key features and annotating important observations.
+
+### **Step 1: Make a Clear Sketch**
+
+1.  Locate a set of **tracks**. If possible, choose a track with a **full set of front and hind prints** to compare.
+2.  Find a well-defined **individual print** within a trackway. If you cannot find one "perfect" print, you can create a "composite sketch" based on several individual prints to make sure you are including all the key characteristics
+3.  Draw **draw the outline** of the print carefully. Pay attention to the shape of the toes, presence of claws, and the central pad.
+
+### **Step 2: Measure and Record Data & Label Key Features**
+
+Record your measurements **next to your sketch** to compare with field guides and **label** key features of your print:
+
+1.  **Total Length** – Distance from the tip of the longest toe/claw to the back of the heel pad.
+2.  **Total Width** – Widest part of the print.
+3.  If present: **Metacarpal** (central pad of the foot), **Claw Marks** – If visible, measure from the front of the toe pad to the tip of the claw.
+4.  If possible measure the **gait** and **straddle.**
+
+### **Step 3: Annotate Your Observations**
+
+Annotations are **short notes** that describe key aspects of the track. Use the following prompts to guide your observations; of course include anything else that you notice that seems important to you. Margins and space below are a great place for annotations. You can also use an arrow to indicate a specific feature of the print itself.
+
+**Print Details**
+
+-   Do the toes point forward, or do they splay outward?
+-   Are claw marks visible? (Can help distinguish between canine and feline tracks.)
+-   Is the print symmetrical or asymmetrical?
+
+**Track Measurements & Gait**
+
+-   What is the stride length (distance between two successive prints of the same foot)?
+-   What is the straddle width (distance between the left and right tracks)? This not onl helps identify species—narrow straddles suggest energy-efficient movement, while wider straddles may indicate waddling or side-to-side motion.
+-   Are the prints evenly spaced (perfect/imperfect walking) or clustered (bounding/hopping)?
+-   Do distances between prints change? If so what does that tell you? Stride (or leap) length gives clues about speed—longer strides mean the animal was moving quickly.
+-   Are the tracks in a straight line?
+-   Are there tracks from multiple individuals? Are they the same species?
+
+**Environmental Context**
+
+-   What kind of habitat is the track found in (open field, under trees, near water)?
+-   Does the track appear fresh or partially melted?
+-   Are there any other signs nearby, like scat, fur, or feeding marks?
+
+*The track finder booklet has helpful notes on pages 1, 4-5, 12-13, 22-23, 32, and 46.*
+
+## Results
+
+::: {.callout-tip title="Give it a try"}
+Find a set of tracks, observe, record, and analyze what you see.
+:::
+
+**Final Check**
+
+**Before Moving On**
+
+-   Did you label all key features?
+-   Did you annotate details about shape, claws, and symmetry?
+-   Did you record important measurements?
+-   Did you note the habitat and conditions?
+
+## Discussion
+
+Take the time to reflect on today's lab experience and develop two key takeaways from this experience in terms of what you have learned.
+
+-   **A reflection on the experience itself** (observing, sketching, measuring, and annotating tracks).
+-   **A reflection on ecological insights gained** (animal movement, habitat use, adaptations to winter).
+
+::: {.callout-tip title="Consider this"}
+Use the following prompts to reflect on what you learned about observation and field documentation based on what your experience was like tracking and documenting animal prints in the snow.
+
+These are not meant as a checklist or comprehensive list of what to consider. View them more as a starting point for you to discuss with your lab mates and think over on your own to then write up a paragraph summarizing your experience (150-200 words).
+
+-   How easy or difficult was it to find tracks? What factors influenced this? (e.g., snow conditions, habitat type)
+-   What did you notice about tracks once you started looking for them? Did it become easier over time?
+-   What details were hardest to capture in your sketch? What details stood out the most? How did sketching and annotating the tracks help you notice details you might have missed with just a photo?
+-   Did measuring the tracks (length, width, stride, straddle) change how you thought about identifying them?
+-   Did you notice differences between fresh vs. older tracks?
+-   How did environmental factors affect track visibility?
+-   How did snowshoeing affect how you moved through the environment? Did you feel more connected to the landscape?
+-   What surprised you most about this experience? What was challenging? How did you overcome it?
+:::
+
+.
+
+::: {.callout-caution title="Your Answer Here"}
+\[Take some notes\]
+:::
+
+.
+
+::: {.callout-tip title="Consider this"}
+Use the following prompts to reflect on what your learned about animal movement, habitat use, and winter animal survival strategies based on observing animal tracks in winter.
+
+Again, these are not meant as a checklist or comprehensive list of what to consider. View them more as a starting point for you to discuss with your lab mates and think over on your own to then write up a paragraph summarizing your experience (150-200 words).
+
+-   What gaits did you observe (walking, bounding, hopping, leaping)? Did they match the species you expected?
+-   Which animals did you expect to "see" and which did you identify? Were you surprised by any of them?
+-   How did the type of habitat (open field vs. wooded area) affect where you found tracks?
+-   Did you notice differences in track depth or clarity in different types of snow? What might this tell you?
+-   Did you find tracks that suggested an interaction (e.g., predator-prey chase, foraging patterns)?
+-   How do different animals move in winter? What energy-saving strategies did you notice from their tracks?
+-   What evidence did you see of how animals adapt to winter conditions (e.g., reduced movement, efficient gaits, sheltering behaviors)?
+-   How might your observations be different if you did this same activity in the summer?
+-   What ecological patterns became more apparent to you through tracking?
+:::
+
+.
+
+::: {.callout-caution title="Your Answer Here"}
+\[Take some notes\]
+:::

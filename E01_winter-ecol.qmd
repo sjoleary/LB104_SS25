@@ -1,0 +1,59 @@
+# Winter Ecology {#sec-winter-ecology}
+
+After completing this set of activities, you should be able to:
+
+-   Describe key questions that ecologists ask about how organisms survive and interact with their environment in winter.
+-   Understand the importance of making and sketching field observations.
+
+## What is winter ecology? {#sec-what-is-winter-ecology}
+
+Winter ecology focuses on how organisms adapt to and interact with cold, snow-covered environments. Scientists study how animals, plants and ecosystems respond to snow and cold, the energy cost of staying alive and active in winter, how food, shelter, and movement strategies change and how climate change is impacting winter environments.
+
+::: {.callout-tip title="Consider this"}
+Briefly discuss what challenges animals face in winter compared to other seasons and possible adaptations to overcome these.
+:::
+
+::: {.callout-note title="Answer" collapse="true"}
+In winter, animals face challenges such as colder temperatures, reduced/limited food availability, and harsher environmental conditions like snow and ice - for example, deep snow that makes movement harder. Some animals migrate to avoid these challenges, while others hibernate or develop special adaptations like thicker fur or fat stores to survive. Predators may have difficulty finding prey, while herbivores must search for food buried under snow. Some animals, such as snowshoe hares, have physical adaptations like white fur for camouflage and large feet for better movement in snow. Behavioral adaptations, such as altering activity patterns or caching food, also help them survive through the colder months.
+:::
+
+Winter ecologist investigate a wide range of questions.
+
+-    How do animals move and survive in snow?
+    -   What strategies do animals use to travel across snow (e.g., walking, bounding, hopping)?
+    -   How does snow depth and type affect movement?
+-   How do animals find food in winter?
+    -   What do herbivores eat when plants are covered in snow?
+    -   How do predators hunt in snow-covered landscapes?
+-   How do animals stay warm in cold temperatures?
+    -   What morphological adaptations help animals conserve heat?
+    -   What behavioral adaptations help animals conserve heat?
+-   How do winter conditions shape ecosystems?
+    -   How do temperature, snowfall, and ice impact food webs and species interactions?
+    -   How does snow act as an insulating layer for plants and small animals?
+
+::: {.callout-tip title="Consider this"}
+Expand on your short discussion from the question above by writing a short response to each of these question (sets) based on our prior knowledge and/or intuition.
+:::
+
+::: {.callout-note title="Answer" collapse="true"}
+-   **How do animals move and survive in snow?** Animals move in different ways depending on snow conditions. Deer have long legs to walk through deep snow, while snowshoe hares have large feet that help them stay on top of the snow. Some animals, like weasels, use tunnels under the snow to stay hidden and move more easily.
+
+-   **How do animals find food in winter?** Many herbivores eat twigs, bark, and dried leaves when fresh vegetation is unavailable. Squirrels store nuts in the fall to eat during winter, and some birds change their diet to include seeds and insects hidden under tree bark. Predators like foxes use their keen hearing to detect small animals moving under the snow.
+
+-   **How do animals stay warm in cold temperatures?** Animals stay warm through a combination of fur, fat, and behavior. Some grow thick winter coats or store extra fat for insulation. Others huddle together for warmth or seek shelter in burrows. Birds fluff up their feathers to trap heat, and some animals, like bears, hibernate to conserve energy.
+
+-   **How do winter conditions shape ecosystems?** Snow acts as an insulator, protecting small mammals and plants from extreme cold. It also affects predator-prey interactions—wolves have an advantage over deer in deep snow because of their larger paws. Streams may freeze, changing the availability of water for animals. As climate change alters winter conditions, species may struggle to adapt.
+:::
+
+## Why observe animal tracks?
+
+Winter provides a unique opportunity to study wildlife through the tracks animals leave behind in the snow. These tracks offer valuable insights into the presence, movement, and behavior of animals that might otherwise remain unseen. By analyzing track patterns, we can determine which species are active in a given area, their gaits and movement speeds, and even interactions such as predation or foraging. Tracking also helps us understand habitat use, as different species prefer distinct environments based on food availability, cover, and terrain. Additionally, snow preserves tracks more clearly than other substrates, making winter an ideal time to study the ecology of organisms and their responses to seasonal changes in temperature, food scarcity, and predation risk. Observing animal tracks is a non-invasive way to monitor biodiversity and gain a deeper understanding of how species interact with their environment.
+
+::: {.callout-tip title="Consider this"}
+Briefly reflect on the importance of developing observational skills and sketching in field studies, especially since we could much more easily take photos (3-5 sentences).
+:::
+
+::: {.callout-note title="Answer" collapse="true"}
+Careful observation is a fundamental skill in field biology, and sketching is one of the best ways to develop and refine it. While taking pictures can be useful, sketching requires focused attention to detail—forcing the observer to slow down, notice subtle characteristics, and think critically about what they are seeing. This process enhances memory retention, improves spatial awareness, and helps build pattern recognition skills. Additionally, sketching allows for the inclusion of important contextual information, such as measurements, substrate type, and weather conditions, which photographs may not capture effectively. 
+:::

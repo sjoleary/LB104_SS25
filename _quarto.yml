@@ -28,7 +28,12 @@ book:
     - part: D_lichens.qmd
 
 
-    - part: E_Exp-Design-Analysis.qmd
+    - part: E_tracking.qmd
+      chapters:
+        - E01_winter-ecol.qmd
+        - E02_tracking.qmd
+    
+    - part: F_Exp-Design-Analysis.qmd
 
 
     - part: Z_Appendix.qmd
