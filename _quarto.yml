@@ -20,6 +20,7 @@ book:
         - B01_exp-design.qmd
         - B02_methods.qmd
         - B03_data-collection.qmd
+        - B04_data-analysis.qmd
         
     
     - part: C_bioassays.qmd

@@ -1,0 +1,590 @@
+# Analyze your data {#sec-collect-your-data}
+
+```{r}
+#| label: setup
+#| include: false
+
+# set options
+knitr::opts_chunk$set(
+  tidy = FALSE, 
+  message = FALSE,
+	warning = FALSE)
+
+options(htmltools.dir.version = FALSE)
+
+```
+
+
+After completing this set of activities, you should be able to:
+
+-   modify a scatterplot using `ggplot2` in the `Rstudio Cloud IDE` to depict the relationship between two variables.
+-   modify a bar plot using `ggplot2` in the `Rstudio Cloud IDE` to compare differences in values.
+-   modify a heatplot using `ggplot2` in the `Rstudio Cloud IDE` to visualize categorical data
+-   print a table in the console using `kable()`.
+
+You will also be familiarized with some of the data wrangling verbs (`filter()`, `select()`, `mutate()`, `group_by()`, `summarize()`, `arrange()`).
+
+## Sugar content (Benedict's test) {#sec-sugar-content-benedicts-test}
+
+You observed the color change for each milk type and documented the color before and after photographically. We would consider those images themselves as **data** because they are the raw observations we collected, they are the direct unprocessed evidence of our test results.
+
+Any summary, categorization, or conclusions drawn from them would be **results**. In this case we will interpret our data based on a color chart and classify the color changes as levels of sugar content. These **interpreted findings** would be considered **results**.
+
+In the shared google folder for your section, open the slidedeck with our benedict's test photos in the `data` folder. Additionally, you will find a spreadsheet in the `results` folder names `sugar`.
+
+::: {.callout-tip title="Give it a try"}
+Together with your partner analyze the photos from the sugar tests.
+
+-   create a copy of the spreadsheet and rename it `sugar_initials-initials` (include initials of both you and your lab partner.
+-   view the before/after images of the Benedicts test and for each milk type and age determine the sugar content as
+    -   none (blue)
+    -   traceable (green)
+    -   low (yellow)
+    -   moderate (dark orange)
+    -   high (brick red)
+:::
+
+.
+
+::: {.callout-tip title="Consider this"}
+As part of your discussion section you will discuss constraints/limitations of the experiment, inconsistencies in your results, and other possible explanations.
+
+Together with your partner discuss whether these findings correspond to what you expected to see, if not, discuss whether this is an issue with the experimental design (methods) or an actual contradiction to your expectations.
+:::
+
+.
+
+::: {.callout-note title="Answer" collapse="true"}
+**Expectation vs. Observed Results**
+
+We expected different initial amounts of reducing sugars in whole milk, chocolate milk, buttermilk, and oat milk due to their varying compositions. Additionally, we anticipated a decrease in sugar concentration over time as microbes metabolized available carbohydrates. However, our Benedict’s test results consistently indicated moderate amounts of reducing sugars (orange color) across all samples and time points.
+
+This finding contrasts with our expectation that microbial fermentation would gradually deplete sugars, particularly in dairy milk where lactose is converted into lactic acid. The persistence of reducing sugars suggests either an issue with our experimental design or an alternative explanation for the observed results.
+
+**Experimental Constraints and Limitations**
+
+*Think about which of these you think is the most realistic explanation for our experiment.*
+
+1.  **Sensitivity of the Benedict’s Test**
+    -   The Benedict’s test detects reducing sugars but does not differentiate between types or quantify exact concentrations.
+    -   The test may not be sensitive enough to detect gradual reductions in sugar concentration.
+2.  **Interference from Milk Components**
+    -   Some milk proteins and lipids could interfere with Benedict’s reagent, potentially masking subtle changes in sugar content.
+    -   Chocolate milk contains added sugars (e.g., sucrose, which can hydrolyze into glucose and fructose) that may sustain the presence of reducing sugars even as microbial metabolism progresses.
+3.  **Microbial Metabolism Pathways**
+    -   While we expected microbial fermentation to deplete reducing sugars, some microbes can also break down complex carbohydrates into simpler sugars.
+    -   For instance, oat milk contains starch-derived sugars, and microbial enzymatic activity might have continued breaking down starches into reducing sugars, counteracting expected sugar loss.
+4.  **Variability in Microbial Growth Rates**
+    -   The rate of microbial succession and sugar metabolism might have been slower than anticipated, meaning that significant sugar consumption had not yet occurred by the time we tested.
+    -   If different microbial populations dominated at different time points, some may have consumed sugars rapidly while others may not have metabolized them as efficiently.
+5.  **Experimental Timing**
+    -   The Benedict’s test was performed at discrete time points, and we may have missed key phases where sugar concentrations fluctuated more dramatically.
+
+**Reflection and Future Considerations**
+
+-   To better assess sugar metabolism, we could use a **quantitative assay**, such as a glucose-specific test strip or a spectrophotometric assay, to track sugar concentration more accurately.
+-   Measuring additional parameters, such as **lactic acid concentration** or **CO₂ production**, could provide a clearer picture of microbial metabolic activity.
+-   Extending the experimental duration or sampling more frequently might reveal more pronounced trends in sugar consumption.
+:::
+
+.
+
+::: {.callout-caution title="Your Answer Here"}
+\[Take some notes\]
+:::
+
+## pH {#sec-ph}
+
+We measured the pH for each milk treatment. Two groups determined the pH value so across all groups and sections we have four measurements.
+
+These are what we would consider **technical replicates** which are repeated measurements or observations made on the same sample or experimental unit. These replicates are used to assess the precision and consistency of the measurement process. For instance, if you're measuring the concentration of a substance in a solution as we did with the pH, you might perform the same measurement multiple times (e.g., by pipetting from the same sample) to account for any variability in the technique or equipment used. Technical replicates ensure that the measurement process is reliable and that any observed differences are due to true biological variation, not errors in measurement[^b04_data-collection-1].
+
+[^b04_data-collection-1]: By constrast, a **biological replicate** refers to independent samples that come from different biological sources or experimental units. These replicates are used to account for natural variability within a biological system. For example, if you're studying the effect of a treatment on plant growth, biological replicates would involve treating different plants, each representing an independent individual or biological unit. These replicates help ensure that the observed effects are generalizable and not due to individual differences between a single organism or sample. In our case, each beaker was poured separately from the same container so we are actually not even measuring a time series from the pH from the same spoilage event, they are all completely independent and especially Section A measured the same container twice.
+
+::: {.callout-tip title="Consider this"}
+Discuss with your partner how we can analyze our pH data set. Include what type of summary figures or tables would be helpful to present your data to other people.
+:::
+
+.
+
+::: {.callout-note title="Answer" collapse="true"}
+If we had biological replicates we would want to generate descriptive statistics like the mean and standard deviation for each milk treatment (type and time point) to get a sense of the central tendency and variation across spoilage events. The minimum and maximum values would give us the range of pH values. All of these numbers could be organized in a table.
+
+We would also want to determine trends and changes over time.
+
+-   **Plot pH over time** for each milk treatment to observe trends in pH changes (e.g., line graphs showing pH on the y-axis and milk age on the x-axis for each milk type). We would want to create **separate lines for each milk type** to allow for easy comparison of trends over the 8 days.
+-   **Create boxplots** for pH values at each time point (0, 1, 4, 8 days) for each milk type. Boxplots can help visualize the spread and central tendency, as well as highlight any outliers or anomalies - we cannot doe this with our data set because we do not have biological replicates.
+-   **Compare the rate of change in pH** among milk treatments (e.g., whether some milks acidify more quickly than others).
+-   **Determine the absolut change in pH after 8 days** compared to the unspoiled control (refrigerated milk).
+:::
+
+.
+
+::: {.callout-caution title="Your Answer Here"}
+\[Take some notes\]
+:::
+
+Let's start by creating a summary figure showing the change in pH over time for each milk type. To do this we first need to read in our data set.
+
+```{r}
+
+library(readr)
+library(janitor)
+library(here)
+library(dplyr)
+library(tidyr)
+library(knitr)
+library(ggplot2)
+
+
+# read in data set
+ph <- read_delim(here("data", "tidy_ph.csv"),  # specify folder, file
+                 delim = ",")
+
+
+# take a look at first few rows
+head(ph)
+
+```
+
+You will notice that this is what we call a long or tidy format:
+
+1.  Each variable is a column; each column is a variable.
+2.  Each observation is a row; each row is an observation.
+3.  Each value is a cell; each cell is a single value.
+
+This isn't the most helpful format for humans to compare data, but it will allow us to efficiently create a new `dataframe` of our mean values across all measurements. First, we will group our data by milk type and age, and then calculate the mean for each treatment.
+
+```{r}
+
+mean_ph <- ph |>
+  group_by(milk_type, age) |>
+  summarize(mean_ph = mean(ph, na.rm = TRUE))
+
+```
+
+### Summary table mean pH {#sec-summary-table-mean-ph}
+
+If we wanted to create a handy summary table for a report we could convert it into a wide format and print it:
+
+```{r}
+
+mean_ph |>
+  pivot_wider(names_from = milk_type, values_from = mean_ph) |>
+  kable(digits = 2)
+
+```
+
+::: {.callout-tip title="Give it a try"}
+Try modifying the code above to create a summary table with milk type in the first column and the ages in the next four columns.
+:::
+
+::: {.callout-note title="Answer" collapse="true"}
+```{r}
+
+mean_ph |> 
+  pivot_wider(names_from = age, values_from = mean_ph) |> 
+  kable(digits = 2)
+
+```
+:::
+
+### Scatterplot pH over time {#sec-scatterplot-ph-over-time}
+
+These tables are helpful because they give us the actual numbers but visualization are generally a better way to identify key trends and make comparisons.
+
+::: {.callout-tip title="Give it a try"}
+We are going to run the code for plotting line by line to see what each line does. When you are working in `R` you can always use a `#` to create a comment - `R` ignores everything after.
+
+Annotate the code below to indicate how you are specifying which object to use, what column to plot on the x-axis, what column to plot on the y-axis, that we want a scatterplot, how we are indicating to color code according to milkt type and anything else you find informative.
+
+You can also add comments to your script.
+:::
+
+Let's create a plot that shows the change in pH over time for each milk type.
+
+```{r}
+
+ggplot(mean_ph,
+       aes(x = age, y = mean_ph,
+           color = milk_type)) +
+  geom_point()
+
+```
+
+We can improve our plot, by changing the size of the data points, by choosing our own color scale, moving the legend, and by picking a theme.
+
+::: {.callout-tip title="Give it a try"}
+Modify the code below:
+
+1.  `ggplot` will automatically use the column names as axis titles, pick better ones!
+2.  Pick an appropriate size for the data points so they are easily distinguishable.
+3.  Pick a color scale (you need four, they will be used alphabetical).
+4.  Try different locations for the legend "top", "bottom", "right", "left".
+5.  Pick a theme that enhances the readability of your plot.
+    -   theme_grey()
+    -   theme_bw()
+    -   theme_linedraw()
+    -   theme_light()
+    -   theme_minimal()
+    -   theme_classic()
+    -   theme_void()
+
+```{r}
+
+# pick your colors
+col <- c("darkorange", "darkgreen", "cyan", "purple")
+
+# pick your point size
+pt_size <- 2
+
+ggplot(mean_ph,
+       aes(x = age, y = mean_ph,
+           color = milk_type)) +
+  geom_point(size = pt_size) +
+  scale_color_manual(values = col) +
+  labs(x = "better axis title",
+       y = "better axis title") +
+  theme_grey() +
+  theme(legend.position = "left")
+
+```
+:::
+
+With just the individual points it can be difficult to see trends, fortunately we can just add an additional layer to the plot useing `geom_line()` to add a line.
+
+::: {.callout-tip title="Give it a try"}
+Add the line `geom_line()` after the `geom_point()` line. Don't forget to add a `+` so `R` knows to connect it to the rest of the code.
+:::
+
+.
+
+::: {.callout-note title="Answer" collapse="true"}
+```{r}
+
+ggplot(mean_ph,
+aes(x = age, y = mean_ph,
+           color = milk_type)) +
+  geom_point(size = pt_size) +
+  scale_color_manual(values = col) +
+  labs(x = "better axis title",
+       y = "better axis title") +
+  theme_grey() +
+  theme(legend.position = "left")
+
+```
+:::
+
+Most of you are not comparing all four milk types, so you may want to filter the data set to only contain the milk types you are interested in.
+
+We can subset our current `dataframe` to only contain the milk types we are interested in. Then we can reuse the same code you just created to make your figure, we just have to change the object.
+
+```{r}
+
+# create a vector with milk types (modify accordingly)
+milks <- c("whole", "buttermilk", "oat", "chocolate")
+
+# create subset
+my_ph_data <- mean_ph |>
+  filter(milk_type %in% milks)
+
+```
+
+.
+
+::: {.callout-tip title="Give it a try"}
+In your script, cut and paste the code you have developed and then modify it to plot your data subset only.
+:::
+
+.
+
+::: {.callout-note title="Answer" collapse="true"}
+All you have to do is change the `dataframe`/object name:
+
+```{r}
+
+ggplot(my_ph_data,
+       aes(x = age, y = mean_ph,
+           color = milk_type)) +
+  geom_point(size = pt_size) +
+  geom_line() +
+  scale_color_manual(values = col) +
+  labs(x = "better axis title",
+       y = "better axis title") +
+  theme_grey() +
+  theme(legend.position = "left")
+
+```
+:::
+
+### Calculate absolute change in pH {#sec-calculate-absolute-change-in-ph}
+
+Another helpful metric is the change in pH from unspoiled milk to the pH after 8 days.
+
+::: {.callout-tip title="Give it a try"}
+Annotate the code below to indicate what each line is doing.
+:::
+
+```{r}
+
+# Calculate the mean pH difference between milk age 0 and milk age 8
+change_ph <- mean_ph |>
+  filter(age %in% c(0, 8)) |>
+  pivot_wider(names_from = age, values_from = mean_ph, names_prefix = "age_") |>
+  mutate(ph_difference = age_0 - age_8)
+
+# take a look at the summary table
+change_ph |>
+  kable(digits = 2)
+
+```
+
+Then, we can create a barplot indicating the change in pH for each age.
+
+::: {.callout-tip title="Give it a try"}
+Use your (gg)plotting skills to
+
+1.  Modify the color scheme to the colors you have picked (note that we are using fill not color).
+2.  Add your own custom axis titles.
+3.  Change it to the same theme you picked for your scatter plot.
+4.  Move the legend to the same place as in your other figure.
+
+```{r}
+
+ggplot(change_ph,
+       aes(x = milk_type, y = ph_difference,
+           fill = milk_type)) +
+  geom_bar(stat = "identity")
+
+```
+:::
+
+.
+
+::: {.callout-note title="Answer" collapse="true"}
+This is where we notice some of the convenience of using code. Instead of having to rewrite everything you can just cut and paste the last for lines of the code from your scatter plot that specify color, labels and the theme.
+
+You do have to change `scale_color_manual()` to `scale_fill_manual()` and of course change the axis titles to fit your plot.
+
+```{r}
+
+ggplot(change_ph,
+       aes(x = milk_type, y = ph_difference,
+           fill = milk_type)) +
+  geom_bar(stat = "identity") +
+  scale_fill_manual(values = col) +
+  labs(x = "better axis title",
+       y = "better axis title") +
+  theme_grey() +
+  theme(legend.position = "left")
+
+```
+:::
+
+### Rate of change {#sec-rate-of-change}
+
+Finally, we can calculate the rate of change between each time point for each milk type. The code below will output a new column called `rate_of_change` that shows how pH changes per unit time (age) for each `milk_type`. The first row for each milk type will have `NA` since there's no previous value to compare but we can easily filter those from the final output.
+
+Instead of having to calculate the difference in pH between each time point and then dividing it by the number of days in between those time points we can use the function `lag()` which tells `R` to use the previous value in the table.
+
+1.  `arrange(milk_type, milk_age)`: Ensures the data is sorted by `milk_type` and `milk_age`.
+2.  `group_by(milk_type)`: Groups the data by `milk_type` so calculations happen within each type.
+3.  `mutate(rate_of_change = (mean_pH - lag(mean_pH)) / (age - lag(age)))`: Computes the rate of change as the difference in mean pH divided by the difference in age.
+4.  `ungroup()`: Removes grouping after calculations.
+
+```{r}
+
+# Calculate rate of change
+rate_ph <- mean_ph |>
+  arrange(milk_type, age) |>
+  group_by(milk_type) |>
+  mutate(rate_of_change = (mean_ph - lag(mean_ph)) / (age - lag(age))) |>
+  ungroup() |>
+  filter(!is.na(rate_of_change))
+
+# print summary table
+rate_ph |>
+  kable(digits = 4)
+
+```
+
+## Microbial Community {#sec-microbial-community}
+
+Similar to the results from our Benedict's tests our raw observations of our microbial community was documented in your notes in your data collection table along with pictures of the plate as a whole and the slides.
+
+### Classify relative abundance {#sec-classify-relative-abundance}
+
+We can determine the presence of fungal colonies on the plates and the slides allow us to determine whether yeast is present as well as identifying the presence of bacteria by shape.
+
+::: {.callout-tip title="Consider this"}
+Together with your lab partner, take another look at our background information of known patterns of microbial succession in dairy milk.
+
+Take a few notes in terms of why microbial groups mentioned here match our cell types and bacterial shapes.
+
+1.  Refrigerated, unspoiled milk has a pH of \~6.5
+2.  *Streptococcus* (round-shaped cocci) and *Lactobacillus* (rod-shaped bacilli) bacteria naturally occur in milk and survive pasteurization
+3.  *Streptococcus* and *Lactobacillus* both ferment lactose sugar into lactic acid and acetic acid
+4.  *Streptococcus* bacteria thrive in milk with pH \> 5.5
+5.  *Lactobacillus* bacteria grow in milk with pH \> 4.5
+6.  Two common bacteria that always manage to get into milk from the environment, *Pseudomonas* and *Achromobacter* (both rod-shaped bacilli), digest butterfat and produce a putrid smell
+7.  An acidic environment causes casein to solidify, or curd
+8.  Yeasts and molds grow well in acidic environments
+:::
+
+.
+
+::: {.callout-caution title="Your Answer Here"}
+\[Take some notes\]
+:::
+
+We did not determine density or abundance which would be quantitative data but we can still classify our microbial data to created a ranking of relative abundance.
+
+In the shared google folder for your section, open the slidedeck with our plate and slide photos in the `data` folder. Additionally, you will find a spreadsheet in the `results` folder names `microbe-community`.
+
+::: {.callout-tip title="Give it a try"}
+Together with your partner analyze the photos.
+
+-   create a copy of the spreadsheet and rename it `microbe-community_initials-initials` (include initials of both you and your lab partner).
+-   view the plate photos and classify the microbial growth as a whole - remember we did not streak the whole plate, so you and your partner should compare the groups and come up with a standard way to classify.
+    1.  **No growth**: No visible microbial colonies or growth observed on the plate.
+    2.  **Minimal growth**: Very few small colonies observed, covering less than 10% of the plate.
+    3.  **Moderate growth**: Some visible colonies scattered across the plate, covering approximately 10-50% of the plate.
+    4.  **Substantial growth**: Many colonies present, covering 50-75% of the plate.
+    5.  **Extensive growth**: A dense colony presence, covering more than 75% of the plate, with colonies merging or almost completely covering the surface.
+-   view the slide photos (remember you have two per treatment) and classify the presence of the three bacteria shapes and yeast as
+    1.  **Absent**: No visible bacteria or yeast cells observed in the field of view.
+    2.  **Few**: Only a few individual bacteria or yeast cells present, scattered sparsely throughout the slide.
+    3.  **Common**: Several bacteria or yeast cells observed, but not densely clustered; they occupy approximately 10-50% of the field of view.
+    4.  **Abundant**: Many bacteria or yeast cells present, covering more than 50% of the field of view with some clusters or groups.
+    5.  **Dominant**: The field of view is densely packed with bacteria or yeast cells, with little to no empty space visible.
+-   Finally, take a look at the plate photos to classify fungal growth as:
+    1.  **None**: No visible mold growth on the plate; the surface is clear and free from any fungal growth.
+    2.  **Trace**: Very small amounts of mold visible, appearing as isolated spots or patches, covering less than 10% of the plate.
+    3.  **Moderate**: Mold growth is noticeable and covers approximately 10-50% of the surface area of the plate, with a few patches or clusters.
+    4.  **Abundant**: Mold growth is widespread, covering more than 50% of the plate, with large patches or a thick spread.
+    5.  **Extensive**: Mold growth is fully covering the surface of the plate, with dense growth that may overlap or dominate the entire plate.
+:::
+
+Once you and your lab partner have agreed on your classifications, you will need to export your spreadsheet as a comma-delimited file[^b04_data-collection-2] (`*.csv`).
+
+[^b04_data-collection-2]: This means that for each row, the end of a column ("limit") is indicated by a comma.
+
+-   Go to `File` .
+-   Select `Download` and pick `comma separated values (csv)` from the drop-down menu.
+-   This should open a `Save As` dialogue box because at the beginning of the semester we set our browser to ask us where to download files. By default it will suggest `microbe-community - Sheet1` as the file name (it will automatically add `.csv` as the file format). Change that to `microbe-community` and save it - make sure that you know where, you created an `lb104` folder at the beginning of the semester, that is a good location.
+-   Finally, you will need to upload it to your `posit cloud` workspace.
+
+### Create a heatplot {#sec-create-a-heatplot}
+
+Let's read in our data and print and overview table. By default, `R` will organize column content that is a `character` (strings) alphabetically. We have categories that have a distinct ranking. Therefore, we will need to convert those columns into `factors` which allows us to create a hierarchical set of levels.
+
+```{r}
+
+# levels microbial growth
+levels_growth <- c("none", "minimal", "moderate", "substantial", "extensive")
+
+# levels cells
+levels_cells <- c("absent", "few", "moderate", "abundant", "dominant")
+
+# levels fungi
+levels_fungi <- c("none", "trace", "moderate", "abundant", "extensive")
+
+# read data
+microbes <- read_delim(here("data", "microbe-community.csv"),
+                       delim = ",") |>
+  clean_names() |>
+  mutate(microbial_growth = ordered(microbial_growth, levels = levels_growth),
+         cocci = ordered(cocci, levels = levels_cells),
+         bacilli = ordered(bacilli, levels = levels_cells),
+         spirilla = ordered(spirilla, levels = levels_cells),
+         yeast = ordered(yeast, levels = levels_cells),
+         mold = ordered(mold, levels_fungi),
+         age = as.character(age))
+
+# print overview
+microbes |>
+  kable()
+
+```
+
+An table like this holds all your results but it is not easy to make comparisons or a helpful way to present your results to others. One way to visualize this type of data is to make a heatplot, where the color of the tile corresponds to the rank of the categorical variable.
+
+Let's start by making a heatplot that visualizes the change in overall microbial growth for all milk treatments. To do this we will use `select()` to subset our `dataframe` to just contain the milk type, age, and microbial growth and then use that to create our heatplot.
+
+```{r}
+
+# subset data
+growth <- microbes |>
+  select(milk_type, age, microbial_growth)
+
+# create heatplot
+ggplot(growth, 
+       aes(x = age, y = milk_type,
+           fill = microbial_growth)) +
+  geom_tile(color = "black") +
+  scale_fill_viridis_d() +
+  labs(x = "milk age", y = "milk type") +
+  theme_bw() +
+  theme(legend.position = "bottom")
+
+```
+
+.
+
+::: {.callout-tip title="Give it a try"}
+Cut and paste the code above and then modify it to create a plot showing change in fungal growth for all milk types.
+:::
+
+::: {.callout-note title="Answer" collapse="true"}
+Again, we really only have to change two things.
+
+1.  Let's change the object name from `growth` to `mold`.
+2.  Instead of selecting the `microbial_growth` column we select the `mold` column
+3.  Then we just have to change the object name in the ggplot code and the fill to the `mold` column.
+
+```{r}
+
+# subset data
+mold <- microbes |>
+  select(milk_type, age, mold)
+
+# create heatplot
+ggplot(mold, 
+       aes(x = age, y = milk_type,
+           fill = mold)) +
+  geom_tile(color = "black") +
+  scale_fill_viridis_d() +
+  labs(x = "milk age", y = "milk type") +
+  theme_bw() +
+  theme(legend.position = "bottom")
+
+```
+:::
+
+To be able to see the change in the composition (relative abundance) of the different bacterial and yeast cell types, we should create individual plots for the milk types.
+
+By creating a tidy data set with a column defining the cell type, we can then add a line to our code that will tell `R` to create individual panels for each milk type.
+
+```{r}
+
+# create a vector with milk types (modify accordingly)
+milks <- c("whole", "buttermilk", "oat", "chocolate")
+
+# create subset
+cells <- microbes |>
+  select(milk_type, age, cocci, bacilli, spirilla, yeast) |>
+  pivot_longer(names_to = "cell_type", values_to = "abundance", 3:6) |>
+  filter(milk_type %in% milks)
+
+# plot multifaceted plot
+ggplot(cells, 
+       aes(x = age, y = cell_type,
+           fill = abundance)) +
+  geom_tile(color = "black") +
+  facet_wrap(. ~ milk_type) +
+  scale_fill_viridis_d() +
+  labs(x = "milk age", y = "cell type") +
+  theme_bw() +
+  theme(legend.position = "bottom")
+
+```

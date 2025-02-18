@@ -90,7 +90,7 @@ Together with your partner observe and record the odor and consistency for all m
 |           |          |      |             |
 |           |          |      |             |
 
-Changes in microbial communities for different milk types and ages. {#tbl-organisms}
+: Changes in microbial communities for different milk types and ages. {#tbl-types}
 
 ### Determine changes in pH
 
@@ -135,7 +135,7 @@ Observe and record microbes present in each milk type by examining your culture 
 Remember to take 1-2 representative pictures of your slide and add it to our shared slide deck to make it straightforward for each group to describe the differences in the milk treatments.
 
 ::: {.callout-tip title="Give it a try"}
-Use {#tbl-organisms} to describe the organisms present in each milk treatment.
+Use @tbl-organisms to describe the organisms present in each milk treatment.
 
 Remember this is qualitative data. The simplest determination would be presence and absence of the different microbe types. Together with your partner, discuss how you can classify and document changes in composition of the microbial community in terms of relative abundance. Then compare your slides and those of your classmates to describe the organisms present.
 :::

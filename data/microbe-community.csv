@@ -1,0 +1,17 @@
+milk-type,age,microbial-growth,cocci,bacilli,spirilla,yeast,mold
+whole,0,none,dominant,few,absent,absent,none
+whole,1,minimal,dominant,moderate,absent,absent,none
+whole,4,moderate,moderate,dominant,absent,few,none
+whole,8,substantial,few,dominant,absent,abundant,moderate
+chocolate,0,none,dominant,moderate,absent,absent,none
+chocolate,1,minimal,dominant,few,absent,few,none
+chocolate,4,moderate,dominant,few,few,abundant,none
+chocolate,8,extensive,dominant,few,moderate,dominant,extensive
+oat,0,none,few,absent,absent,absent,none
+oat,1,minimal,few,absent,absent,absent,none
+oat,4,moderate,few,few,absent,few,none
+oat,8,moderate,few,moderate,absent,few,none
+buttermilk,0,none,few,absent,absent,absent,none
+buttermilk,1,minimal,few,absent,absent,few,none
+buttermilk,4,moderate,few,moderate,absent,moderate,none
+buttermilk,8,substantial,few,moderate,absent,moderate,none
