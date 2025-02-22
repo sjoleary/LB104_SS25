@@ -1,0 +1,32 @@
+# Analyze your data {#sec-collect-your-data}
+
+```{r}
+#| label: setup
+#| include: false
+
+# set options
+knitr::opts_chunk$set(
+  tidy = FALSE, 
+  message = FALSE,
+	warning = FALSE)
+
+options(htmltools.dir.version = FALSE)
+
+```
+
+After completing this set of activities, you should be able to:
+
+-   
+
+## Describe your results
+
+
+
+## Interpret your results
+
+
+
+## Discuss your results
+
+
+

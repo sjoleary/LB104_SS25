@@ -21,6 +21,8 @@ book:
         - B02_methods.qmd
         - B03_data-collection.qmd
         - B04_data-analysis.qmd
+        - B05_results.qmd
+        - B06_report.qmd
         
     
     - part: C_bioassays.qmd
@@ -35,6 +37,8 @@ book:
         - E02_tracking.qmd
     
     - part: F_Exp-Design-Analysis.qmd
+      chapters:
+        - F01_writing-report.qmd
 
 
     - part: Z_Appendix.qmd

@@ -8,4 +8,4 @@
 -   Generate and interpret descriptive statistics summarizing distribution, central tendency and variability of a data set.
 -   Execute and interpret a statistical to determine the probability that results are result of sampling error and do not represent reality.
 
-Over the course of the semester you will be introduced to fundamental principles of scientific method and experimental design and start to built a basic tool kit of data analysis skills. Additionally, you will develop your scientific writing skills as you compile a report on each of the three projects we will work on. We will complete various activities in parallel to your first research projects as you develop these skills.
+Over the course of the semester you will be introduced to fundamental principles of scientific method and experimental design and start to built a basic tool kit of data analysis skills. Additionally, you will develop your scientific writing skills as you compile a report on each of the three projects we will work on. We will complete various activities in parallel to your research projects as you develop these skills.
