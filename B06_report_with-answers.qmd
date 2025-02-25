@@ -1,4 +1,4 @@
-# Describe and interpret your results {#sec-results}
+# Communicate your findings {#sec-results}
 
 ```{r}
 #| label: setup
@@ -98,9 +98,9 @@ Go back to your notes/assignments and review your initial draft of your summary 
 
 #### Experimental Design & Data Analysis
 
-The next step is write your methods section that elaborates on your summary[^b06_report-1]. It can be helpful to structure your method section with subheadings to include important components of your study.
+The next step is write your methods section that elaborates on your summary[^b06_report_with-answers-1]. It can be helpful to structure your method section with subheadings to include important components of your study.
 
-[^b06_report-1]: Well, at this point we'll make our first notes that we can then use as an outline to write our report.
+[^b06_report_with-answers-1]: Well, at this point we'll make our first notes that we can then use as an outline to write our report.
 
 **Study area/Site description or Laboratory Setting/Experimental Conditions**
 
@@ -276,30 +276,30 @@ A good discussion will build on your summary/transition statement to write an ef
 
 In addition to ending with a clear set of conclusions you should include these four components:
 
--   Interpret your results and compare them to your expectations and other studies[^b06_report-2]:
+-   Interpret your results and compare them to your expectations and other studies[^b06_report_with-answers-2]:
     -   Did your results match your predictions?
     -   Do your results support your hypothesis? How do you interpret them in that context?
     -   Why do you think you ended up with these results?
     -   Are your results consistent with similar studies/your classmates results? Different? Why?
--   Discuss constraints/limitations, inconsistencies, other possible explanations[^b06_report-3]
+-   Discuss constraints/limitations, inconsistencies, other possible explanations[^b06_report_with-answers-3]
     -   Acknowledge and discuss constraints, point out shortcomings and any caveats for how your data should be interpreted.
     -   Explain unexpected results.
     -   If results are inconsistent/ambiguous why are you confident you are interpreting them way you are?
     -   Are the other possible explanations? Other reasons of why you may have ended up with the results you did?
     -   Are there any errors, assumptions, ambiguities etc that could have impacted your results? Why you are still confident interpreting you data as you are?
     -   How might you redesign the experiment for more clear results?
--   Discuss implications of your results[^b06_report-4].
+-   Discuss implications of your results[^b06_report_with-answers-4].
     -   How do your results contribute to answering your overarching research question?
     -   Why is your study important? What do we know now that we didn't before?
 -   Future steps
     -   What questions where generated?
     -   What is the next step to even better understand your overarching research question?
 
-[^b06_report-2]: In this semester we will generally keep the "compare to other studies very small, don't worry, you won't have to go on an extended literature search.
+[^b06_report_with-answers-2]: In this semester we will generally keep the "compare to other studies very small, don't worry, you won't have to go on an extended literature search.
 
-[^b06_report-3]: This is still really specific to your study.
+[^b06_report_with-answers-3]: This is still really specific to your study.
 
-[^b06_report-4]: Now you are broadening your scope to the broader context in which you asked your question
+[^b06_report_with-answers-4]: Now you are broadening your scope to the broader context in which you asked your question
 
 Remember to wrap up your discussion with a firm conclusion that summarizes the key findings and the interpretation of your study.
 
@@ -321,13 +321,13 @@ Think of your introduction as the funnel or top piece of an hourglass that start
 
 -   Introduce the broad topic/general research question you are asking, including why this is an important question to be asking. Give a brief overview of the current state of understanding of the research question. Make sure you introduce any key terms/concepts to set up the context of a large question/scientific field or overarching theme.
 -   Increasingly narrow your scope down to the specific focus of your study. Describe why your question is relevant and how it furthers the understanding of this question: Even though you cannot fully answer the big question you laid out, you can contribute to part of the answer by filling a knowledge gap or clarifying existing conflicting results.
--   Clearly state the purpose of your research, you should state what your hypothesis is, what you expect to find and why, and how you are testing this[^b06_report-5].
+-   Clearly state the purpose of your research, you should state what your hypothesis is, what you expect to find and why, and how you are testing this[^b06_report_with-answers-5].
 
-[^b06_report-5]: No details about your methods/results yet at this point, just brief "how".
+[^b06_report_with-answers-5]: No details about your methods/results yet at this point, just brief "how".
 
-You should always have at least two paragraphs. The first, sets up the broad context[^b06_report-6].
+You should always have at least two paragraphs. The first, sets up the broad context[^b06_report_with-answers-6].
 
-[^b06_report-6]: For a lab report you can likely do this in a single paragraph, in a longer research paper you will likely then take several following paragraphs to flesh out relevant background information
+[^b06_report_with-answers-6]: For a lab report you can likely do this in a single paragraph, in a longer research paper you will likely then take several following paragraphs to flesh out relevant background information
 
 ::: {.callout-tip title="Give it a try"}
 We have previously identified our "big question" to be either "Ecological Succession: how abiotic conditions shape biological communities and how biological communities shape abiotic conditions of ecosystems" or the broad topic of food spoilage or food safety.
@@ -400,7 +400,7 @@ Draft a workingg title for your report below.
 ::: {.callout-note title="Answer" collapse="true"}
 Here are examples: classify them as too broad or too narrow in scope and as being the category of "what was done" or "what was found".
 
--   Food Spoilage of Plant-based milkts
+-   Food Spoilage of Plant-based milks
 -   "Microbial Growth and Physical Changes in Dairy and Non-Dairy Milks"
 -   "Observing Fungal Growth in Oat Milk at Day 8"
 -   "Higher Fungal Growth Observed in Dairy Milk on TGY Plates"
@@ -423,3 +423,122 @@ Here are examples: classify them as too broad or too narrow in scope and as bein
 ::: {.callout-caution title="Your Answer Here"}
 \[Take some notes\]
 :::
+
+## Format your report
+
+### Use headers to structure your report
+
+Format text as hierarchical headers.
+
+Insert table of content.
+
+### Figures/tables and captions
+
+Insert figure.
+
+Insert table.
+
+Insert caption.
+
+Use cross-references.
+
+### Additional formatting
+
+Double space.
+
+Insert page numbers.
+
+Force a page break.
+
+## Adding context to your introduction and discussion
+
+For this lab report we are sticking very close to our study with very brief introduction and discussion sections. [**There is no expectation that you do any additional research for information to cite in your introduction or discussion**]{.underline}.
+
+### What do we cite?
+
+For the most part our introduction and discussion contain the two types of information that we do not need to cite, **general common knowledge** and **field-specific common knowledge**. General common knowledge are facts that are considered to be in the public domain. For example, you would not need to cite that bacteria and yeasts are considered microbes or that milk spoils when left out or that lactose is a disaccharide consisting of of glucose and galactose. That second example starts to fall more into the realm of field-specific knowledge. With field-specific knowledge it becomes a bit more tricky, these are facts that we consider to be common within a specific field of study, e.g. ecological succession is a well-documented effect. However, it can get a bit blurry of where those boundaries are and so when in doubt, attribute the original source.
+
+Typically, we document **another authors specific words and phrases** and **information and ideas** with citations pointing towards the original author (primary literature or grey literature[^b06_report_with-answers-7]) or works that have analyzed, synthesized, and interpreted primary research (secondary literature[^b06_report_with-answers-8]). Papers in the humanities and literary analysis frequently use direct quotations because that is essentially your data and you need to present it to support your analysis of specific words and phrases. In the social and natural sciences we **summarize, paraphrase** [^b06_report_with-answers-9] and then **attribute** the specific pieces of information (frequently data/results, or examples/case studies) and individual ideas/arguments, methods, theories, processes etc. to the original author.
+
+[^b06_report_with-answers-7]: Primary literature refers to original research findings published in a peer-reviewed journal, grey literature is information not published through traditional journals that have undergone some sort of review/fact checking like government reports or internal company documents.
+
+[^b06_report_with-answers-8]: Secondary literature typically appears as review articles or textbooks and summarizes primary literature for a specific topic. Review articles can sometimes fall into both primary and secondary literature. A review article that synthesizes other work to produce something new or formalize a certain argument/theory for the first time is frequently considered primary literature.
+
+[^b06_report_with-answers-9]: There should be no direct quotations in your lab report!
+
+Two big ideas in for our lab report are ecological succession and the spoilage of milk. You can use your textbook when you are talking about ecological succession in general and your lab manual when you are specifically referencing the well-understood process of ecological succession during milk spoilage.
+
+-   Urry, L. A., Cain, M. L. 1., Wasserman, S. A., Minorsky, P. V., Reece, J. B., & Campbell, N. A. (2017). *Campbell biology*. Eleventh edition. New York, NY, Pearson Education, Inc.
+-   O'Leary, S. J. *Lab Manual General Biology II* (2025) \[unpublished manuscript\], Department of Biological Sciences, Saint Anselm College.
+
+::: {.callout-tip title="Consider this"}
+Are these primary sources or secondary sources?
+:::
+
+::: {.callout-note title="Answer" collapse="true"}
+Textbooks and lab manuals are typically secondary sources because they summarize and explain existing knowledge rather than generating new data. The typically compile and synthesize existing knowledge from primary sources rather than presenting new findings and provide interpretations, explanations, and context for scientific concepts.
+:::
+
+::: {.callout-caution title="Your Answer Here"}
+\[Take some notes\]
+:::
+
+Both the rubric and your description for how to write an effective discussion does include the following expectation/prompt "Are your results consistent with similar studies/your classmates results? Different? Why?"
+
+For the most part, you built your hypothesis using information provided in your lab manual which is based on primary research that has documented ecological succession in milk (category of "similar experiments"). You had a list of which microbes typically appear at what stages and what the changes in the physical characteristics (smell, consistency should look like. In your discussion when you determine whether or not your results match your expectations you will want to reference that information to show that it looks like "normal spoilage" or that it is an unexpected result.
+
+Most of you are not comparing all four milk types, but in your discussion you might want to reference that you saw a similar trend support your conclusions in another one of the treatments. One option would be to cite the lab report of a class mate. For a simpler solution, we can cite them as a **personal communication**. You could also use this format of you e.g. talked through your results with a peer or your instructor and they gave you unpublished information[^b06_report_with-answers-10]. Because is a format that is only used if a recoverable source is not available, you will also find that some journals do not not allow them at all - they are problematic because while you are correctly attributing the original author (good thing) these results are not recoverable so nobody can verify (bad thing). Personal communications are not included in the reference list, only in-text.
+
+[^b06_report_with-answers-10]: For example, in my work we often speak to fisheries managers and they will give us information like "well the fish always come back in the first two weeks of February" but that is not published information. That is different from talking to a colleague who says "oh, we ran a similar experiment and found x" and that is published then you would track down their paper.
+
+The format would look like this:
+
+-   "Oat milk tastes sour when left on the counter too long (J. Doe, personal communication, Jan 2020)" as a parenthetical citations
+-   Doe reported that oat milk tastes sour when left out on the counter too long (personal communication, Jan 2020).
+
+Most of you built your hypothesis around specific characteristics like sugar content/type, fat content, initial pH, or protein. Here are a few pieces of information from papers that might provide context for your interpretation in addition to information from the lab manual.
+
+-   Srinivas, D., Mital, B. K., & Garg, S. K. (1990). *Utilization of sugars by Lactobacillus acidophilus strains*. International Journal of Food Microbiology, *10*(1), 51-57.
+
+    -   The specific strain of *Lactobacillus acidophilus* is able to use lactose in milk because it has the enzyme to break the disaccharide into glucose and galactose and then ferment it to produce lactic acid.
+    -   This study tested the utilization pattern of glucose, galactose, fructose (monosaccharides) and sucrose, lactose (disaccharides) which use different pathways that may intersect to a certain extent.
+    -   Key results in the abstract: "Maximum viable counts, acid production and sugar utilization by different test strains where in this order: glucose \> fructose \> sucrose \> lactose \> galactose. The generation time of the tested strains was shorter in glucose medium as compared to sucrose or lactose medium.
+
+-   Iyer, R., Tomar, S. K., Maheswari, T. U., & Singh, R. (2010). *Streptococcus thermophilus strains: Multifunctional lactic acid bacteria.* International Dairy Journal, *20*(3), 133-141.
+
+    -   Review article
+    -   *Streptococcus thermophilus* is frequently used to manufacture fermented dairy foods (cheese!)
+    -   *S. thermophilus* prefers lactose over other sugars
+
+-   Jayashree, S., Pushpanathan, M., Rajendhran, J., & Gunasekaran, P. (2013). *Microbial diversity and phylogeny analysis of buttermilk, a fermented milk product, employing 16S rRNA-based pyrosequencing*. Food Biotechnology, *27*(3), 213-221.
+
+    -   16S sequencing to determine microbial community of buttermilk (fermented dairy product)
+    -   results from abstract "A total of 23,080 high-quality pyrosequencing reads was obtained. Of these, 96.3% of reads represented the well-defined domain bacteria and 3.7% represented unclassified domain; no archaeal sequences were found. *Lactobacillus delbrueckii* was the most predominant species identified, which constituted 94.86% of total reads"
+
+-   Buzby, J. C., Farah-Wells, H., & Hyman, J. (2014). The estimated amount, value, and calories of postharvest food losses at the retail and consumer levels in the United States. *USDA-ERS Economic Information Bulletin*, (121).
+
+    -   at 17% dairy foods 3rd highest dollar amount (\$165.6 billion) of food wasted (consumer, retail level)
+
+-   Martin, N. H., Torres-Frenzel, P., & Wiedmann, M. (2021). Invited review: Controlling dairy product spoilage to reduce food loss and waste. *Journal of Dairy Science*, *104*(2), 1251-1261.
+
+    -   "Mechanisms of dairy product spoilage: (1) the production of extracellular enzymes that break down components including proteins, lipids, and lactose, producing off-odors, off-flavor, and body defects (e.g., coagulation in fluid milk); (2) visually detectable growth, most often by spoilage fungi; (3) production of pigments by bacterial and fungal contaminants; and (4) other metabolic processes (e.g., fermentation)."
+
+Some of you have formed hypothesis about the starting pH conditions. A key principle to keep in mind here would be the competitive exclusion principle to consider what organisms might outcompete each other given different environmental conditions.
+
+-   Gause, GF. (1932). Experimental studies on the struggle for existence. *Journal of Experimental Biology* 9: 389-402.
+
+### How do we cite?
+
+Your lab report should be formatted according to the APA (American Psychological Association), which is the citation format typically used in the natural and social sciences, including biology and the environmental sciences. For documents in APA style we include and alphabetical reference section at the end of a document, listing all sources cited in the text. Each entry in the reference list follows a specific format based on the type of source (e.g., journal article, book, website). Within the text, citations are formatted using the **author-year system**, which helps readers easily locate the full reference in the bibliography.
+
+In-text citations in APA style can be either narrative or parenthetical. A **narrative citation** incorporates the author’s name into the sentence, followed by the publication year in parentheses, such as **Smith (2020) found that environmental factors influence species distribution.** This format is often used when emphasizing the researcher’s contributions. In contrast, a **parenthetical citation** places both the author's last name and the year within parentheses at the end of a sentence, such as **(Smith, 2020).** Parenthetical citations are commonly used when the focus is on the information rather than the author. If a source has two authors, both names are listed with an ampersand (**Smith & Jones, 2020**), while for three or more authors, only the first author's name is included, followed by "et al." (**Smith et al., 2020**).
+
+## Additional Resources for writing
+
+Really, the only way to become a good writer is to do a lot of it. Additionally, comparing your work that of others to identify patterns in a certain writing style. Similarly, allowing other people to critique your work will help you identify your weaknesses. While even for scientific writing you want to write in your own voice there are certain rules and conventions. It can be helpful to first learn the rules and conventions and then you can start breaking them to achieve a specific effect and to start developing your own style.
+
+Here are some additional resources as you continue on your writing journey:
+
+-   [The Academic Phrasebank](https://www.phrasebank.manchester.ac.uk/): This was designed as a general resource for non-native speakers. It has a menu of "general language functions" (e.g. "being critical" or "describing trends") and then examples for more specific goals (e.g. "Introducing problems and limitations" or "highlighting a trend in a table or chart").
+-   The University of Wisonsin-Madison's Writing Center's [guidelines for quoting and paraphrasing](https://writing.wisc.edu/handbook/quotingsources/).
+-   [Purdue Online Writing Lab](https://owl.purdue.edu/owl/index.html).
