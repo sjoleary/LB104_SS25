@@ -1,4 +1,4 @@
-# Describe and interpret your results {#sec-results}
+# Communicate your findings {#sec-results}
 
 ```{r}
 #| label: setup
@@ -303,32 +303,72 @@ Draft a workingg title for your report below.
 \[Take some notes\]
 :::
 
-
 ## Format your report
 
 ### Use headers to structure your report
 
-Format text as hierarchical headers.
+Define styles using the styles menu
+
+![Format the individual styles and control the settings for the entire document.](images/word-format-styles.png)
+
+You can modify any style which will then be applied to any part of your document that has been classified into one of those styles.
+
+![Modify the styles using the menu to change font type, size and paragraph settings.](images/modify-styles.png)
+
+Format text as title and hierarchical headers.
+
+![Format line of text as title.](images/change-title.png)
+
+![Format line of text as header.](images/change-headers.png)
+
+Open the navigation pane.
+
+![Open the navigation pane to access sections of document.](images/word-navigation-ribbon.png)
 
 Insert table of content.
 
+![Insert a Table of Contents based on headers in a document.](images/insert-toc.png)
+Update table of contents
+
+![Update table of contents to match new headers and changes in page numbers.](images/update-toc.png)
+
 ### Figures/tables and captions
 
-Insert figure.
+Insert figures and table
 
-Insert table.
+![Insert a table or figure.](images/insert-figs-tbl.png)
 
-Insert caption.
+Insert captions for figures and tables
+
+![Insert a figure caption](images/insert-caption.png)
+
+![Add figure caption using dialogue box.](images/add-caption.png)
+
+![Edit figure caption in the document.](images/edit-figure-caption.png)
+
+![Insert a table caption.](images/table-caption.png)
+
+![Add table caption using dialogue box.](images/format-table-caption.png)
 
 Use cross-references.
+
+![Access the cross reference menu.](images/cross-reference-menu.png)
+
+![Add a cross reference to a table or figure.](images/chose-caption.png)
 
 ### Additional formatting
 
 Double space.
 
+![Double spacing](images/word_double-spacing.png)
+
 Insert page numbers.
 
+![Insert page numbers.](images/word_page-number.png)
+
 Force a page break.
+
+![Add page break.](images/word_page-break.png)
 
 ## Adding context to your introduction and discussion
 
@@ -338,13 +378,13 @@ For this lab report we are sticking very close to our study with very brief intr
 
 For the most part our introduction and discussion contain the two types of information that we do not need to cite, **general common knowledge** and **field-specific common knowledge**. General common knowledge are facts that are considered to be in the public domain. For example, you would not need to cite that bacteria and yeasts are considered microbes or that milk spoils when left out or that lactose is a disaccharide consisting of of glucose and galactose. That second example starts to fall more into the realm of field-specific knowledge. With field-specific knowledge it becomes a bit more tricky, these are facts that we consider to be common within a specific field of study, e.g. ecological succession is a well-documented effect. However, it can get a bit blurry of where those boundaries are and so when in doubt, attribute the original source.
 
-Typically, we document **another authors specific words and phrases** and **information and ideas** with citations pointing towards the original author (primary literature or grey literature[^b06_report_with-answers-7]) or works that have analyzed, synthesized, and interpreted primary research (secondary literature[^b06_report_with-answers-8]). Papers in the humanities and literary analysis frequently use direct quotations because that is essentially your data and you need to present it to support your analysis of specific words and phrases. In the social and natural sciences we **summarize, paraphrase** [^b06_report_with-answers-9] and then **attribute** the specific pieces of information (frequently data/results, or examples/case studies) and individual ideas/arguments, methods, theories, processes etc. to the original author.
+Typically, we document **another authors specific words and phrases** and **information and ideas** with citations pointing towards the original author (primary literature or grey literature[^b06_report-7]) or works that have analyzed, synthesized, and interpreted primary research (secondary literature[^b06_report-8]). Papers in the humanities and literary analysis frequently use direct quotations because that is essentially your data and you need to present it to support your analysis of specific words and phrases. In the social and natural sciences we **summarize, paraphrase** [^b06_report-9] and then **attribute** the specific pieces of information (frequently data/results, or examples/case studies) and individual ideas/arguments, methods, theories, processes etc. to the original author.
 
-[^b06_report_with-answers-7]: Primary literature refers to original research findings published in a peer-reviewed journal, grey literature is information not published through traditional journals that have undergone some sort of review/fact checking like government reports or internal company documents.
+[^b06_report-7]: Primary literature refers to original research findings published in a peer-reviewed journal, grey literature is information not published through traditional journals that have undergone some sort of review/fact checking like government reports or internal company documents.
 
-[^b06_report_with-answers-8]: Secondary literature typically appears as review articles or textbooks and summarizes primary literature for a specific topic. Review articles can sometimes fall into both primary and secondary literature. A review article that synthesizes other work to produce something new or formalize a certain argument/theory for the first time is frequently considered primary literature.
+[^b06_report-8]: Secondary literature typically appears as review articles or textbooks and summarizes primary literature for a specific topic. Review articles can sometimes fall into both primary and secondary literature. A review article that synthesizes other work to produce something new or formalize a certain argument/theory for the first time is frequently considered primary literature.
 
-[^b06_report_with-answers-9]: There should be no direct quotations in your lab report!
+[^b06_report-9]: There should be no direct quotations in your lab report!
 
 Two big ideas in for our lab report are ecological succession and the spoilage of milk. You can use your textbook when you are talking about ecological succession in general and your lab manual when you are specifically referencing the well-understood process of ecological succession during milk spoilage.
 
@@ -367,9 +407,9 @@ Both the rubric and your description for how to write an effective discussion do
 
 For the most part, you built your hypothesis using information provided in your lab manual which is based on primary research that has documented ecological succession in milk (category of "similar experiments"). You had a list of which microbes typically appear at what stages and what the changes in the physical characteristics (smell, consistency should look like. In your discussion when you determine whether or not your results match your expectations you will want to reference that information to show that it looks like "normal spoilage" or that it is an unexpected result.
 
-Most of you are not comparing all four milk types, but in your discussion you might want to reference that you saw a similar trend support your conclusions in another one of the treatments. One option would be to cite the lab report of a class mate. For a simpler solution, we can cite them as a **personal communication**. You could also use this format of you e.g. talked through your results with a peer or your instructor and they gave you unpublished information[^b06_report_with-answers-10]. Because is a format that is only used if a recoverable source is not available, you will also find that some journals do not not allow them at all - they are problematic because while you are correctly attributing the original author (good thing) these results are not recoverable so nobody can verify (bad thing). Personal communications are not included in the reference list, only in-text.
+Most of you are not comparing all four milk types, but in your discussion you might want to reference that you saw a similar trend support your conclusions in another one of the treatments. One option would be to cite the lab report of a class mate. For a simpler solution, we can cite them as a **personal communication**. You could also use this format of you e.g. talked through your results with a peer or your instructor and they gave you unpublished information[^b06_report-10]. Because is a format that is only used if a recoverable source is not available, you will also find that some journals do not not allow them at all - they are problematic because while you are correctly attributing the original author (good thing) these results are not recoverable so nobody can verify (bad thing). Personal communications are not included in the reference list, only in-text.
 
-[^b06_report_with-answers-10]: For example, in my work we often speak to fisheries managers and they will give us information like "well the fish always come back in the first two weeks of February" but that is not published information. That is different from talking to a colleague who says "oh, we ran a similar experiment and found x" and that is published then you would track down their paper.
+[^b06_report-10]: For example, in my work we often speak to fisheries managers and they will give us information like "well the fish always come back in the first two weeks of February" but that is not published information. That is different from talking to a colleague who says "oh, we ran a similar experiment and found x" and that is published then you would track down their paper.
 
 The format would look like this:
 
