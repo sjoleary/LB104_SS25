@@ -26,9 +26,21 @@ book:
         
     
     - part: C_bioassays.qmd
+        - C01_question.qmd
+        - C02_generate.qmd
+        - C03_collect.qmd
+        - C04_analyze.qmd
+        - C05_describe.qmd
+        - C06_communicate.qmd
 
     
     - part: D_lichens.qmd
+        - D01_question.qmd
+        - D02_generate.qmd
+        - D03_collect.qmd
+        - D04_analyze.qmd
+        - D05_describe.qmd
+        - D06_communicate.qmd
 
 
     - part: E_tracking.qmd

@@ -1,4 +1,4 @@
-# Communicate your findings {#sec-results}
+# Communicate your findings {#sec-communicate-your-findings}
 
 ```{r}
 #| label: setup
@@ -22,13 +22,13 @@ After completing this set of activities, you should be able to:
 -   Use Microsoft Word to insert figures and tables along with captions and reference them in your document.
 -   Summarize, paraphrase, and attribute information from sources and cite them using the author-year format.
 
-## Work out your lab report components
+## Work out your lab report components {#sec-work-out-your-lab-report-components}
 
 It can be helpful to build your lab report in a non-linear fashion. Our lab manual contains a chapter on writing a lab report with general pointers and specific information about what to include in each component that you should use as a reference (@sec-writing-a-scientific-report); much of that information is included here but you will find more details in that chapter.
 
 A key piece of advise is to write through your experiment as to writing it up. This means that keeping good notes that you can then easily convert into your methods, results, introduction, and discussion section will make your writing process a lot smoother. Writing up specific section as you go will also help you think through the various steps of your experiment.
 
-### Methods
+### Methods {#sec-methods}
 
 **Your method section should describe your study design, how you collected, processed, and analyzed the data.**
 
@@ -145,7 +145,7 @@ How you processed your data and produced your results is a key component of your
 \[Take some notes\]
 :::
 
-### Results
+### Results {#sec-results}
 
 **This section should present your results based the visualizations and any processing of data (e.g. descriptive and inferential statistics) you applied to analyze your data set.**
 
@@ -200,7 +200,7 @@ Review your results and draft a summary/transition paragraph below.
 \[Draft your summary/transition here\]
 :::
 
-### Discussion
+### Discussion {#sec-discussion}
 
 **A good discussion evaluates context, acknowledges constraints, and justifies conclusions.**
 
@@ -303,72 +303,199 @@ Draft a workingg title for your report below.
 \[Take some notes\]
 :::
 
-## Format your report
+## Format your report {#sec-format-your-report}
 
-### Use headers to structure your report
+### Use headers to structure your report using Word's formatting options {#sec-use-headers-to-structure-your-report}
 
-Define styles using the styles menu
+**Step 1: Set Up Your Document Structure**
 
-![Format the individual styles and control the settings for the entire document.](images/word-format-styles.png)
+1.  Open Microsoft Word and create a new document.
 
-You can modify any style which will then be applied to any part of your document that has been classified into one of those styles.
+2.  Type the following structure in your document:
+
+```         
+Title of Your Report  
+Name | Course Name | Semester  
+
+Introduction  
+Methods  
+Results  
+Discussion  
+References  
+```
+
+**Step 2: Apply Styles to Structure Your Document**
+
+Microsoft Word’s Styles feature helps maintain consistent formatting and allows easy navigation and automatic Table of Contents generation.
+
+![Use the styles menu in the Home ribbon to format the individual styles and control the settings for the entire document.](images/word-format-styles.png)
+
+1.  Title:
+
+-   Select your report’s title.
+-   Go to the Home tab and click on Title in the Styles section.
+
+![Format text as title by selecting the Title style from the styles menu in the Home ribbon.](images/change-title.png)
+
+2.  Subtitle (Name, Course, Semester):
+
+-   Highlight your name, course name, and semester.
+-   Apply the Subtitle style from the Styles section.
+
+3.  Level One Headers (Introduction, Methods, etc.):
+
+-   Select Introduction and apply the Heading 1 style from the Styles section.
+-   Repeat this step for Methods, Results, Discussion, and References.
+
+![Format line of text as header - you can create a hierarchical structure using the different levels of headers.](images/change-headers.png)
+
+**Step 3: Modify Styles (If Needed)**
 
 ![Modify the styles using the menu to change font type, size and paragraph settings.](images/modify-styles.png)
 
-Format text as title and hierarchical headers.
+If you want to change how your headings appear across the document:
 
-![Format line of text as title.](images/change-title.png)
+1.  Right-click on the Heading 1 style in the Styles panel.
+2.  Select Modify.
+3.  Adjust font, size, bolding, color, alignment, or spacing.
+4.  Click OK to apply changes to all text using that style.
 
-![Format line of text as header.](images/change-headers.png)
+**Step 4: Enable and Use the Navigation Pane**
 
-Open the navigation pane.
+The Navigation Pane helps you move quickly through the document.
 
 ![Open the navigation pane to access sections of document.](images/word-navigation-ribbon.png)
 
-Insert table of content.
+1.  Go to the View tab.
+2.  Check the Navigation Pane box.
+3.  The pane appears on the left, showing all your Heading 1 sections.
+4.  Click on any section to jump to that part of the document.
+
+**Step 5: Insert a Table of Contents**
 
 ![Insert a Table of Contents based on headers in a document.](images/insert-toc.png)
-Update table of contents
 
-![Update table of contents to match new headers and changes in page numbers.](images/update-toc.png)
+1.  Place your cursor at the beginning of your document where you want the Table of Contents.sunday
+2.  Go to the References tab.
+3.  Click Table of Contents and choose a built-in style.
+4.  A Table of Contents (TOC) will generate based on your Heading 1 styles.
+
+**Step 6: Update the Table of Contents**
+
+If you add or edit headings and as your page numbering changes as you write your report.
+
+1.  Click anywhere inside the Table of Contents.
+2.  Go to the References tab.
+3.  Click Update Table → Choose Update entire table.
+
+The TOC will refresh with your changes.
+
+![Update table of contents to match new headers and changes in page numbers using the quick link.](images/update-toc.png)
 
 ### Figures/tables and captions
 
-Insert figures and table
+**Step 1: Insert tables and figures**
 
-![Insert a table or figure.](images/insert-figs-tbl.png)
+1.  Tables
 
-Insert captions for figures and tables
+-   Place your cursor where you want to insert a table.
+-   Go to the Insert tab and click Table.
+-   Select the number of rows and columns needed.
+-   After inserting the table, adjust its formatting as needed using the Table Design and Layout tabs.
+
+2.  Figures
+
+-   Place your cursor where you want to insert a figure.
+-   Go to the Insert tab and select Pictures → Choose This Device (or another option) to insert an image.
+-   Resize or position the figure as needed.
+
+![Insert a table or figure using the insert ribbon. You can also cut and paste table and figures into your document from a file explorer/finder or another document.](images/insert-figs-tbl.png)
+
+**Step 2: Insert captions for figures and tables**
 
 ![Insert a figure caption](images/insert-caption.png)
 
-![Add figure caption using dialogue box.](images/add-caption.png)
+1.  Right click on the table or figure.
+2.  Select insert caption.
+3.  In the Caption window:
+    -   Set Label to Figure or table
+    -   Figure captions should be set to appear **below** and table captions **above**.
+    -   Type a descriptive title for the figure.
+    -   Include any additional details necessary for interpretation
+    -   Click OK to insert the caption.
 
-![Edit figure caption in the document.](images/edit-figure-caption.png)
-
-![Insert a table caption.](images/table-caption.png)
+![Add figure caption using dialogue box by selecting the appropriate settings.](images/add-caption.png)
 
 ![Add table caption using dialogue box.](images/format-table-caption.png)
 
-Use cross-references.
+4.  You can continue editing the caption in your document as needed.
+
+![Edit figure caption in the document. These can be finicky so avoid disconnecting the caption and the element (table or figure.)](images/edit-figure-caption.png)
+
+**Step 3: Cross-Reference Tables and Figures in your text**
+
+To properly cite tables and figures within your document, use the Cross-Reference function instead of manually typing numbers (this ensures they update automatically if reordered).
+
+1.  Place your cursor where you want to refer to a table or figure (e.g., "As shown in Figure 1...").
+2.  Go to the References tab and click Cross-reference.
 
 ![Access the cross reference menu.](images/cross-reference-menu.png)
 
-![Add a cross reference to a table or figure.](images/chose-caption.png)
+3.  In the Reference type dropdown, select Figure or Table, depending on what you're citing.
+4.  In the Insert reference to dropdown, select Only label and number.
+5.  Select the appropriate table or figure from the list.
+6.  Click Insert.
+7.  The reference (e.g., "Figure 1") will be inserted.
+
+![Select the correct reference to a table or figure. Remember to only include the label and number not the entire caption.](images/chose-caption.png)
+
+*Updating References*:
+
+If you add or rearrange tables/figures, update all captions and cross-references by pressing `Ctrl` + `A` (to select everything), then pressing `F9` to refresh.
 
 ### Additional formatting
 
-Double space.
+**Apply Double Spacing to the Whole Document**
 
 ![Double spacing](images/word_double-spacing.png)
 
-Insert page numbers.
+1.  Press Ctrl + A to select all text.
+2.  Go to the Home tab.
+3.  In the Paragraph group, click the small arrow in the bottom-right corner.
+4.  In the Line Spacing section, select Double from the dropdown menu.
+5.  Click OK to apply the change.
 
-![Insert page numbers.](images/word_page-number.png)
+Since you are using the word styles you can also modify the Normal Style to include double spacing.
 
-Force a page break.
+1.  Open the Styles Panel
 
-![Add page break.](images/word_page-break.png)
+-   Go to the Home tab.
+-   In the Styles group, find the Normal style.
+-   Right-click on Normal and select Modify.
+
+2.  Adjust Line Spacing
+
+-   In the Modify Style window, locate the Formatting section.
+-   Click the Line Spacing button (it looks like three horizontal lines with an up/down arrow).
+-   Select Double (or set Line Spacing: Double under Format → Paragraph).
+
+**Insert page numbers.**
+
+1.  Go to the Insert tab.
+2.  Click Page Number → Hover over Top of Page → Choose where you want your page numbers to appear.
+3.  Your page numbers will now appear on every page.
+
+![Insert page numbers. You can include page numbers in the header (top of document) or the footer (bottom of document).](images/word_page-number.png)
+
+**Force a page break.**
+
+Use a page break when you want to start a new section on a fresh page (e.g., after a title page or before references).
+
+1.  Place your cursor where you want the new page to begin.
+2.  Go to the Insert tab.
+3.  Click Page Break (or press Ctrl + Enter on your keyboard).
+
+![Add page break. You will want a page break between your title page and table of contents and between your table of contents and introduction.](images/word_page-break.png)
 
 ## Adding context to your introduction and discussion
 

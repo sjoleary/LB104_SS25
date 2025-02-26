@@ -1,4 +1,4 @@
-# Describe your results {#sec-collect-your-data}
+# Describe and interpret your results {#sec-collect-your-data}
 
 ```{r}
 #| label: setup
