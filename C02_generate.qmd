@@ -1,0 +1,150 @@
+# Generate your data
+
+After completing this set of activities, you should be able to design a bioassay using radish seeds to test the effects of substances on a living organism by
+
+-   Identifying the independent (explanatory) and dependent (response) variable for a given hypothesis.
+-   Determining how you will measure your dependent variable.
+-   Designing experimental treatments that manipulate your independent variable.
+-   Identifying variables that you need to control for and modifying your design to accommodate this.
+-   Considering factors such sample size, replicates, and randomization in your design.
+
+## Design your Experiment
+
+**1. Identify the Hypothesis**\
+Start by thinking about what you want to test. Write down a specific hypothesis using the **If-Then-Because** format. Consider the deicers available and how they might affect radish seed germination.
+
+-   **Questions to consider**:
+
+    -   What substances (NaCl, MgCl₂, CaCl₂, urea, beet juice, etc.) will you test?
+    -   What do you predict will happen to seed germination or seedling growth based on the substance you are testing?
+    -   Why do you think the substance will affect germination or growth?
+
+::: {.callout-caution title="Your Answer Here"}
+\[restate the hypothesis we have agreed on here\]
+:::
+
+**2. Identify Independent and Dependent Variables**
+
+-   **Independent (Explanatory) Variable**: What factor will you manipulate in your experiment?
+-   **Dependent (Response) Variable**: What will you measure to assess the effect of the independent variable?
+-   **Questions to consider**:
+    -   What specific substance or concentration will you manipulate?
+    -   How will you assess outcome?
+
+::: {.callout-caution title="Your Answer Here"}
+\[Take some notes\]
+:::
+
+**3. How Will You Measure the Dependent Variable?**
+
+-   Define how you will quantify the dependent variable.
+-   **Questions to consider**:
+    -   What will you measure to assess seed germination (e.g., number of seeds germinated)?
+    -   What will you measure to assess seedling growth (e.g., seedling height, root length)?
+    -   What units of measurement will you use (e.g., number of seeds, millimeters for seedling growth)?
+
+::: {.callout-caution title="Your Answer Here"}
+\[Take some notes\]
+:::
+
+**4. Experimental Treatments**\
+Think about how you will set up your experimental treatments. What different conditions will you test?
+
+-   **Questions to consider**:
+
+    -   What different concentrations or types of substances will you use (e.g., 0%, 2%, 5%, and 10% NaCl)?
+    -   Will you have a control treatment with no substance?
+    -   Are there multiple types of substances?
+    -   How many different treatment groups will you have?
+
+::: {.callout-caution title="Your Answer Here"}
+\[Take some notes\]
+:::
+
+**5. Control Variables**\
+What variables could influence the results of your experiment that you need to keep constant across all treatments?
+
+-   **Questions to consider**:
+
+    -   Will you use the same type of growing medium and seed variety for all treatments?
+
+    -   How will you control for light and temperature conditions?
+
+    -   How will you ensure the water volume is consistent across all treatments?
+
+    -   Will you provide similar levels of moisture or water to each treatment group?
+
+::: {.callout-caution title="Your Answer Here"}
+\[Take some notes\]
+:::
+
+**6. Sample Size and Replication**\
+Think about how many replicates you will need for each treatment to obtain reliable results.
+
+-   **Questions to consider**:
+
+    -   How many radish seeds will you use in each treatment group?
+
+    -   How many petri dishes will you use for each treatment?
+
+    -   Will you have multiple replicates for each concentration or type of substance?
+
+::: {.callout-caution title="Your Answer Here"}
+\[Take some notes\]
+:::
+
+**7. Randomization**\
+To avoid bias, you should randomize the placement of your treatments and the assignment of seeds to petri dishes.
+
+-   **Questions to consider**:
+
+    -   How will you randomize the placement of petri dishes or the assignment of seeds to each treatment group?
+    -   How can you ensure there is no researcher bias in assigning substances to each treatment?
+
+::: {.callout-caution title="Your Answer Here"}
+\[Take some notes\]
+:::
+
+**8. Duration of the Experiment**\
+Decide how long you will run the experiment to observe the effects of the substances on seed germination and growth.
+
+-   **Questions to consider**:
+
+    -   How many days will you monitor the germination of seeds?
+    -   When will you measure seedling height and when will you record your final observations?
+
+::: {.callout-caution title="Your Answer Here"}
+\[Take some notes\]
+:::
+
+**9. Data Collection and Analysis**\
+Determine how you will organize your data and analyze the results.
+
+-   **Questions to consider**:
+    -   What specific data will you collect for each treatment group?
+
+    -   How will you calculate averages or means for each treatment?
+
+    -   Will you perform statistical tests to compare differences between treatment groups?
+
+::: {.callout-caution title="Your Answer Here"}
+\[Take some notes\]
+:::
+
+**10. Reflection and Considerations**\
+Reflect on the potential limitations of your experiment and how you can improve the design.
+
+-   **Questions to consider**:
+    -   What challenges do you anticipate in executing your experiment (e.g., controlling variables, ensuring consistency)?
+    -   How will you handle any unexpected outcomes, such as seeds failing to germinate in certain treatments?
+    -   What improvements could be made to your design to make the results more reliable?
+
+::: {.callout-caution title="Your Answer Here"}
+\[Take some notes\]
+:::
+
+## Implement your experiment
+
+### Create the deicer solutions ("meltwater") you want to test
+
+### Assemble your bioassays.

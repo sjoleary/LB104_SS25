@@ -1,0 +1,163 @@
+# Ask an interesting questions
+
+After completing this set of activities, you should be able to:
+
+-   Describe the impacts of rock salt used for deicing on infrastructure and the environment.
+-   Describe the trade-offs involved in balancing human safety and the impacts on the environment.
+-   Write a testable and falsifiable hypothesis about the effect of commonly used deicers on radish seed growth.
+
+## The Big Question: Road Ecology
+
+During our lecture periods we have been exploring key concepts in ecology and evolution. In general, we focusing on biological communities and ecosystems that are intact, health, and in equilibrium. However, many of you have asked question about how human impact changes some of the natural processes and impacts our environment. Humans are major drivers of biodiversity loss by altering habitats or even eliminating them completely, overexploiting natural resources, polluting the environment, introducing invasive species, and causing climate change.
+
+In general, ecology asks questions about how organisms interact with environment and we have discussed how subfields of ecology focus on different hierarchical levels of biodiversity such as populations, communities, and ecosystems. However, anthropogenic impacts have created entire new fields of ecology. Conservation Biology focuses on protecting biodiversity in response to habitat descruction, climate change and decline, similarly restoration ecology focuses in repairing damaged ecosystems, often due to deforestation, mining, or climate change. Later this semester we will think about questions in Urban ecology that focuses on how cities function as a "new kind" of ecosystems, including the interactions between people, wildlife, and urban environments.
+
+For the next few weeks, we conduct a study that will contribute to our understanding of road ecology which focuses on how roads and transportation infrastructure affect wildlife movement, habitat fragmentation, water flow, and pollution. It is an interdisciplinary field that combines principles from ecology, conservation biology, engineering, and transportation planning to understand and mitigate the ecological effects of roads.
+
+::: {.callout-tip title="Consider this"}
+Generate 3-5 questions that a road ecologist might ask, i.e. what do you think could be the focus of a road ecologist?
+:::
+
+.
+
+::: {.callout-note title="Answer" collapse="true"}
+**Questions could fall into these categories:**
+
+-   Wildlife and Habitat Fragmentation – Examining how roads act as barriers to animal movement, leading to habitat loss, genetic isolation, and increased mortality from vehicle collisions.
+
+-   Roadkill and Wildlife-Vehicle Collisions – Studying patterns of animal fatalities and designing mitigation strategies such as wildlife corridors, fencing, and underpasses.
+
+-   Hydrology and Water Quality – Investigating how roads alter drainage patterns, increase runoff, and contribute to water pollution through contaminants like road salt, heavy metals, and oil.
+
+-   Noise and Light Pollution – Assessing how road noise and artificial lighting affect wildlife behavior, migration, and communication.
+
+-   Invasive Species and Roadside Ecology – Understanding how roads facilitate the spread of invasive plant and animal species along transportation corridors.
+
+-   Human and Socioeconomic Aspects – Balancing infrastructure development with conservation efforts, including policies, environmental impact assessments, and sustainable road planning.
+
+**Specific questions might include:**
+
+-   How do roads and highways affect wildlife movement and migration patterns?
+-   What are the most effective wildlife crossing structures (e.g., overpasses, underpasses) for reducing roadkill and habitat fragmentation?
+-   How does road noise pollution influence animal communication, behavior, and stress levels? What role do roads play in the spread of invasive plant and animal species?
+-   How does road runoff impact nearby aquatic ecosystems, including water quality and freshwater species?
+-   What are the ecological consequences of using road salt and other de-icing chemicals in winter?
+-   How do roads contribute to habitat fragmentation, and what are the long-term genetic and population effects on wildlife?
+-   What are the trade-offs between road expansion for human development and conservation of sensitive ecosystems?
+-   How can transportation planning integrate ecological principles to minimize negative environmental impacts?
+-   What are the effects of artificial lighting along roads on nocturnal wildlife and plant growth?
+:::
+
+.
+
+::: {.callout-caution title="Your Answer Here"}
+\[Take some notes\]
+:::
+
+## The specific problem: Impact of Rock Salt and other de-icers
+
+Winter is coming and with it snow and ice. Keeping streets clear and safe is and important task. Here in New England we primarily use rock salt (NaCl) as a deicers that is cheap, available, and effective. Unfortunately, it has all kinds of side effects including being extremely corrosive which damages cars and infrastructure like roads and bridges and can negative side effects on the terrestrial and aquatic ecosystems as the snow melts, dissolves the salt and seeps into the soil and freshwater systems.
+
+::: {.callout-tip title="Consider this"}
+Read through these two resources compiled by the US Environmental Protection Agency (EPA) and the Sustainable Technologies Evaluation Program, a multi-agency initiative in Canada to gain some background knowledge on Salt and Salt Alternatives for deicing.
+
+PDF versions are available on Canvas in the Lab module or you can use the links here:
+
+-   [Sherwell S., (2020). Links to an external site.*Winter is Coming! And with it tons of salt on our roads.Links to an external site.* Environmental Protection Agency, Southeast New England Program](https://www.epa.gov/snep/winter-coming-and-it-tons-salt-our-roads)
+
+-   [STEP (2020) . Links to an external site.*Alternatives to Salt. What else melts snow and ice?Links to an external site.* Technical Brief. Sustainable Technologies Evaluation Program.](https://sustainabletechnologies.ca/app/uploads/2020/03/Alternatives-to-salt-technical-brief.pdf)
+
+Discuss what you have learned with your lab section with your class:
+
+-   What are the primary reasons road salt is used despite its negative impacts?
+-   What are the main differences between salt-based and alternative deicers?
+-   How does road salt contribute to infrastructure damage (e.g., roads, bridges, vehicles)?
+-   How might the impact on infrastructure differ between NaCl, MgCl₂, and CaCl₂?
+-   How does road salt affect freshwater ecosystems, particularly streams and lakes?
+-   What are the effects of increased salinity on aquatic organisms?
+-   How does road salt contamination travel through watersheds?
+-   How does road salt affect soil chemistry and structure?
+-   What impacts might increased soil salinity have on plant growth and survival?
+-   How does the distance from a roadway influence soil salt levels and plant health?
+-   How do NaCl, MgCl₂, and CaCl₂ differ in their effectiveness and environmental impact?
+-   What are some potential benefits and drawbacks of using organic alternatives like beet-based deicers?
+-   How do sand, sawdust, and gravel compare in terms of effectiveness and environmental impact?
+-   Given what you’ve learned, what factors should be considered when choosing a deicer for a particular location?
+-   What are some ways to mitigate the negative effects of road salt while maintaining road safety?
+-   What role might policy and public awareness play in reducing road salt usage?
+:::
+
+.
+
+::: {.callout-caution title="Your Answer Here"}
+\[Take some notes\]
+:::
+
+For this upcoming lab unit we will be design bioassays that allow us to rest the effect of deicers on radish seeds[^c01_question-1]. Bioassays typically have a simple, easily repeatable design that allow you to assess your results within a few weeks. They are performed in controlled settings in a lab with the goal of getting clear results that are then frequently followed up with e.g. microcosm experiments that allow you simulate a more complex ecosystem or a field study.
+
+[^c01_question-1]: A **bioassay** is an experiment designed to determine the properties and effects of a substance (frequently drugs, polllutants, contaminants) on living organisms by testing it under controlled laboratory conditions.
+
+## Develop a specific hypothesis
+
+Chloride, sodium, magnesium, calcium, ammonia, urea, and organic compounds/sugars are molecules that are found in soil in various concentrations and interact with plants.
+
+| **Substance** | **Interactions with soil & seeds** |
+|------------------------------------|------------------------------------|
+| **Chloride (Cl⁻)** | Chloride ions can cause ion toxicity, disrupting cellular metabolism. High Cl⁻ levels interfere with nutrient uptake, particularly nitrate, affecting protein synthesis and growth. Excess Cl⁻ can also create an osmotic imbalance, making water absorption more difficult for seeds. |
+| **Sodium (Na⁺)** | Sodium causes osmotic stress by reducing the ability of seeds to take up water, leading to dehydration. It also competes with potassium (K⁺) for uptake, disrupting enzyme function, membrane stability, and cellular signaling. In extreme cases, Na⁺ accumulation can lead to ion toxicity and oxidative stress in developing seedlings. |
+| **Magnesium (Mg²⁺)** | Magnesium is an essential nutrient for chlorophyll and enzyme activation, but excessive Mg²⁺ can disrupt soil structure, increasing compaction and reducing oxygen availability. High Mg²⁺ levels can also interfere with calcium and potassium uptake, leading to nutrient imbalances that impair root and shoot growth. |
+| **Calcium (Ca²⁺)** | Calcium plays a key role in cell wall stability, signaling, and membrane function. Unlike Na⁺, Ca²⁺ improves soil structure by promoting aggregation, which enhances water infiltration and root aeration. However, excessive Ca²⁺ can compete with magnesium and potassium, leading to nutrient imbalances. |
+| **Ammonium (NH₄⁺)** | Ammonium serves as a nitrogen source, promoting cell division and early seedling growth. However, in high concentrations, NH₄⁺ can lead to toxicity, causing cellular acidification, ion imbalances, and disruption of root development. Excess NH₄⁺ can also inhibit calcium and magnesium uptake, leading to deficiencies. |
+| **Urea (CO(NH₂)₂)** | Urea breaks down into ammonium and bicarbonate in the soil, providing nitrogen for plant growth. However, at high concentrations, it can lead to ammonia toxicity, disrupting pH balance and causing root damage. Urea breakdown can also increase soil salinity and contribute to nitrogen runoff, potentially harming seed germination. |
+| **Organic Compounds & Sugars** | Organic carbon sources that can enhance microbial activity in the soil, promoting nutrient cycling. The sugars may improve water retention, reducing osmotic stress on seeds. However, high concentrations could lead to microbial overgrowth, oxygen depletion, and fermentation byproducts that may negatively impact germination. |
+
+::: {.callout-tip title="Give it a try"}
+For this study, you will test effects of different deicers using radish seed bioassays.
+
+We have NaCl~2~ , MgCl~2~ , and CaCl~2~ on hand as well as two readily available alternative deicers.
+
+-   Fusion 2330 is marketed as a organic, eco-friendly, pet safe liquid deicer made from sugar beets that is non-staining, less corrosive and environmentally friendly. Manufacturer states is effective down to -25C (-13F), fast-acting and long lasting, and eliminates the mess of rock salt, resists re-freezing and prevents snow and ice from bonding to surface. It is available for individual use but also sold commercially as drums of 200l and totes of 1,000l.
+-   North Pro Nature Subzero Deicer is marketed as a chloride-free, eco-friendly, concrete safe ice melt. It contains urea, sodium formate, and additional chloride free materials. The manucfacturer advertises it as proven safer for concret, landscape, vegetation that uses 35% less product than standard ice melt and reduces corrosion by 70%. The highlight that it works in Minnesota where you cannot rely on the sun for activation and that NPN is "snow & ice's worst enemy".
+
+Together with your lab partner brainstorm three hypotheses that you are interested in testing using these materials, using the "if-then-because" format.
+
+Be ready to pitch them to the rest of your lab section. You should state why you think that it is important that we explore this specific question, i.e. how this will contribute to our big question(s) of how roads impact ecosystems and how relying on rock salt as our main deicers impacts ecosystems in New England.
+:::
+
+.
+
+::: {.callout-caution title="Your Answer Here"}
+**Hypothesis 1:**
+
+**IF** (connect with an expected/observed pattern that interests your group):
+
+**THEN** (suggest a relationship that might explain or follow this pattern)
+
+**BECAUSE** (explain your reasoning)
+
+Why is it important that we pursue this question specifically? How would that help managers make decisions about what deicers to implement to balance effectiveness with side effects like impact on the environment and infrastructure?
+
+------------------------------------------------------------------------
+
+**Hypothesis 2:**
+
+**IF** (connect with an expected/observed pattern that interests your group):
+
+**THEN** (suggest a relationship that might explain or follow this pattern)
+
+**BECAUSE** (explain your reasoning)
+
+Why is it important that we pursue this question specifically? How would that help managers make decisions about what deicers to implement to balance effectiveness with side effects like impact on the environment and infrastructure?
+
+------------------------------------------------------------------------
+
+**Hypothesis 3:**
+
+**IF** (connect with an expected/observed pattern that interests your group):
+
+**THEN** (suggest a relationship that might explain or follow this pattern)
+
+**BECAUSE** (explain your reasoning)
+
+Why is it important that we pursue this question specifically? How would that help managers make decisions about what deicers to implement to balance effectiveness with side effects like impact on the environment and infrastructure?
+:::

@@ -39,7 +39,7 @@ Start with your methods section to describe how you conducted your study, which 
 You developed a hypothesis using the IF-THEN-BECAUSE format a few weeks ago.
 
 -   IF: connect with an expected/observed pattern that interests your group
--   THEN: suggest a relationship that might explain or follow this pattern)
+-   THEN: suggest a relationship that might explain or follow this pattern
 -   BECAUSE: explain your reasoning.
 
 The last part is the hypotheses that you are planning to test with the data set you will be gathering. For example, I have chosen these two hypothesis, the first focuses on changes in the milk itself (abiotic conditions) and the second focuses on the microbial community (biotic conditions).
@@ -159,7 +159,7 @@ Here is an example of what this section might look like in paragraph form.
 
 **Data Analysis**
 
-include how you manipulated data to obtain results, specific calculations, descriptive statistics to summarize data (what metrics you produced), statistical tests.
+Include how you manipulated data to obtain results, specific calculations, descriptive statistics to summarize data (what metrics you produced), statistical tests.
 
 ::: {.callout-tip title="Consider this"}
 How you processed your data and produced your results is a key component of your methods. Review the @sec-collect-your-data section of your lab manual and take some notes below in terms of which information you might need to include for this section.
@@ -172,7 +172,7 @@ Again, you would include the components relevant to your hypothesis, so in my ex
 
 Here is an example of what a completed paragraph might look like:
 
-> Overall microbial growth, fungal growth, and observation of yeast and bacteria cells were categorized using qualitative descriptors (none, rare, moderate, abundant, extensive) and visualized as a heat plot to identify trends over time and between different milk types. pH changes over time were plotted using to compare changes among the different milk types. Any unexpected findings were noted and discussed in relation to experimental limitations and microbial succession.
+> Overall microbial growth, fungal growth, and observation of yeast and bacteria cells were categorized using qualitative descriptors (none, rare, moderate, abundant, extensive) and visualized as a heat plot to identify trends over time and between different milk types. Changes in pH over time were plotted using to compare differences among the different milk types.
 :::
 
 .
@@ -228,6 +228,10 @@ Go back over your results and decide which figures and/or tables you want to inc
 .
 
 ::: {.callout-note title="Answer" collapse="true"}
+-   Scatter/lineplot summarizing the change of pH over time for each milk type included in the data set.
+-   heatplot showing overall microbial growth
+-   heatplot showing fungal growth
+-   heatplot with individual panels for each milk type showing relative abundance for the different bacterial and yeast cell types.
 :::
 
 .
@@ -371,12 +375,12 @@ The pH of milk plays a critical role in shaping microbial succession, influencin
 Following paragraph on Food Spoilage:
 
 **Second Paragraph (for Hypothesis 1: Oat Milk and Curdling)**\
-Dairy milk spoilage is characterized by a predictable sequence of microbial changes, including acidification and protein coagulation that lead to curdling. This process occurs due to the presence of casein, a milk protein that precipitates out of solution when the pH drops. However, plant-based milks like oat milk contain different proteins and carbohydrates, which may alter the texture changes associated with spoilage. This study tests whether oat milk follows the same curdling process as dairy milk or if its spoilage results in a different consistency, such as a slimy texture.
+Dairy milk spoilage is characterized by a predictable sequence of microbial changes, including acidification and protein coagulation that lead to curdling. This process occurs due to the presence of casein, a milk protein that precipitates out of solution when the pH drops. However, plant-based milks like oat milk contain different proteins and carbohydrates, which may alter the texture changes associated with spoilage. As a result, oat milk is expected to follow a different curdling process compared to dairy milk resulting in a different consistency, such as a slimy texture.
 
 **Second Paragraph (for Hypothesis 2: Oat Milk and Fungal Growth)**\
-Food safety concerns often arise from microbial contamination, particularly when fungal growth occurs in spoiled products. In dairy milk, bacteria lower the pH as they ferment lactose, which may promote fungal colonization in later stages of spoilage. However, oat milk lacks lactose and may not experience the same level of acidification, potentially reducing fungal growth. This study investigates whether oat milk exhibits different patterns of fungal contamination during spoilage compared to dairy milk by examining microbial succession and pH changes over time.
+Food safety concerns often arise from microbial contamination, particularly when fungal growth occurs in spoiled products. In dairy milk, bacteria lower the pH as they ferment lactose, which may promote fungal colonization in later stages of spoilage. However, oat milk lacks lactose and may not experience the same level of acidification, potentially reducing fungal growth. As a result oat milk is expected to exhibit different patterns of fungal contamination during spoilage compared to dairy milk and should differ in the observed microbial succession and pH changes over time.
 
-Note how similar these paragraphs are.
+Note how similar these paragraphs are even though the set up in the previous paragraph would be quite different.
 :::
 
 .
@@ -392,7 +396,7 @@ Yes - you still need a title! Now that you know what your findings are and how y
 Your title should be informative and clearly state the main focus or purpose of your study. It does not need to be especially clever or thought-provoking, your focus should be on clear communication. There are typically two ways to do this, either by a stating what was done or what was found. You should also consider how broad to make your title.
 
 ::: {.callout-tip title="Give it a try"}
-Draft a workingg title for your report below.
+Draft a working title for your report below.
 :::
 
 .
@@ -424,31 +428,199 @@ Here are examples: classify them as too broad or too narrow in scope and as bein
 \[Take some notes\]
 :::
 
-## Format your report
+## Format your report {#sec-format-your-report}
 
-### Use headers to structure your report
+### Use headers to structure your report using Word's formatting options {#sec-use-headers-to-structure-your-report}
 
-Format text as hierarchical headers.
+**Step 1: Set Up Your Document Structure**
 
-Insert table of content.
+1.  Open Microsoft Word and create a new document.
+
+2.  Type the following structure in your document:
+
+```         
+Title of Your Report  
+Name | Course Name | Semester  
+
+Introduction  
+Methods  
+Results  
+Discussion  
+References  
+```
+
+**Step 2: Apply Styles to Structure Your Document**
+
+Microsoft Word’s Styles feature helps maintain consistent formatting and allows easy navigation and automatic Table of Contents generation.
+
+![Use the styles menu in the Home ribbon to format the individual styles and control the settings for the entire document.](images/word-format-styles.png)
+
+1.  Title:
+
+-   Select your report’s title.
+-   Go to the Home tab and click on Title in the Styles section.
+
+![Format text as title by selecting the Title style from the styles menu in the Home ribbon.](images/change-title.png)
+
+2.  Subtitle (Name, Course, Semester):
+
+-   Highlight your name, course name, and semester.
+-   Apply the Subtitle style from the Styles section.
+
+3.  Level One Headers (Introduction, Methods, etc.):
+
+-   Select Introduction and apply the Heading 1 style from the Styles section.
+-   Repeat this step for Methods, Results, Discussion, and References.
+
+![Format line of text as header - you can create a hierarchical structure using the different levels of headers.](images/change-headers.png)
+
+**Step 3: Modify Styles (If Needed)**
+
+![Modify the styles using the menu to change font type, size and paragraph settings.](images/modify-styles.png)
+
+If you want to change how your headings appear across the document:
+
+1.  Right-click on the Heading 1 style in the Styles panel.
+2.  Select Modify.
+3.  Adjust font, size, bolding, color, alignment, or spacing.
+4.  Click OK to apply changes to all text using that style.
+
+**Step 4: Enable and Use the Navigation Pane**
+
+The Navigation Pane helps you move quickly through the document.
+
+![Open the navigation pane to access sections of document.](images/word-navigation-ribbon.png)
+
+1.  Go to the View tab.
+2.  Check the Navigation Pane box.
+3.  The pane appears on the left, showing all your Heading 1 sections.
+4.  Click on any section to jump to that part of the document.
+
+**Step 5: Insert a Table of Contents**
+
+![Insert a Table of Contents based on headers in a document.](images/insert-toc.png)
+
+1.  Place your cursor at the beginning of your document where you want the Table of Contents.sunday
+2.  Go to the References tab.
+3.  Click Table of Contents and choose a built-in style.
+4.  A Table of Contents (TOC) will generate based on your Heading 1 styles.
+
+**Step 6: Update the Table of Contents**
+
+If you add or edit headings and as your page numbering changes as you write your report.
+
+1.  Click anywhere inside the Table of Contents.
+2.  Go to the References tab.
+3.  Click Update Table → Choose Update entire table.
+
+The TOC will refresh with your changes.
+
+![Update table of contents to match new headers and changes in page numbers using the quick link.](images/update-toc.png)
 
 ### Figures/tables and captions
 
-Insert figure.
+**Step 1: Insert tables and figures**
 
-Insert table.
+1.  Tables
 
-Insert caption.
+-   Place your cursor where you want to insert a table.
+-   Go to the Insert tab and click Table.
+-   Select the number of rows and columns needed.
+-   After inserting the table, adjust its formatting as needed using the Table Design and Layout tabs.
 
-Use cross-references.
+2.  Figures
+
+-   Place your cursor where you want to insert a figure.
+-   Go to the Insert tab and select Pictures → Choose This Device (or another option) to insert an image.
+-   Resize or position the figure as needed.
+
+![Insert a table or figure using the insert ribbon. You can also cut and paste table and figures into your document from a file explorer/finder or another document.](images/insert-figs-tbl.png)
+
+**Step 2: Insert captions for figures and tables**
+
+![Insert a figure caption](images/insert-caption.png)
+
+1.  Right click on the table or figure.
+2.  Select insert caption.
+3.  In the Caption window:
+    -   Set Label to Figure or table
+    -   Figure captions should be set to appear **below** and table captions **above**.
+    -   Type a descriptive title for the figure.
+    -   Include any additional details necessary for interpretation
+    -   Click OK to insert the caption.
+
+![Add figure caption using dialogue box by selecting the appropriate settings.](images/add-caption.png)
+
+![Add table caption using dialogue box.](images/format-table-caption.png)
+
+4.  You can continue editing the caption in your document as needed.
+
+![Edit figure caption in the document. These can be finicky so avoid disconnecting the caption and the element (table or figure.)](images/edit-figure-caption.png)
+
+**Step 3: Cross-Reference Tables and Figures in your text**
+
+To properly cite tables and figures within your document, use the Cross-Reference function instead of manually typing numbers (this ensures they update automatically if reordered).
+
+1.  Place your cursor where you want to refer to a table or figure (e.g., "As shown in Figure 1...").
+2.  Go to the References tab and click Cross-reference.
+
+![Access the cross reference menu.](images/cross-reference-menu.png)
+
+3.  In the Reference type dropdown, select Figure or Table, depending on what you're citing.
+4.  In the Insert reference to dropdown, select Only label and number.
+5.  Select the appropriate table or figure from the list.
+6.  Click Insert.
+7.  The reference (e.g., "Figure 1") will be inserted.
+
+![Select the correct reference to a table or figure. Remember to only include the label and number not the entire caption.](images/chose-caption.png)
+
+*Updating References*:
+
+If you add or rearrange tables/figures, update all captions and cross-references by pressing `Ctrl` + `A` (to select everything), then pressing `F9` to refresh.
 
 ### Additional formatting
 
-Double space.
+**Apply Double Spacing to the Whole Document**
 
-Insert page numbers.
+![Double spacing](images/word_double-spacing.png)
 
-Force a page break.
+1.  Press Ctrl + A to select all text.
+2.  Go to the Home tab.
+3.  In the Paragraph group, click the small arrow in the bottom-right corner.
+4.  In the Line Spacing section, select Double from the dropdown menu.
+5.  Click OK to apply the change.
+
+Since you are using the word styles you can also modify the Normal Style to include double spacing.
+
+1.  Open the Styles Panel
+
+-   Go to the Home tab.
+-   In the Styles group, find the Normal style.
+-   Right-click on Normal and select Modify.
+
+2.  Adjust Line Spacing
+
+-   In the Modify Style window, locate the Formatting section.
+-   Click the Line Spacing button (it looks like three horizontal lines with an up/down arrow).
+-   Select Double (or set Line Spacing: Double under Format → Paragraph).
+
+**Insert page numbers.**
+
+1.  Go to the Insert tab.
+2.  Click Page Number → Hover over Top of Page → Choose where you want your page numbers to appear.
+3.  Your page numbers will now appear on every page.
+
+![Insert page numbers. You can include page numbers in the header (top of document) or the footer (bottom of document).](images/word_page-number.png)
+
+**Force a page break.**
+
+Use a page break when you want to start a new section on a fresh page (e.g., after a title page or before references).
+
+1.  Place your cursor where you want the new page to begin.
+2.  Go to the Insert tab.
+3.  Click Page Break (or press Ctrl + Enter on your keyboard).
+
+![Add page break. You will want a page break between your title page and table of contents and between your table of contents and introduction.](images/word_page-break.png)
 
 ## Adding context to your introduction and discussion
 
