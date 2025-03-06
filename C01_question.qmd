@@ -1,4 +1,4 @@
-# Ask an interesting questions
+# Ask an interesting question
 
 After completing this set of activities, you should be able to:
 
@@ -10,7 +10,7 @@ After completing this set of activities, you should be able to:
 
 During our lecture periods we have been exploring key concepts in ecology and evolution. In general, we focusing on biological communities and ecosystems that are intact, health, and in equilibrium. However, many of you have asked question about how human impact changes some of the natural processes and impacts our environment. Humans are major drivers of biodiversity loss by altering habitats or even eliminating them completely, overexploiting natural resources, polluting the environment, introducing invasive species, and causing climate change.
 
-In general, ecology asks questions about how organisms interact with environment and we have discussed how subfields of ecology focus on different hierarchical levels of biodiversity such as populations, communities, and ecosystems. However, anthropogenic impacts have created entire new fields of ecology. Conservation Biology focuses on protecting biodiversity in response to habitat descruction, climate change and decline, similarly restoration ecology focuses in repairing damaged ecosystems, often due to deforestation, mining, or climate change. Later this semester we will think about questions in Urban ecology that focuses on how cities function as a "new kind" of ecosystems, including the interactions between people, wildlife, and urban environments.
+In general, ecology asks questions about how organisms interact with environment and we have discussed how subfields of ecology focus on different hierarchical levels of biodiversity such as populations, communities, and ecosystems. However, anthropogenic impacts have created entire new fields of ecology. Conservation Biology focuses on protecting biodiversity in response to habitat destruction, climate change and decline, similarly restoration ecology focuses in repairing damaged ecosystems, often due to deforestation, mining, or climate change. Later this semester we will think about questions in Urban ecology that focuses on how cities function as a "new kind" of ecosystems, including the interactions between people, wildlife, and urban environments.
 
 For the next few weeks, we conduct a study that will contribute to our understanding of road ecology which focuses on how roads and transportation infrastructure affect wildlife movement, habitat fragmentation, water flow, and pollution. It is an interdisciplinary field that combines principles from ecology, conservation biology, engineering, and transportation planning to understand and mitigate the ecological effects of roads.
 
@@ -63,9 +63,9 @@ Read through these two resources compiled by the US Environmental Protection Age
 
 PDF versions are available on Canvas in the Lab module or you can use the links here:
 
--   [Sherwell S., (2020). Links to an external site.*Winter is Coming! And with it tons of salt on our roads.Links to an external site.* Environmental Protection Agency, Southeast New England Program](https://www.epa.gov/snep/winter-coming-and-it-tons-salt-our-roads)
+-   [Sherwell S., (2020). Links to an external site.*Winter is Coming! And with it tons of salt on our roads.* Environmental Protection Agency, Southeast New England Program](https://www.epa.gov/snep/winter-coming-and-it-tons-salt-our-roads)
 
--   [STEP (2020) . Links to an external site.*Alternatives to Salt. What else melts snow and ice?Links to an external site.* Technical Brief. Sustainable Technologies Evaluation Program.](https://sustainabletechnologies.ca/app/uploads/2020/03/Alternatives-to-salt-technical-brief.pdf)
+-   [STEP (2020) . Links to an external site.*Alternatives to Salt. What else melts snow and ice?*](https://sustainabletechnologies.ca/app/uploads/2020/03/Alternatives-to-salt-technical-brief.pdf) *Technical Brief. Sustainable Technologies Evaluation Program.*
 
 Discuss what you have learned with your lab section with your class:
 
@@ -97,12 +97,12 @@ For this upcoming lab unit we will be design bioassays that allow us to rest the
 
 [^c01_question-1]: A **bioassay** is an experiment designed to determine the properties and effects of a substance (frequently drugs, polllutants, contaminants) on living organisms by testing it under controlled laboratory conditions.
 
-## Develop a specific hypothesis
+## Develop a specific hypothesis {#sec-develop-a-specific-hypothesis}
 
 Chloride, sodium, magnesium, calcium, ammonia, urea, and organic compounds/sugars are molecules that are found in soil in various concentrations and interact with plants.
 
 | **Substance** | **Interactions with soil & seeds** |
-|------------------------------------|------------------------------------|
+|---------------------|---------------------------------------------------|
 | **Chloride (Cl⁻)** | Chloride ions can cause ion toxicity, disrupting cellular metabolism. High Cl⁻ levels interfere with nutrient uptake, particularly nitrate, affecting protein synthesis and growth. Excess Cl⁻ can also create an osmotic imbalance, making water absorption more difficult for seeds. |
 | **Sodium (Na⁺)** | Sodium causes osmotic stress by reducing the ability of seeds to take up water, leading to dehydration. It also competes with potassium (K⁺) for uptake, disrupting enzyme function, membrane stability, and cellular signaling. In extreme cases, Na⁺ accumulation can lead to ion toxicity and oxidative stress in developing seedlings. |
 | **Magnesium (Mg²⁺)** | Magnesium is an essential nutrient for chlorophyll and enzyme activation, but excessive Mg²⁺ can disrupt soil structure, increasing compaction and reducing oxygen availability. High Mg²⁺ levels can also interfere with calcium and potassium uptake, leading to nutrient imbalances that impair root and shoot growth. |
@@ -111,10 +111,12 @@ Chloride, sodium, magnesium, calcium, ammonia, urea, and organic compounds/sugar
 | **Urea (CO(NH₂)₂)** | Urea breaks down into ammonium and bicarbonate in the soil, providing nitrogen for plant growth. However, at high concentrations, it can lead to ammonia toxicity, disrupting pH balance and causing root damage. Urea breakdown can also increase soil salinity and contribute to nitrogen runoff, potentially harming seed germination. |
 | **Organic Compounds & Sugars** | Organic carbon sources that can enhance microbial activity in the soil, promoting nutrient cycling. The sugars may improve water retention, reducing osmotic stress on seeds. However, high concentrations could lead to microbial overgrowth, oxygen depletion, and fermentation byproducts that may negatively impact germination. |
 
+: Selected anticipated effects of components of commonly used deicers on soil and seeds.
+
 ::: {.callout-tip title="Give it a try"}
 For this study, you will test effects of different deicers using radish seed bioassays.
 
-We have NaCl~2~ , MgCl~2~ , and CaCl~2~ on hand as well as two readily available alternative deicers.
+We have NaCl , MgCl~2~ , and CaCl~2~ on hand as well as two readily available alternative deicers:
 
 -   Fusion 2330 is marketed as a organic, eco-friendly, pet safe liquid deicer made from sugar beets that is non-staining, less corrosive and environmentally friendly. Manufacturer states is effective down to -25C (-13F), fast-acting and long lasting, and eliminates the mess of rock salt, resists re-freezing and prevents snow and ice from bonding to surface. It is available for individual use but also sold commercially as drums of 200l and totes of 1,000l.
 -   North Pro Nature Subzero Deicer is marketed as a chloride-free, eco-friendly, concrete safe ice melt. It contains urea, sodium formate, and additional chloride free materials. The manucfacturer advertises it as proven safer for concret, landscape, vegetation that uses 35% less product than standard ice melt and reduces corrosion by 70%. The highlight that it works in Minnesota where you cannot rely on the sun for activation and that NPN is "snow & ice's worst enemy".
@@ -161,3 +163,9 @@ Why is it important that we pursue this question specifically? How would that he
 
 Why is it important that we pursue this question specifically? How would that help managers make decisions about what deicers to implement to balance effectiveness with side effects like impact on the environment and infrastructure?
 :::
+
+Being able to effectively pitch the importance of investigating a specific hypothesis is critical - especially if you want to be funded.
+
+In this specific case, municipalities, state, and federal agencies are actively considering whether to switch to alternative deicers. Road salting is a necessary trade-off—while it improves road safety and reduces accidents, it also comes with significant environmental and infrastructure costs. Salt corrodes roads and bridges, increasing long-term maintenance expenses, and runoff harms freshwater ecosystems. While alternative deicers may have higher upfront costs, they could reduce damage to infrastructure and minimize environmental harm, making them a more sustainable choice in the long run.
+
+As decision-makers increasingly focus on balancing public safety, economic costs, and environmental responsibility, scientific data can guide policies that minimize trade-offs and ensure better long-term outcomes

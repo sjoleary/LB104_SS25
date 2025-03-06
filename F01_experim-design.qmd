@@ -1,0 +1,146 @@
+# Scientific Method & Experimental Design {#sec-scientific-method--experimental-design}
+
+```{r}
+#| label: set-up
+#| include: false
+
+# set options
+knitr::opts_chunk$set(tidy = FALSE)
+options(htmltools.dir.version = FALSE)
+
+```
+
+## Scientific inquiry {#sec-scientific-inquiry}
+
+"Science" can be define as a systematic, evidence-based approach to understanding the natural world[^f01_experim-design-1]. It comprises both the body of existing knowledge and is a process of inquiry with the goal of understanding, explaining, and predicting natural phenomena. Science relies on observations, empirical[^f01_experim-design-2] evidence, experimentation, and the formulation of hypothesis and theories to describe the underlying principles that govern the natural world. Scientific knowledge is provisional and subject to revision as new data and evidence become available which necessitate modifying or replacing scientific theories.
+
+[^f01_experim-design-1]: We frequently use the term natural sciences to refer to fields of science specifically centered around the physical world and the phenomena and processes that govern it, which typically refers to broadly to life sciences/biology, chemistry, physics, geology, though not everyone is in agreement in what to include. Frankly, depending on the type of research questions somebody is interested in. For example, a psychologist might consider themselves a natural scientist compared to a social scientist.
+
+[^f01_experim-design-2]: **Empirical** in contrast to **theory** is based on verifiable observation/experiences.
+
+All forms of science share a common goal - to know more and better understand how the world operates. For scientific inquiry we typically employ two types of logical thinking **inductive reasoning** and **deductive reasoning**[^f01_experim-design-3]. For **descriptive science** our goal is to observe, explore, and discover. Here, we typically employ inductive reasoning with the goal of developing a hypothesis or theory. To do this, we compile related observation to draw general conclusions. We make observations and record them[^f01_experim-design-4] to build large data sets that allow us to infer generalizations based on an analysis. By contrast, **hypothesis-driven** science begins with a specific question/problem and a proposed testable or answer/solution. In this case, we are using deductive reasoning to test a theory: We start with a general principle and use that to predict a specific outcome assuming it is true and we design an experiment to determine if our results support the hypothesis. Even though we have just described these two types of reasoning as a binary to understand the difference between the approaches, most scientific studies rely on both approaches.
+
+[^f01_experim-design-3]: **Inductive** reasoning moves from the particular to the general. **Deductive** reasoning moves from the general to the particular.
+
+[^f01_experim-design-4]: The data sets can be qualitative or quantitative and are frequently supplemented with drawings, pictures/videos.
+
+## The Scientific method {#sec-the-scientific-method}
+
+The **scientific method** is a key process that guides the process of scientific inquiry with the goal of advancing knowledge. It follows a structured process of formulating hypotheses based on observations, designing repeatable[^f01_experim-design-5] experiments, collecting data, and drawing conclusions based on evidence.
+
+[^f01_experim-design-5]: In the natural sciences, the scientific method centered around repeatable experiments is arguably *the* key process. However, for example in paleontology repeatable experiments are not possible. Still, they follow the same process formulating a hypothesis that may be supported or contradicted by new findings
+
+Generally the scientific method starts with an **Observation**. For example, you might notice that on a specific island birds there is a large number of birds nest on the ground. Observations can also include your own or other scientists previous research. So rather than have visited the island yourself, you may have read about it in the literature.
+
+The next step is to ask a **Research Question** based on these observations. Research questions can be descriptive or causal. A **descriptive question** quantifies an observation and seeks to identify trends and patterns. In this case we might ask, "*What proportion of individuals are building their nests on the ground?*" or "*Are all species building their nests on the ground?*". By contrast, a **causal question** focuses on understanding why we observe trends and patterns. In our example, we would likely ask "*Why are birds building their nests on the ground?*". Frequently, a descriptive question leads to a causal one because once we have an idea of what the trends and patterns are we want to know why we are observing them. So for example, if we had pursued our initial question we may have determine that "*90% of nests are built on the ground*" or "*Species X always builds their nests on the ground.*" and we may formulate a more specific question such as "*Why does species X build their nests on the ground and species Y does not?*". In our course, as the instructor, I am frequently pointing you towards observations and "big research questions" and then instructing you to develop a more specific question that we can answer within the confines of our lab.
+
+Next, we need to formulate a **Hypothesis** as a proposed answer to the research question based on prior knowledge. Rationale for hypothesis should be supported by previous research and understanding of an area of research. In this case, as ecologists, we might have read about other examples of ground nest-building or the prevalence of flightless birds in the absence of predators and so we hypothesize that in this case the island might lack predators for species X but there are predators present for species Y. A hypothesis must be both **testable** and **falsifiable**. Testable means that we can generate predictions and use observation and experimentation to determine if they are correct. Falsifiable means that we must be able to design experiments so results can disprove the hypothesis.
+
+Our next step is to make a **Prediction** that describes the expected observed outcome assuming our hypothesis is true. Prediction and hypothesis are distinct from each other, even though they are frequently used interchangeable. A prediction is frequently formulated as a If-Then statement. In our example, we might predict that for each species on islands where predators co-occur we observe a small number of birds nests on the ground and on islands where there are no or few predators that number would be larger. Remember that your hypothesis adds a "because" component to your prediction - this is your understanding of what mechanism might cause that predicted relationship or effect to occur. In our course, we are typically combining the prediction and hypothesis using the "if-then-because" structure to develop a hypothesis.
+
+Finally, we design and execute an **experiment** or study to test our prediction. In this case, we would need to identify a series of islands inhabited by the bird species that vary in their level of predator prevalence and quantify the proportion of nests built on the ground. Then we would determine if our results are consistent with our prediction or not.
+
+Generally, once we have the answer, we find that we have more questions and we iterate where our results and conclusion become the next set of observations that start the process over again.
+
+## Designing Controlled Experiments {#sec-designing-controlled-experiments}
+
+The scientific method hinges on robustly designed experiments. The goal of an experiment is to systematically test a hypothesis, Therefore, we must pay careful attention to ensure our design enables this. In a **controlled experiment**, the we manipulates one or more independent variables to observe the effect on a dependent variable while carefully controlling other relevant variables to ensure consistent conditions across treatments. As a result, we are (hopefully) able to establish cause-and-effect relationships, with a high level of certainty based on our results.
+
+**Here are the key steps to Experimental Design:**
+
+-   Identify the dependent and independent variables you are interested in and how they are related.
+-   Determine how you will measure your dependent variable.
+-   Formulate a testable, falsifiable hypothesis and predict the outcome.
+-   Design experimental treatments that manipulate your independent variable.
+-   Identify variables that you need to control for and modify your design to accommodate this.
+-   Finalize aspects like sample size, replicates, and randomization.
+
+::: callout-note
+Even though we are presenting these as consecutive steps, the process of designing a experiment is frequently iterative where you need to go back and make adjustments or you may be considering components of the experimental design at the same time before making final decisions to ensure a good design.
+:::
+
+Let's think through the nuances of experimental design using another example.
+
+You make the **observation**, that when you plant onions, garlic, leeks, or chives on the perimeter of your garden, you lettuce is less affected by slugs. You initially as a **descriptive research question**: "*Do onions, garlic, leeks, or chives reduce the impact of slugs?*". Next, you formulated the hypothesis "*Onions, garlic, leeks, or chives repel slugs.*" and test this by collecting data from a range of gardens that did or did not have onions, garlic, leeks, or chives planted on the perimeter and you found that indeed the "slug-affectedness" is significantly lower. Based on this new observation you are ready to pose a **causal research question**: "*Why do onions, garlic, leeks, or chives repell slugs?*". Before your formulate your research hypothesis you do some additional research and learn that these plants are all part of the Allium family which produce allicin which is toxic to a range of organisms, including slugs. This leads you to postulate a research hypothesis: "*Allicin is toxic to slugs and as a result allicin-producing plants repel slugs.*".
+
+Now, you are ready to design an experiment.
+
+**First, we need to figure out what variables we are are in play and how they relate to each other.**
+
+Generally, we categorize variables as either independent, dependent, or controlled variables. The **dependent** or **response** variable is the variable you expect to be affected and are therefore measuring in your experiment[^f01_experim-design-6]. By contrast, the **independent** or **explanatory** variable is the variable or phenomena that you think will affect your dependent variable[^f01_experim-design-7]. Any remaining variables are what we would consider **constants** or **controlled variables**. These are factors that we will want to intentionally keep constant so they do not effect the outcome.
+
+[^f01_experim-design-6]: It is not uncommon to measure more than one dependent variable in an experiment. Frequently you will measure the outcome in more than one way.
+
+[^f01_experim-design-7]: Having only one independent variable makes the interpretation of the an experiment straightforward. However, including two or more independent variables allows us to test not only the effect of each explanatory variable but also how they interact, i.e. how they modify each other's effects.
+
+Let's think about our example to identify what variables are involved and what their relationship is. In this case, we think that the outcome will differ depending whether allicin is present or not. That makes "allicin presence" our explanatory or independent variable. By contrast, the outcome that we think will change is "slug presence" or "slug impact", which makes that our response or dependent variable.
+
+**Before we move on to the next step, we will want to figure out how we are going to quantify our dependent variable.**
+
+Frequently this requires having a rough idea of what your experimental design will look like. Let's say that we are going to have a set up with multiple plots and plants that slugs like to eat. We could directly measure whether or not slugs are present, for example by counting the number of slugs in a specific parameter or we could indirectly measure whether allicin repels slugs by determine the level of impact by assessing the damage to the plants. We could quantify this by counting the number of affected plants or by creating a scale of how strongly a plant is impacted e.g. based on the amount that was eaten. Which is our best option? Well, there might not actually be a "best" option because each gives us an different line of evidence, in that case we might decide to include all three dependent variables: Number of observed slugs beyond an allicin barrier, number of plants affected, and level of plants affected.
+
+**Now we are ready to formulate a hypothesis.**
+
+We should conceptually differ between a **Biological**, **Scientific** or **Research Hypothesis** as an idea or claim about one specific or very narrow set of natural phenomena, in contrast to a **Statistical Hypothesis**, that is specific to our experimental design. We generally design an study comprising of one or multiple experiments to test the research hypothesis we developed based on a set of observations. However, when we plan that experiment we make specific choices about the variables we are using and for our data analysis we need to define statistical hypothesis that allow us to make predictions specifically about our **outcome** or **dependent variable** and test those mathematically. This will always have two parts: A **Null hypothesis** $H_{O}$ that states that there is no relationship or pattern between the independent and the dependent variables and an **Alternative hypothesis** $H_{a}$ which stats that there is a relationship or pattern between the independent and dependent variable.
+
+Let's apply this to our example:
+
+Our **Biological hypothesis** is "*Allicin repels slugs because it is toxic to them*". Now that we have identified our variables and how we are going to measure them, we can restate this as a **statistical hypothesis** and make **predictions** regarding the outcome of our experiment.
+
+We can state our **Null hypothesis** $H_{O}$ as "The presence of allicin does not affect the presence of slugs" and then make a set of predictions assuming this is true:
+
+-   The number observed slugs will be the same both when plants are or are not protected by an allicin border.
+-   The number of impacted plants will be the same both when plants are or are not protected by allicin border.
+-   The level to which plants are impacted will be the same both when plants are or are not protected by allicin border.
+
+We also need to formulate our **Alternative hypothesis** $H_{a}$ as "*The presence of allicin impacts the presence of slugs.*" and then make a series of predictions assuming this true.
+
+-   The number observed slugs will be lower when plants are protected by an allicin border.
+-   The number of affected plants will be lower when plants are protected by an allicin border.
+-   The level to which plants are impacted will be lower when plants are protected by an allicin border.
+
+::: callout-note
+The fact that we were able to state both a null and alternative hypothesis ensures that our hypothesis is falsifiable.
+:::
+
+**Our next step is to design an experiment that tests our statistical hypothesis.**
+
+Our experiment should include at least two groups or **treatments**[^f01_experim-design-8], the **control** and the **experimental** groups. The groups should be completely the same, with the exception that an **experimental group** receives a treatment while the **control** does not. Comparing these two groups allows us to determine if the treatment has had an effect. You should always include a control group to have a baseline of what the outcome should look like if there is no effect (**negative** control) or if there is an effect (**positive** control)[^f01_experim-design-9]. Depending on the complexity of your hypothesis and the number of dependent and independent variables you are testing, your design may comprise several experimental groups, each with a different treatment.
+
+[^f01_experim-design-8]: We use the term **treatment** to describe a set of conditions.
+
+[^f01_experim-design-9]: It's important to keep in mind that positive and negative have nothing to do with "good" or "bad" in this context but rather presence/absence of an effect.
+
+Let's think about our example. It's always important to consider what you are trying to test to figure out how to design the experiment. For example, we would not want a set up where we have a number of slugs and we expose them to Allicin to determine if it kills them or makes them sick - We already know that Allicin is toxic to slugs. We want to know whether the presence of Allicin repels slugs, i.e. if they get close to something that is emiting Allicin (e.g. onions), can they sense that from a "safe distance" and stay clear.
+
+Let's assume that we have an outdoor space in which we can plant multiple small plots. Our independent variable is "Allicin presence" so we would need to create treatments that differ in whether or not Allicin is present. We can't do this by planting onions or leeks - because then we still wouldn't know if it is the Allicin or something else in the Allium plants that is repeling the slugs. So we need to have isolated Allicin, perhaps diluted in water that would allow us to spray a border either around the entire experimental plot. We would want to do some research to figure out what concentrations would be comparable to onions or similar being present. Then as our control, we would have plots without a Allicin border.
+
+**With our treatments in place, we need to identify variables that we need to control for to ensure that if we do see a difference between our experimental and control treatments we can ensure that they are due to the independent variable.**
+
+For our example, if we are outdoors we have a wide range of variables like sunlight/shade, soil conditions, temperature, and other weather conditions to consider. Those are variables that we cannot control, however, ideally we can chose our plot locations so we can reasonably assume that they are **consistent** across treatments. In addition, we would want to make sure that we are running our experiment during a time of year where it e.g. isn't too cold for slugs to be out and about. Better yet, we might see if we cannot get access to a greenhouse where we *can* control these conditions.
+
+Ideally, we would also control the number of slugs. This might require hiring a bunch of 5-year olds to go slug collecting and then we could "seed" the number of slugs around each plot. Again, this might be easier to do in a greenhouse.
+
+The type of plant being grown and potentially snacked on by slugs is also a variable that we probably want to control. The most straightforward set up would be to identify a plant that we know slugs like to eat[^f01_experim-design-10] and then have each plot be set up in an identical way.
+
+[^f01_experim-design-10]: This is important because otherwise we don't know whether there was no slug damage/presence because of that plant itself or the Allicin treatment.
+
+**As a final step, we need to account for sample size, replicates, randomization to ensure that our results are reliable and representative.**
+
+A key component of experimental design is ensuring the **sample size** is sufficiently large that we can be confident that our results can be generalized to the population as a whole. There is always potential for naturally occurring variation despite our best efforts to control all the variables that we are not testing for. For example some of our slugs might just be lazy. So we would want to have a sufficiently large sample size of slugs to ensure that we can account for this. Similarly, we would want to make sure that we include a a consistent number of plants in each plot and ensure that that number is large enough to account for variability.
+
+We would also want to decide if we want to have just one control and one experimental treatment or whether it makes more sense to have **replicates**, i.e. we set up multiple plots for each type of treatment. That way if there was e.g. variability in the soil that meant that the Allicin was absorbed/dispersed differently that variability would have less of an effect when we combine results across plots in the same treatment category.
+
+Let's say that we decide to have three control and three experimental treatments, then we would need to consider how we want them laid out in our greenhouse or outdoor space. You could have all of the control plots on one side and all of the experimental plots on the other. But what if the greenhouse is warmer on one side compared to the other? This could affect the activity of the slugs. In this case we would want to **randomize** the placement of our plots to minimize those impacts. Another aspect of randomization would be that if we had for example collected our slugs from several different locations we would want to randomly assign those to different plots.
+
+At this point, we have thought through all the important aspects of our experimental design that we have though through to optimize our experimental design and ensure all of these aspects are accounted for.
+
+-   Does my design allow me to systematically and precisely manipulate the independent variable(s)?
+-   Am I able to precisely measure the dependent variably?
+-   Have I made sure to control any confounding variables?
+
+## Conducting Field and Observational Experiments {#sec-conducting-field-and-observational-experiments}
+
+In many biological fields, including ecology and evolution, we more commonly use observational experiments or studies compare to the controlled design. Here, we observe and record natural phenomena without manipulating any variables. The studies are still carefully designed and follow the scientific method. However, in a controlled experiment we are able to effectively isolate the effect of the independent variable from other factors because we are able to include both an experimental group that is exposed to the treatment and a control group that is not, while controlling all other variables. By contrast, in an observational experiment we generally cannot intervene to control or change the conditions to create a control group because it is impractical, impossible or frankly, unethical to manipulate variables directly[^f01_experim-design-11]. Our first example exploring the relationship of bird nests and predator presence would likely fall into this category. Observational experiments give us important insights into existing patterns and relationships in the natural environment and how phenomena play out in the real world. However, results are frequently a bit messier or more ambiguous and it is more difficult to establish causality because a lack of experimental control means that there are more challenges due to the presence of confounding variables and difficulties isolating just one independent variable to test for.
+
+[^f01_experim-design-11]: Sometimes you will hear somebody describe certain field experiments as a "natural laboratory" because there is a naturally occurring situation that mimics how we would design a controlled experiments. For example, islands or lakes can create scenarios where e.g. predators are only present in one location and so it functions as a "natural control group". However, even then it is not possible to match all variables e.g. temperature or other abiotic factors the way we can in a controlled setting.

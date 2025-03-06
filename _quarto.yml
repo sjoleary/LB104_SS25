@@ -52,7 +52,12 @@ book:
     
     - part: F_Exp-Design-Analysis.qmd
       chapters:
-        - F01_writing-report.qmd
+        - F01_experim-design.qmd
+        - F02_data-management.qmd
+        - F03_posit.qmd
+        - F04_descript-stats.qmd
+        - F05_inferent-stats.qmd
+        - F06_writing-report.qmd
 
 
     - part: Z_Appendix.qmd

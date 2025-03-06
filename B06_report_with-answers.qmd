@@ -1,4 +1,4 @@
-# Communicate your findings {#sec-results}
+# Communicate your findings {#sec-microbe-results}
 
 ```{r}
 #| label: setup
@@ -111,8 +111,6 @@ The next step is write your methods section that elaborates on your summary[^b06
 In the space below take a few notes to describe the Laboratory Setting/Experimental Conditions for this study.
 :::
 
-.
-
 ::: {.callout-note title="Answer" collapse="true"}
 This one is a bit tricky if you have not seen an example before. It is much more straightforward for a field study that you would be able to give an exact location and description. You will find that for controlled experiments in a lab section there might not be an explicit section, rather that information might be noted along with the individual components of experimental design.
 
@@ -122,7 +120,7 @@ Here is an example if it were a stand alone section:
 
 > This experiment was conducted in a controlled laboratory environment at Saint Anselm College under sterile conditions to minimize contamination. Milk samples were stored at room temperature (approximately 22C) in an designated area free from sunlight and then stored in a refrigerator (approximately 6C) until further use. Microbial culturing and slide preparation were performed under sterile conditions and observations of microbial growth conducted using a compound light microscope and standard microbiological plating techniques.
 
-You can see that there are several statements that would be better placed in the context of e.g. describing the culturing step and you might only retain the first sentence.
+You can see that there are several statements that would be better placed in the context of e.g. describing the culturing step and you might only retain the first sentence. For lab studies it is not unusual to have the "Laboratory Setting" and "Experimental Design" sections combined.
 :::
 
 .
@@ -148,7 +146,7 @@ Here is an example of what this section might look like in paragraph form.
 
 > Milk samples (whole milk, chocolate milk, buttermilk, and oat milk) were left at room temperature for 1, 4, and 8 days to observe changes in pH, microbial growth, and physical characteristics. At each time point, the pH of each sample was measured using a digital pH meter. Samples were also examined for changes in odor, consistency, and visible signs of spoilage.
 
-> To assess microbial growth, a small amount of each milk sample was streaked onto tryptone glucose yeast extract (TGY) agar plates. Plates were incubated at 37C for 48, and microbial colonies were observed for overall abundance and fungal growth. Additionally, bacterial samples were heat-fixed onto microscope slides and stained for visualization under a compound microscope. Bacteria were classified based on morphology as cocci, bacilli, or spirilla, and yeast and mold presence were recorded.
+> To assess microbial growth, a small amount of each milk sample was streaked onto tryptone glucose yeast extract (TGY) agar plates. Plates were incubated at 37C for 48 hours and then stored in a refrigerator to halt growth. The microbial colonies were assessed for overall abundance and fungal growth. Additionally, bacterial samples were heat-fixed onto microscope slides and stained for visualization under a compound microscope. Bacteria were identified based on morphology as cocci, bacilli, or spirilla, and yeast and mold presence were recorded.
 :::
 
 .
@@ -168,11 +166,11 @@ How you processed your data and produced your results is a key component of your
 .
 
 ::: {.callout-note title="Answer" collapse="true"}
-Again, you would include the components relevant to your hypothesis, so in my example sugar results were not analyzed.
+Again, you would include only the components relevant to your hypothesis, so in my example sugar results were not analyzed.
 
 Here is an example of what a completed paragraph might look like:
 
-> Overall microbial growth, fungal growth, and observation of yeast and bacteria cells were categorized using qualitative descriptors (none, rare, moderate, abundant, extensive) and visualized as a heat plot to identify trends over time and between different milk types. Changes in pH over time were plotted using to compare differences among the different milk types.
+> Overall microbial growth, fungal growth, and observation of yeast and bacteria cells were categorized using qualitative descriptors (none, rare, moderate, abundant, extensive) and visualized as a heat plot to identify trends over time and between different milk types. Changes in pH over time were plotted using a line plot to compare differences among the different milk types.
 :::
 
 .
@@ -198,19 +196,19 @@ Look over your results and identify the individual components (variables) you wi
 .
 
 ::: {.callout-note title="Answer" collapse="true"}
-Compare these two set of (made up) results - note the "broad trend" and "notable highlights" in each to understand the format.
+Compare these two set of (made up) results - note the "broad trend" and "notable highlights" in each to understand the format. Note that this description of the results are "generic" to serve as an example, they are not necessarily representative of your specific results.
 
 **Example of results supporting hypothesis:**
 
-> Across all milk types, observable changes in odor, consistency, and microbial growth became more pronounced over time. Dairy milks (whole milk, chocolate milk, and buttermilk) exhibited progressive thickening and curdling by day 8, whereas oat milk remained liquid throughout the experiment. Notably, oat milk developed a slimy texture rather than forming visible curds, supporting the hypothesis that its lack of casein prevents coagulation. In terms of odor, whole and chocolate milk exhibited a strong sour smell by day 4, intensifying by day 8. Buttermilk, initially tangy, became more pungent over time, while oat milk developed a mildly musty odor without the strong sour notes observed in dairy milk.
+> Across all milk types, observable changes in odor, consistency, and microbial growth became more pronounced over time. Dairy milks (whole milk, chocolate milk, and buttermilk) exhibited progressive thickening and curdling by day 8, whereas oat milk remained liquid throughout the experiment. Notably, oat milk developed a slimy texture rather than forming visible curds. In terms of odor, whole and chocolate milk exhibited a strong sour smell by day 4, intensifying by day 8. Buttermilk, initially tangy, became more pungent over time, while oat milk developed a mildly musty odor without the strong sour notes observed in dairy milk.
 >
-> pH measurements showed a steady decline in all dairy milks over time, with buttermilk exhibiting the lowest final pH (4.2) by day 8, followed by whole milk (4.5) and chocolate milk (4.6). In contrast, oat milk maintained a higher pH throughout the study, only decreasing slightly from 6.7 to 6.3. This supports the hypothesis that oat milk does not experience the same acidification as dairy milks, likely due to differences in microbial fermentation.
+> pH measurements showed a steady decline in all dairy milks over time, with buttermilk exhibiting the lowest final pH (4.2) by day 8, though whole milk (4.5) and chocolate milk (4.6) were only slightly higher. In contrast, oat milk maintained a higher pH throughout the study, only decreasing slightly from 6.7 to 6.3 (Figure 1).
 >
-> All milk types exhibited microbial growth on TGY agar, with dairy milks showing abundant bacterial colonies by day 4 and extensive fungal growth by day 8. Chocolate milk and whole milk exhibited the most fungal growth, forming visible mold on the plates. In contrast, oat milk showed moderate bacterial growth but limited fungal presence. Similarly, heat-fixed slides revealed abundant cocci and bacilli in dairy milk samples, whereas oat milk samples contained fewer bacteria overall.
+> All milk types exhibited microbial growth on TGY agar, with dairy milks showing abundant bacterial colonies by day 4 and extensive fungal growth by day 8. Chocolate milk and whole milk exhibited the most fungal growth, forming visible mold on the plates (Figure 2). In contrast, oat milk showed moderate bacterial growth but limited fungal presence. Similarly, heat-fixed slides revealed abundant cocci and bacilli in dairy milk samples across all time points, whereas oat milk samples contained fewer bacteria overall (Figure 3).
 
 **Example of results not supporting hypothesis:**
 
-> Dairy milks developed curds and exhibited progressive thickening over time. Similarly, oat milk showed evidence of coagulation by day 8, forming small clumps and a thicker consistency. Whole and chocolate milk exhibited increasingly sour smells, while buttermilk retained a strong tangy smell. Oat milk developed an pungent odor by day 8. Oat milk exhibited a large drop in pH, declining from 6.7 to 5.2 by day 8, similar to that observed in dairy milks. Finally, TGY plates revealed robust bacterial growth in all milk types, with dairy milks showing extensive microbial colonization, though oat milk also exhibited considerable fungal growth by day 8. Heat-fixed slides showed a diverse bacterial community in all samples.
+> Dairy milks developed curds and exhibited progressive thickening over time. Similarly, oat milk showed evidence of coagulation by day 8, forming small clumps and a thicker consistency. Whole and chocolate milk exhibited increasingly sour smells, while buttermilk retained a strong tangy smell. Oat milk developed an pungent odor by day 8. Oat milk exhibited a large drop in pH, declining from 6.7 to 5.2 by day 8, similar to that observed in dairy milks (Figure 1). Finally, TGY plates revealed robust bacterial growth in all milk types (Figure 2). Dairy milks showed extensive fungal colonization by day 4, though oat milk also exhibited considerable fungal growth by day 8 (Figure 3). Heat-fixed slides showed a diverse bacterial community in all samples initially dominated by cocci which were gradually replace by bacilli (day 4), and finally yeast cells (day 8; Figure 4).
 :::
 
 .
@@ -225,13 +223,11 @@ While your written description alone should provide all the needed information w
 Go back over your results and decide which figures and/or tables you want to include and list them in the space below, be specific.
 :::
 
-.
-
 ::: {.callout-note title="Answer" collapse="true"}
 -   Scatter/lineplot summarizing the change of pH over time for each milk type included in the data set.
--   heatplot showing overall microbial growth
--   heatplot showing fungal growth
--   heatplot with individual panels for each milk type showing relative abundance for the different bacterial and yeast cell types.
+-   Heatplot showing overall microbial growth for all milk types for each time points.
+-   Heatplot showing fungal growth for all milk types for each time points.
+-   Heatplot with individual panels for each milk type showing relative abundance for the different bacterial and yeast cell types.
 :::
 
 .
@@ -317,6 +313,26 @@ In the space below take some notes on what your key discussion points will be.
 \[Take some notes\]
 :::
 
+::: {.callout-note title="Answer" collapse="true"}
+**Discussion example if results support the hypothesis:**
+
+The absence of curdling in oat milk aligns with our expectation that casein, the primary protein responsible for curd formation in dairy milk, is largely absent in oat milk. Instead of forming curds, oat milk became more viscous, possibly due to microbial production of exopolysaccharides. Similar findings have been reported in studies on plant-based milk fermentation, where polysaccharide-producing bacteria lead to increased viscosity rather than curdling (Citation). Additionally, our pH measurements support the hypothesis that oat milk does not experience the same level of acidification as dairy milk. While dairy milks dropped to a pH between 4.2 and 4.6 by day 8, oat milk maintained a higher pH (above 6.3), which likely contributed to the lower fungal growth observed on TGY plates. Since many spoilage-associated fungi thrive in acidic environments, the lack of significant pH reduction in oat milk may have limited fungal colonization.
+
+While our results strongly support our hypotheses, there are some limitations to consider. Our study did not control for initial microbial load, which could have varied between milk types and influenced spoilage rates, though all milks used in this experiment were pasteurized. Additionally, we did not perform molecular identification of microbes, meaning the specific species responsible for spoilage remain unknown. Similarly, our experiment lacks replicates and therefore only provides initial evidence for our hypothesis. Differences in oat milk formulations (e.g., added stabilizers or fortifications) could also impact spoilage characteristics and should be investigated in future studies.
+
+These findings contribute to broader questions of food safety and shelf stability in plant-based milk alternatives. Understanding the spoilage patterns of oat milk compared to dairy milk can help improve storage recommendations and product formulations. Future research should explore other non-dairy milks such as nut milks determine if there are similar differences. Overall, our study highlights the importance of protein composition and pH stability in determining the physical and microbial changes that occur during milk spoilage.
+
+**Discussion example where results do not support the hypothesis:**
+
+The unexpected curdling in oat milk suggests that factors beyond casein content may influence coagulation. While casein is essential for curd formation in dairy milk, oat milk contains other proteins and carbohydrates that may interact with spoilage-associated microbes to alter texture. The increased acidity of oat milk, which dropped to a pH of 5.2 by day 8, may have contributed to curdling through protein aggregation or microbial metabolic activity. This contradicts our initial assumption that oat milk would maintain a stable pH due to differences in fermentation processes. One possible explanation is that oat milk contains fermentable carbohydrates that certain microbes can metabolize to produce organic acids, leading to acidification similar to that observed in dairy milk.
+
+The observation that oat milk developed significant fungal growth by day 8 also challenges our hypothesis that a higher pH would limit fungal colonization. This result suggests that other factors, such as moisture content or microbial competition, may influence fungal growth more than pH alone. Since oat milk lacks the natural antimicrobial properties of dairy (e.g., lactoferrin), it is possible that spoilage-associated fungi were able to proliferate despite a relatively higher pH. Our findings highlight the complexity of microbial succession in different milk types and suggest that oat milk may not be as resistant to fungal spoilage as originally hypothesized.
+
+Several limitations could explain these unexpected findings. The microbial communities present in each milk type were not controlled at the start of the experiment, meaning differences in initial contamination could have influenced spoilage patterns. Additionally, variations in oat milk formulations (e.g., sugar content or added stabilizers) may have impacted microbial metabolism and growth. Future studies should include a broader range of plant-based milks, for example nut milks to determine whether these findings are specific to oat milk or apply more generally to non-dairy alternatives.
+
+Despite these unexpected results, our study contributes to the broader understanding of food spoilage in dairy and plant-based alternatives. The findings suggest that oat milk undergoes spoilage processes that may be more similar to dairy milk than previously thought, with implications for storage recommendations and microbial safety. Future research should investigate the specific microbial communities responsible for oat milk spoilage and whether formulation adjustments can enhance its shelf stability. Understanding these processes is critical for improving food safety and extending the shelf life of plant-based dairy alternatives.
+:::
+
 ### Introduction {#sec-introduction}
 
 **Your introduction should establish the context the reader needs to understand the topic.**
@@ -367,10 +383,10 @@ Go back over your notes/assignments. You have previously noted key differences a
 Following paragraph on ecological succession
 
 **Second Paragraph (for Hypothesis 1: Oat Milk and Curdling)**\
-Milk serves as a nutrient-rich medium that supports microbial growth, leading to biochemical changes that influence texture, odor, and acidity. In dairy milk, lactic acid bacteria ferment lactose, lowering pH and causing casein proteins to coagulate into curds, a key step in both intentional processes like cheese-making and unintentional spoilage. However, plant-based milks, such as oat milk, contain different carbohydrates and proteins, potentially altering the microbial succession process and physical changes during spoilage. This study examines whether oat milk undergoes curdling similar to dairy milk or instead develops a slimy texture due to the absence of casein.
+Milk serves as a nutrient-rich medium that supports microbial growth, leading to biochemical changes that influence texture, odor, and acidity. In dairy milk, lactic acid bacteria ferment lactose, lowering pH and causing casein proteins to coagulate into curds, a key step in both intentional processes like cheese-making and unintentional spoilage. However, plant-based milks, such as oat milk, contain different carbohydrates and proteins, potentially altering the microbial succession process and physical changes during spoilage. As a result, we can expect oat milk to not undergo a curdling process similar to dairy milk. Rather, oat milk may develop a slimy texture due to the absence of casein.
 
 **Second Paragraph (for Hypothesis 2: Oat Milk and Fungal Growth)**\
-The pH of milk plays a critical role in shaping microbial succession, influencing which organisms can thrive as fermentation progresses. In dairy milk, lactose fermentation by *Streptococcus* and *Lactobacillus* leads to acidification, which can create conditions conducive to fungal growth at later stages of spoilage. Oat milk, which lacks lactose, is expected to experience less acidification, potentially limiting fungal colonization. This study investigates whether differences in pH change between dairy and oat milk influence the extent of fungal growth over time.
+The pH of milk plays a critical role in shaping microbial succession, influencing which organisms can thrive as fermentation progresses. In dairy milk, lactose fermentation by *Streptococcus* and *Lactobacillus* leads to acidification, which can create conditions conducive to fungal growth at later stages of spoilage. Oat milk, which lacks lactose, is expected to experience less acidification, potentially limiting fungal colonization. As a result we would expect differences in the pH changes between dairy and oat milk which would influence the extent of fungal growth over time.
 
 Following paragraph on Food Spoilage:
 
@@ -404,7 +420,7 @@ Draft a working title for your report below.
 ::: {.callout-note title="Answer" collapse="true"}
 Here are examples: classify them as too broad or too narrow in scope and as being the category of "what was done" or "what was found".
 
--   Food Spoilage of Plant-based milks
+-   "Food Spoilage of Plant-based milks"
 -   "Microbial Growth and Physical Changes in Dairy and Non-Dairy Milks"
 -   "Observing Fungal Growth in Oat Milk at Day 8"
 -   "Higher Fungal Growth Observed in Dairy Milk on TGY Plates"

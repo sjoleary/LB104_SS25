@@ -10,134 +10,138 @@ After completing this set of activities, you should be able to design a bioassay
 
 ## Design your Experiment
 
-**1. Identify the Hypothesis**\
+### 1. Identify the Hypothesis
+
 Start by thinking about what you want to test. Write down a specific hypothesis using the **If-Then-Because** format. Consider the deicers available and how they might affect radish seed germination.
 
--   **Questions to consider**:
+**Questions to consider**:
 
-    -   What substances (NaCl, MgCl₂, CaCl₂, urea, beet juice, etc.) will you test?
-    -   What do you predict will happen to seed germination or seedling growth based on the substance you are testing?
-    -   Why do you think the substance will affect germination or growth?
+-   What substances (NaCl, MgCl₂, CaCl₂, urea, beet juice, etc.) will you test?
+-   What do you predict will happen to seed germination or seedling growth based on the substance you are testing?
+-   Why do you think the substance will affect germination or growth?
 
 ::: {.callout-caution title="Your Answer Here"}
 \[restate the hypothesis we have agreed on here\]
 :::
 
-**2. Identify Independent and Dependent Variables**
+### 2. Identify Independent and Dependent Variables
 
 -   **Independent (Explanatory) Variable**: What factor will you manipulate in your experiment?
 -   **Dependent (Response) Variable**: What will you measure to assess the effect of the independent variable?
--   **Questions to consider**:
-    -   What specific substance or concentration will you manipulate?
-    -   How will you assess outcome?
 
 ::: {.callout-caution title="Your Answer Here"}
 \[Take some notes\]
 :::
 
-**3. How Will You Measure the Dependent Variable?**
+### 3. Determine How You Will Measure the Dependent Variable
 
--   Define how you will quantify the dependent variable.
--   **Questions to consider**:
-    -   What will you measure to assess seed germination (e.g., number of seeds germinated)?
-    -   What will you measure to assess seedling growth (e.g., seedling height, root length)?
-    -   What units of measurement will you use (e.g., number of seeds, millimeters for seedling growth)?
+Define how you will quantify the dependent variable.
+
+**Questions to consider**:
+
+-   What will you measure to assess seed germination (e.g., number of seeds germinated)?
+-   What will you measure to assess seedling growth (e.g., seedling height, root length)?
+-   What units of measurement will you use (e.g., number of seeds, millimeters for seedling growth)?
 
 ::: {.callout-caution title="Your Answer Here"}
 \[Take some notes\]
 :::
 
-**4. Experimental Treatments**\
+### 4. Experimental Treatments
+
 Think about how you will set up your experimental treatments. What different conditions will you test?
 
--   **Questions to consider**:
+**Questions to consider**:
 
-    -   What different concentrations or types of substances will you use (e.g., 0%, 2%, 5%, and 10% NaCl)?
-    -   Will you have a control treatment with no substance?
-    -   Are there multiple types of substances?
-    -   How many different treatment groups will you have?
+-   How many different treatment groups will you have?
+-   Are there multiple types of substances?
+-   What different concentrations or types of substances will you use?
+-   Will you have a control treatment with no substance?
+-   Will you have a control treatment with a known outcome?
 
 ::: {.callout-caution title="Your Answer Here"}
 \[Take some notes\]
 :::
 
-**5. Control Variables**\
+### 5. Identify Confounding Variables to Control for
+
 What variables could influence the results of your experiment that you need to keep constant across all treatments?
 
--   **Questions to consider**:
+**Questions to consider**:
 
-    -   Will you use the same type of growing medium and seed variety for all treatments?
-
-    -   How will you control for light and temperature conditions?
-
-    -   How will you ensure the water volume is consistent across all treatments?
-
-    -   Will you provide similar levels of moisture or water to each treatment group?
+-   Will you use the same type of growing medium and seed variety for all treatments?
+-   How will you control for light and temperature conditions?
+-   How will you ensure the water volume is consistent across all treatments?
+-   Will you provide similar levels of moisture or water to each treatment group?
 
 ::: {.callout-caution title="Your Answer Here"}
 \[Take some notes\]
 :::
 
-**6. Sample Size and Replication**\
+### 6. Sample Size and Replication
+
 Think about how many replicates you will need for each treatment to obtain reliable results.
 
--   **Questions to consider**:
+**Questions to consider**:
 
-    -   How many radish seeds will you use in each treatment group?
-
-    -   How many petri dishes will you use for each treatment?
-
-    -   Will you have multiple replicates for each concentration or type of substance?
+-   How many radish seeds will you use in each treatment group?
+-   How many petri dishes will you use for each treatment?
+-   Will you have multiple replicates for each concentration or type of substance?
 
 ::: {.callout-caution title="Your Answer Here"}
 \[Take some notes\]
 :::
 
-**7. Randomization**\
+### 7. Randomization
+
 To avoid bias, you should randomize the placement of your treatments and the assignment of seeds to petri dishes.
 
--   **Questions to consider**:
+**Questions to consider**:
 
-    -   How will you randomize the placement of petri dishes or the assignment of seeds to each treatment group?
-    -   How can you ensure there is no researcher bias in assigning substances to each treatment?
+-   How will you randomize the placement of petri dishes or the assignment of seeds to each treatment group?
+-   How can you ensure there is no researcher bias in assigning substances to each treatment?
 
 ::: {.callout-caution title="Your Answer Here"}
 \[Take some notes\]
 :::
 
-**8. Duration of the Experiment**\
+### 8. Duration of the Experiment
+
 Decide how long you will run the experiment to observe the effects of the substances on seed germination and growth.
 
--   **Questions to consider**:
+**Questions to consider**:
 
-    -   How many days will you monitor the germination of seeds?
-    -   When will you measure seedling height and when will you record your final observations?
+-   How many days will you monitor the germination of seeds?
+-   When will you measure seedling height and when will you record your final observations?
 
 ::: {.callout-caution title="Your Answer Here"}
 \[Take some notes\]
 :::
 
-**9. Data Collection and Analysis**\
+### 9. Data Collection and Analysis
+
 Determine how you will organize your data and analyze the results.
 
--   **Questions to consider**:
-    -   What specific data will you collect for each treatment group?
+**Questions to consider**:
 
-    -   How will you calculate averages or means for each treatment?
-
-    -   Will you perform statistical tests to compare differences between treatment groups?
+-   What specific data will you collect for each treatment group?
+-   How will you record your data in a consistent fashion?
+-   How will you calculate averages or means for each treatment?
+-   Will you perform statistical tests to compare differences between treatment groups?
 
 ::: {.callout-caution title="Your Answer Here"}
 \[Take some notes\]
 :::
 
-**10. Reflection and Considerations**\
-Reflect on the potential limitations of your experiment and how you can improve the design.
+### 10. Reflection and Considerations
 
--   **Questions to consider**:
-    -   What challenges do you anticipate in executing your experiment (e.g., controlling variables, ensuring consistency)?
-    -   How will you handle any unexpected outcomes, such as seeds failing to germinate in certain treatments?
-    -   What improvements could be made to your design to make the results more reliable?
+Measure twice. Cut once. Reflect on the potential limitations of your experiment and how you can improve the design.
+
+**Questions to consider**:
+
+-   What challenges do you anticipate in executing your experiment (e.g., controlling variables, ensuring consistency)?
+-   How will you handle any unexpected outcomes, such as seeds failing to germinate in certain treatments?
+-   What improvements could be made to your design to make the results more reliable?
 
 ::: {.callout-caution title="Your Answer Here"}
 \[Take some notes\]
@@ -147,4 +151,134 @@ Reflect on the potential limitations of your experiment and how you can improve 
 
 ### Create the deicer solutions ("meltwater") you want to test
 
+Deionized (DI) water is purified using ion exchange resins that remove charged particles (ions) like calcium (Ca²⁺), magnesium (Mg²⁺), sodium (Na⁺), and chloride (Cl⁻) but may still contain organic molecules, bacteria, or particulates, unless additional filtration is applied.
+
+The large carboy in our lab contains reverse osmosis water which is purified using a semi-permeable membrane that removes most dissolved salts, minerals, bacteria, and organic molecules. Typically this process retains some dissolved gases and small molecules that pass through the membrane. RO-treated water is often used in drinking water systems, laboratories, and industrial applications where high-purity water is needed.
+
+By using RO water as our negative control and to create our individual solutions, the experiment remains consistent, reproducible, and scientifically valid, allowing for clear conclusions about how different deicers affect seed germination.
+
+-   It removes variability as tap water contains varying levels of minerals (e.g., calcium, magnesium, and chlorine), which could unintentionally affect seed germination and growth. Using RO water ensures that differences in plant response are due to the experimental treatments, not unknown water chemistry. \* Using it as a negative control creates a standardized baseline. Because it contains no ions, RO water provides a neutral reference point for comparing the effects of different deicers. If plants in the control group show poor germination, it indicates that something other than the treatment (e.g., experimental setup) may be affecting growth.
+-   Finally it ensures Accurate Solution Preparation. When dissolving salts or deicers to create treatment solutions, using RO water prevents additional dissolved ions from interfering with concentration calculations. This ensures that the final solution contains only the intended compounds at the correct levels.
+
+#### Prepare Solutions from Solid Deicers
+
+**Gather Materials:**
+
+-   Solid deicer
+-   Microbalance
+-   Weigh boats or small containers
+-   1L beaker (or appropriate container)
+-   Magnetic stir bar and stir plate
+-   Reverse osmosis (RO) water
+-   Pipettes or graduated cylinders for measuring water
+-   Labeling tape and marker
+
+**Weigh the Required Amount of Solid Deicer:**
+
+-   Place a clean weighboat on the microbalance.
+-   Use the microbalance to weigh out the precise amount of deicer needed for your desired concentration.
+
+**Dissolve the Deicer in RO Water:**
+
+-   Pour 800 mL of RO water into a 1L beaker.
+-   Place the magnetic stir bar inside and set the beaker on a stir plate.
+-   Slowly add the weighed deicer to the water while stirring.
+-   Increase stirring speed as needed to dissolve completely. If necessary, gently heat (below 40°C) to speed up dissolution.
+
+**Adjust Volume and Label:**
+
+-   Once fully dissolved, add RO water to bring the final volume to 1L.
+-   Remove the stir bar using a magnetic retriever.
+-   Label the solution with: deicer type, concentration, date, and your initials.
+
+#### Preparing Solutions from Liquid Deicer
+
+**Gather Materials:**
+
+-   Liquid deicer
+-   Graduated cylinder (for precise volume measurement)
+-   1L beaker
+-   Magnetic stir bar and stir plate
+-   RO water
+-   Pipettes for small-volume adjustments
+-   Labeling tape and marker
+
+**Measure the Required Volume of Liquid Deicer:**
+
+-   Using a graduated cylinder, measure the necessary amount of liquid deicer for your stock solution.
+
+**Dilute with RO Water:**
+
+-   Pour 800 mL of RO water into a 1L beaker on a stir plate.
+-   Add the measured liquid deicer slowly while stirring.
+-   Let the solution mix thoroughly. If needed, slightly warm the solution to improve mixing, but do not overheat.
+
+**Adjust Volume and Label:**
+
+-   Bring the total volume to 1L using additional RO water.
+-   Label the solution clearly with deicer type, concentration, date, and your initials.
+
+#### Creating Serial Dilutions (1-in-10 for Accuracy)
+
+*Instead of making each solution separately, you can use serial dilutions to ensure accuracy, especially for very low concentrations.*
+
+**Prepare the First (Stock) Solution:**
+
+-   Use the steps above to prepare the highest concentration solution.
+-   Label this as the stock solution.
+
+**Prepare the 1:10 Dilution:**
+
+-   Take 10 mL of the stock solution using a pipette or graduated cylinder.
+-   Add it to a new beaker containing 90 mL of RO water.
+-   Stir well on the stir plate.
+
+**Repeat the Dilution Process as Needed:**
+
+-   For 10 mM, take 100 mL from the 100 mM solution and add it to 900 mL of RO water.
+-   Continue diluting in this manner to obtain 1 mM, 0.1 mM, etc.
+
+**Label All Dilutions:**
+
+Ensure each dilution is labeled with the deicer type, final concentration, and dilution factor.
+
 ### Assemble your bioassays.
+
+**Materials Needed:**
+
+Sterile petri dishes (one per treatment and replicate) Paper towels (cut to fit petri dishes, three layers per dish) Prepared deicer solutions (various treatments) Reverse osmosis (RO) water (for control treatment) Pipettes or graduated cylinders (to measure liquid) Radish seeds Soap and water for handwashing Labeling tape and marker
+
+**Prepare the Petri Dishes**
+
+-   Take one sterile petri dish for each treatment and replicate.
+-   Cut paper towels to fit inside the dish.
+-   Place three layers of paper towels in the bottom of each petri dish.
+
+**Label Each Petri Dish Clearly**
+
+-   Use labeling tape and a marker to label each petri dish with:
+
+    -   Treatment type (deicer/concentration)
+    -   Replicate number (e.g., Rep 1, Rep 2, etc.)
+    -   Date of setup
+    -   Your initials
+    -   Your section number
+
+**Add Treatment Solutions**
+
+-   Use a pipette or graduated cylinder to measure 10 mL of the assigned treatment solution.
+-   Evenly distribute the liquid over the paper towels to ensure they are fully saturated but not pooling.
+-   For the control treatment, use 10 mL of RO water.
+
+**Wash Hands Before Handling Seeds**
+
+-   Wash hands thoroughly with soap and water to remove any residues.
+-   Rinse well to ensure no soap or contaminants remain.
+-   Dry hands with a clean paper towel before handling seeds.
+
+**Add Seeds to the Petri Dish**
+
+-   Place 20 radish seeds evenly spaced on the damp paper towels.
+-   Avoid clustering seeds too closely together.
+
+Place the assembled petri dishes in a drawer or other dark location to prevent microbial growth and photosynthesis. Ensure that dishes remain undisturbed for the duration of the experiment.

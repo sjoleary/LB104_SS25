@@ -2,4 +2,6 @@
 
 After completing this set of activities, you should be able to:
 
-
+-   assess what information is contained in a data set.
+-   decide what type of descriptive statistics to apply according to whether a variable is continuous or categorical.
+-   decide whether to apply a t-test or a $\chi^{2}$-test depending on what type of metrics you are comparing.

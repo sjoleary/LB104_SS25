@@ -1,5 +1,93 @@
 # Describe and interpret your data
 
-After completing this set of activities, you should be able to:
+-   describe your results as broad trends and notable highlights.
+-   identify figures and tables that will serve the narrative to illustrate your results.
+-   compare your results to a hypothesis to determine whether or not they support the hypothesis.
+-   discuss and interpret results by evaluating the context, acknowledging constraints, and justifying conclusions.
 
+## Describe your results
 
+::: {.callout-tip title="Give it a try"}
+Identify the components of your results:
+
+-   germination data
+-   seedling length
+
+For each component identify the broad trend and notable highlights. Your written description should give context to your results as you describe the patterns ("increased", "wider", "smaller"). You can reference the [The Academic Phrasebank](https://www.phrasebank.manchester.ac.uk/) for additional phrases that can be helpful.
+
+Develop a narrative that will guide the reader through your results. This is called "lowering the cognitive burden" i.e. how much they have to think for themselves vs you making the results easily accessible and understandable.
+
+Think ahead to your discussion, you will want to set up any key pieces of information that you are going to highlight and discuss.
+:::
+
+.
+
+::: {.callout-caution title="Your Answer Here"}
+\[Take some notes\]
+:::
+
+::: {.callout-tip title="Give it a try"}
+Determine which figures or tables you will include. Consider how they will serve your narrative to make a specific point.
+
+Then for each of your figures/tables write a description caption. This should include a descriptive title, explanation of how data is encoded, and any other information your reader should know to interpret the results.
+:::
+
+.
+
+::: {.callout-caution title="Your Answer Here"}
+\[Take some notes\]
+:::
+
+## Interpret your results
+
+::: {.callout-tip title="Give it a try"}
+So far you have only **described** your results. Now it is time to **interpret** them.
+
+This means that you need to place them back in to the context of your hypothesis and determine whether they support your hypothesis or not of if you cannot come to a definitive conclusion.
+
+A good way to do this is to summarize your key findings in a few sentences and then make a clear statement about how they related to your original hypothesis. You can follow the fill-in-the-blank-formula below.
+
+> In this study, I investigated \[broad question asked/hypothesis tested\]. To achieve this, I \[specific data set + analysis used\]. I found that \[key results\] which \[statement about how this does or does not support your hypothesis\].
+:::
+
+.
+
+::: {.callout-caution title="Your Answer Here"}
+\[Take some notes\]
+:::
+
+## Discuss your results
+
+::: {.callout-tip title="Give it a try"}
+What your discussion looks like will depend on whether or not your results support your hypothesis. Think of this as discussing your results in the context of your **specific research question** for the study.
+
+If your results **support** your hypothesis, you will want to elaborate on *how* they support your hypothesis. A good way to do this is to use the same break down of components you used for your results and for each component demonstrate how it supports your hypothesis. You will want to go back to the "because" component of your hypotheses to use that same reasoning. Even if your results do support your hypothesis you should acknowledge other possible explanations - this is where your controls come into play.
+
+If your results **do not support** your hypothesis you will focus on what may have been incorrect or only partially correct about your reasoning for your initial hypothesis. You should still follow the same structure of your results, it can be helpful to contrast as "*we expected x, we found y - here is a possible explanation*".
+
+Most typically you will have a bit of both, where certain aspects of your results support your hypothesis and others do not, in that case following the structure of your results and discussing each to show how it does/does not support your results, acknowledging constraints and other possible explanations will be the best way to structure your discussion.
+:::
+
+.
+
+::: {.callout-caution title="Your Answer Here"}
+\[Take some notes\]
+:::
+
+::: {.callout-tip title="Give it a try"}
+Finally, you will want to discuss your results in the context of the "big research question" you presented in your opening paragraph.
+
+Here, you should consider the implications of your results in further the overall understanding of that "big question": What do we know now that we didn't know before?
+
+This typically leads to considering next steps, this will include things like refining the methods you applied to the study at hand, expanding your treatments, or designing a study that will allow to you look at a specific aspect of your findings, frequently to make it more conclusive.
+:::
+
+.
+
+::: {.callout-caution title="Your Answer Here"}
+\[Take some notes\]
+:::
+
+## Formulate your conclusions
+
+Remember to wrap up your discussion with a firm conclusion that summarizes the key findings and the interpretation of your study.
