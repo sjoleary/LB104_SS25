@@ -304,7 +304,7 @@ Recall, that you read two briefs in preparation for our first lab. You should ci
 
 Both the rubric and your description for how to write an effective discussion does include the following expectation/prompt "Are your results consistent with similar studies/your classmates results? Different? Why?"
 
-\[Stay tuned for examples of context to add.\]
+You can see the results of the other lab section in your lab manual if you expand the answer sections in the data analysis chapter. You can cite those as a personal communication from Section A/Section B.
 
 ### How do we cite?
 
@@ -319,5 +319,5 @@ Really, the only way to become a good writer is to do a lot of it. Additionally,
 Here are some additional resources as you continue on your writing journey:
 
 -   [The Academic Phrasebank](https://www.phrasebank.manchester.ac.uk/): This was designed as a general resource for non-native speakers. It has a menu of "general language functions" (e.g. "being critical" or "describing trends") and then examples for more specific goals (e.g. "Introducing problems and limitations" or "highlighting a trend in a table or chart").
--   The University of Wisonsin-Madison's Writing Center's [guidelines for quoting and paraphrasing](https://writing.wisc.edu/handbook/quotingsources/).
+-   The University of Wisconsin-Madison's Writing Center's [guidelines for quoting and paraphrasing](https://writing.wisc.edu/handbook/quotingsources/).
 -   [Purdue Online Writing Lab](https://owl.purdue.edu/owl/index.html).

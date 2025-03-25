@@ -4,4 +4,1641 @@ After completing this set of activities, you should be able to:
 
 -   assess what information is contained in a data set.
 -   decide what type of descriptive statistics to apply according to whether a variable is continuous or categorical.
--   decide whether to apply a t-test or a $\chi^{2}$-test depending on what type of metrics you are comparing.
+-   distinguish between a null and alternative hypothesis and interpret the results of a statistical test for significant differences among means and frequencies.
+
+Before we get started we will need to load our `R` libraries that contain the functions we will need to analyze our data.
+
+```{r}
+
+# load libraries for reporting
+library(knitr)
+
+# load libraries for data import
+library(readr)
+library(here)
+library(janitor)
+
+# load libraries for data wrangling
+library(dplyr)
+library(tidyr)
+library(broom)
+
+# load libraries for plotting
+library(ggplot2)
+
+# load library for inferential stats
+library(infer)
+library(chisq.posthoc.test)
+
+```
+
+## Germination Data
+
+### Get the data
+
+Go to the `GoogleSheet` that contains the germination counts for your lab and select the tab for your group.
+
+-   Double check that the data has been entered correctly.
+-   Go to `File` -\> `Download` -\> `Comma Separated Values (.csv)` to download your data as a comma-delimited file.
+-   Use your `File Explorer` if you are on a Windows computer and `Finder` of you are on a Mac and navigate to the `Downloads` folder. You should see the file you just downloaded there.
+
+Now we have to upload the file to our posit cloud `R project`.
+
+-   In the `File` tab (lower right panel) navigate to the `data` folder.
+-   Select the `Uploads` button.
+-   Use the dialog box to select `Choose File` button and navigate to your file in the downloads folder.
+-   Select your file and upload it.
+-   Check the box next to the file you just uploaded it and use the `Rename` button to rename it to `germination.csv`.
+
+Now we are ready to read in our germination data as a `data.frame` object that we can compute on in `R`. We will create three objects, the first is a generated data set comparing the impacts of different deicers on mung beans, the second the data radish seed data sets from Section A and B.
+
+```{r}
+#| label: read-germination-data
+
+# read in example data set
+germination_ex <- read_delim(here("data", "germination-1.csv"), delim = ",") %>%
+  clean_names() %>%
+  unite(treatment, deicer, treatment_level,
+        sep = "_", remove = FALSE) %>%
+  mutate(treatment_level = factor(treatment_level, 
+                                   levels = c("high", "medium", "low", "trace")))
+
+# read in Section A data set
+germination_A <- read_delim(here("data", "germination_Section-A.csv"), delim = ",") %>%
+  clean_names() %>%
+  unite(treatment, deicer, treatment_level,
+        sep = "_", remove = FALSE) %>%
+  mutate(treatment_level = factor(treatment_level, 
+                                   levels = c("high", "medium", "low", "trace")))
+
+# read in Section B data set
+germination_B <- read_delim(here("data", "germination_Section-B.csv"), delim = ",") %>%
+  clean_names() %>%
+  unite(treatment, deicer, treatment_level,
+        sep = "_", remove = FALSE) %>%
+  mutate(treatment_level = factor(treatment_level, 
+                                   levels = c("high", "medium", "low", "trace")))
+
+# take a look at first few lines
+head(germination_ex) %>%
+  kable()
+
+```
+
+::: {.callout-tip title="Consider this"}
+Take a look at the `data.frame` object holding your data by clicking on it in the `Environment` pane (bottom left) or using `View(object_name)`.
+
+Describe how your data is organized:
+
+-   what information is in each row?
+-   what information is in each column?
+
+Find your explanatory (independent) and response (dependent) variables in the data set.
+
+Assess what type of data you have in each column:
+
+-   is it continuous or categorical?
+-   what groups are you interested in comparing?
+
+Finally, determine which summary/descriptive statistics are appropriate to summarize this data set and how you would visualize your data.
+:::
+
+::: {.callout-note title="Answer" collapse="true"}
+Each row represents one seed. And each column contains information for one variable.
+
+Your explanatory variables are the individual treatments, this is categorical data. Similarly, your response variable is the germination data which is categorical with two possible values "germinated" and "not germinated".
+
+We want to know the total number of seeds that germinated and did not germinate across all replicates for each treatment, and what proportion of the total number of seeds germinated.
+
+Because we have categorical data and want to visualize how the data is distributed across our categories, we will want to use a bar plot to visualize our data.
+:::
+
+We've discussed the need to QA/QC data. Usually whenever we read in data sets it can be helpful to create a few overview tables that allow us to look at the different parameters that were recorded (should be organized in columns) and number of observations in various groupings. These tables can be useful for describing your experimental design as well as an overview of what your data set looked like for your results section.
+
+Let's start with our example data set:
+
+```{r}
+
+# count number of observations per deicer
+germination_ex %>%
+  group_by(deicer) %>%
+  count() %>%
+  kable()
+
+```
+
+::: {.callout-tip title="Give it a try"}
+Create a copy of the code and then modify it to produce a similar table that shows the number of observation per treatment and replicate.
+
+Then produce a version of each of the two tables for the other two data sets.
+:::
+
+.
+
+::: {.callout-caution title="Your Answer Here"}
+\[Take some notes\]
+:::
+
+.
+
+::: {.callout-note title="Answer" collapse="true"}
+You can choose any set of columns to group by (remember to not use quotation marks and separate them by a comma) as long as you type the column name in exactly:
+
+```{r}
+
+# count number of observations per treatment and replicate
+germination_ex %>%
+  group_by(treatment, replicate) %>%
+  count() %>%
+  kable()
+
+```
+
+Then for the other tables you just have to change the object name in the first line.
+
+```{r}
+
+# count number of observations per deicer
+germination_A %>%
+  group_by(deicer) %>%
+  count() %>%
+  kable()
+
+# count number of observations per treatment and replicate
+germination_A %>%
+  group_by(treatment, replicate) %>%
+  count() %>%
+  kable()
+
+# count number of observations per treatment overall
+germination_A %>%
+  group_by(treatment) %>%
+  count() %>%
+  kable()
+
+# count number of observations per deicer
+germination_B %>%
+  group_by(deicer) %>%
+  count() %>%
+  kable()
+
+# count number of observations per treatment and replicate
+germination_B %>%
+  group_by(treatment, replicate) %>%
+  count() %>%
+  kable()
+
+# count number of observations per treatment overall
+germination_B %>%
+  group_by(treatment) %>%
+  count() %>%
+  kable()
+
+```
+
+We can see from these overview tables that we have a few plates where we didn't get exactly 20 seeds in the petri dish. We also seem to have some treatments where a replicate or two is missing.
+:::
+
+### Summarize your results
+
+Now, we can actually start analyzing our results. First, we will want to identify ways to summarize our data so we can identify broad trends and compare the different treatments.
+
+::: {.callout-tip title="Consider this"}
+Your `data.frame` contains the raw data.
+
+Suggest 2-3 ways that you can summarize your data in a meaningful way to describe your results in the context of the hypothesis you are exploring with this experiment. Explain why you think these would be appropriate data analysis methods.
+:::
+
+::: {.callout-note title="Answer" collapse="true"}
+We are going to calculate the total number and relative proportion of seeds that germinated for each treatment.
+
+A good visualization would be a bar plot where the height of each bar on the y-axis indicate the proportion of seeds that germinated.
+:::
+
+```{r}
+#| label: tbl-germination-success-I
+#| tbl-cap: "Summary of germination success after 48 hrs. Total number (n) and percent of seeds that germinated."
+
+# tidy data set
+germination_ex %>%
+  group_by(deicer, treatment_level) %>% # group data by treatment
+  count(germination) %>%                # count number seeds germinated
+  mutate(percent = n/sum(n)*100) %>%
+  filter(germination == "germinated") %>%
+  kable(digits = 2)
+
+```
+
+This table gives you two summary statistics, but the table might not be the best way to present your data for easy comparison in a report.
+
+An easier way to compare would be to pivot our data set into a wider format:
+
+```{r}
+#| label: tbl-germination-success-II
+#| tbl-cap: "Summary of germination success after 48 hrs for each deicer and concentration. Total number (n) and percent of seeds that germinated."
+
+# wide table
+germination_ex %>%
+  group_by(deicer, treatment_level) %>% # group data by treatment
+  count(germination) %>%                # count number seeds germinated
+  mutate(percent = n/sum(n)*100) %>%
+  select(-n) %>%
+  filter(germination == "germinated") %>%
+  pivot_wider(names_from = treatment_level, values_from = percent) %>%
+  kable(digits = 2)
+
+```
+
+::: {.callout-tip title="Give it a try"}
+Modify the code to create similar tables for your data sets.
+:::
+
+.
+
+::: {.callout-caution title="Your Answer Here"}
+\[Take some notes\]
+:::
+
+.
+
+::: {.callout-note title="Answer" collapse="true"}
+```{r}
+
+# wide table
+germination_A %>%
+  group_by(deicer, treatment_level) %>% # group data by treatment
+  count(germination) %>%                # count number seeds germinated
+  mutate(percent = n/sum(n)*100) %>%
+  select(-n) %>%
+  filter(germination == "germinated") %>%
+  pivot_wider(names_from = treatment_level, values_from = percent) %>%
+  kable(digits = 2)
+
+# wide table
+germination_B %>%
+  group_by(deicer, treatment_level) %>% # group data by treatment
+  count(germination) %>%                # count number seeds germinated
+  mutate(percent = n/sum(n)*100) %>%
+  select(-n) %>%
+  filter(germination == "germinated") %>%
+  pivot_wider(names_from = treatment_level, values_from = percent) %>%
+  kable(digits = 2)
+
+```
+:::
+
+Data visualizations are frequently more helpful present your results compared to tables with numbers, so let's create a grouped bar chart visualizing the proportion of seeds that did/did not germinate.
+
+We'll start by comparing the proportion that germinated for each treatment.
+
+```{r}
+#| label: fig-germination-success
+#| fig-cap: "Comparison of germination success of mung beans exposed to different deicers and concentration levels (high = 10mg/L, medium = 1 mg/L, low = 0.1 mgl/L)."
+
+# create table with % germinated
+summary <- germination_ex |>
+  group_by(deicer, treatment_level) |> # group data by treatment
+  count(germination) |>                # count number seeds germinated
+  mutate(percent = n/sum(n)*100)       # calculate proportion
+
+# subset data to show % not germinated ----
+no_germination <- summary |>
+  filter(germination == "germinated")
+
+# create bar plot with frequency
+ggplot(no_germination, aes(x = deicer,                  # specify categories on x axis
+                        y = percent,
+                        fill = treatment_level)) +   # specify how to group data
+  geom_bar(stat = "identity",                        # length of bar indicates number of observations
+           width = .75,                              # space between groups
+           position = position_dodge(.8, 
+                                     preserve = "single"), # space between bars in group
+           color = "black") +                        # line color of bar
+  scale_fill_manual(values = c("#4E5283", 
+                               "#7871AA", 
+                               "#D9BBF9",
+                               "#AA9FB1")) +      # modify for custom colors
+  labs(x = "deicer type",                    # x-axis title
+       y = "% of seeds that did not germinate") +                  # y-axis title
+  theme_classic() +                                  # specify theme
+  theme(legend.position = "bottom")                  # legend position 
+
+```
+
+::: {.callout-tip title="Give it a try"}
+Modify the code to create a similar visualization for your data sets.
+:::
+
+::: {.callout-note title="Answer" collapse="true"}
+```{r}
+
+# create table with % germinated
+summary <- germination_A |>
+  group_by(deicer, treatment_level) |> # group data by treatment
+  count(germination) |>                # count number seeds germinated
+  mutate(percent = n/sum(n)*100)       # calculate proportion
+
+# subset data to show % not germinated ----
+no_germination <- summary |>
+  filter(germination == "germinated")
+
+# create bar plot with frequency
+ggplot(no_germination, aes(x = deicer,                  # specify categories on x axis
+                        y = percent,
+                        fill = treatment_level)) +   # specify how to group data
+  geom_bar(stat = "identity",                        # length of bar indicates number of observations
+           width = .75,                              # space between groups
+           position = position_dodge(.8, 
+                                     preserve = "single"), # space between bars in group
+           color = "black") +                        # line color of bar
+  scale_fill_manual(values = c("#4E5283", 
+                               "#7871AA", 
+                               "#D9BBF9",
+                               "#ECE0F8",
+                               "#AA9FB1")) +      # modify for custom colors
+  labs(x = "deicer type",                    # x-axis title
+       y = "% of seeds that did not germinate",  # y-axis title
+       title = "Data set section A") +     
+  theme_classic() +                                  # specify theme
+  theme(legend.position = "bottom")                  # legend position 
+
+# create table with % germinated
+summary <- germination_B |>
+  group_by(deicer, treatment_level) |> # group data by treatment
+  count(germination) |>                # count number seeds germinated
+  mutate(percent = n/sum(n)*100)       # calculate proportion
+
+# subset data to show % not germinated ----
+no_germination <- summary |>
+  filter(germination == "germinated")
+
+# create bar plot with frequency
+ggplot(no_germination, aes(x = deicer,                  # specify categories on x axis
+                        y = percent,
+                        fill = treatment_level)) +   # specify how to group data
+  geom_bar(stat = "identity",                        # length of bar indicates number of observations
+           width = .75,                              # space between groups
+           position = position_dodge(.8, 
+                                     preserve = "single"), # space between bars in group
+           color = "black") +                        # line color of bar
+  scale_fill_manual(values = c("#4E5283", 
+                               "#7871AA", 
+                               "#D9BBF9",
+                               "#ECE0F8",
+                               "#AA9FB1")) +      # modify for custom colors
+  labs(x = "deicer type",                    # x-axis title
+       y = "% of seeds that did not germinate",  # y-axis title
+       title = "Data set section B") +     
+  theme_classic() +                                  # specify theme
+  theme(legend.position = "bottom")                  # legend position 
+
+```
+:::
+
+A lot of times it can be helpful to generate several exploratory plots that allow us to think through the data set. So let's create a similar visualization that shows the proportion for each treatment that *did not germinate* as this might let us see certain patterns more clearly.
+
+```{r}
+#| label: fig-germination-inhibition
+#| fig-cap: "Comparison of germination inhibition of mung beans for different deicers and concentration levels (high = 10mg/L, medium = 1 mg/L, low = 0.1 mgl/L)."
+
+# create table with % germinated
+summary <- germination_ex |>
+  group_by(deicer, treatment_level) |> # group data by treatment
+  count(germination) |>                # count number seeds germinated
+  mutate(percent = n/sum(n)*100)       # calculate proportion
+
+# subset data to show % not germinated ----
+no_germination <- summary |>
+  filter(germination == "no_germination")
+
+# create bar plot with frequency
+ggplot(no_germination, aes(x = deicer,                  # specify categories on x axis
+                        y = percent,
+                        fill = treatment_level)) +   # specify how to group data
+  geom_bar(stat = "identity",                        # length of bar indicates number of observations
+           width = .75,                              # space between groups
+           position = position_dodge(.8, 
+                                     preserve = "single"), # space between bars in group
+           color = "black") +                        # line color of bar
+  scale_fill_manual(values = c("#4E5283", 
+                               "#7871AA", 
+                               "#D9BBF9",
+                               "#ECE0F8",
+                               "#AA9FB1")) +      # modify for custom colors
+  labs(x = "deicer type",                    # x-axis title
+       y = "% of seeds that did not germinate") +                  # y-axis title
+  theme_classic() +                                  # specify theme
+  theme(legend.position = "bottom")                  # legend position 
+
+```
+
+::: {.callout-tip title="Give it a try"}
+Modify the code to create a similar visualization for your data sets.
+:::
+
+::: {.callout-note title="Answer" collapse="true"}
+```{r}
+
+# create table with % germinated
+summary <- germination_A |>
+  group_by(deicer, treatment_level) |> # group data by treatment
+  count(germination) |>                # count number seeds germinated
+  mutate(percent = n/sum(n)*100)       # calculate proportion
+
+# subset data to show % not germinated ----
+no_germination <- summary |>
+  filter(germination == "no_germination")
+
+# create bar plot with frequency
+ggplot(no_germination, aes(x = deicer,                  # specify categories on x axis
+                        y = percent,
+                        fill = treatment_level)) +   # specify how to group data
+  geom_bar(stat = "identity",                        # length of bar indicates number of observations
+           width = .75,                              # space between groups
+           position = position_dodge(.8, 
+                                     preserve = "single"), # space between bars in group
+           color = "black") +                        # line color of bar
+  scale_fill_manual(values = c("#4E5283", 
+                               "#7871AA", 
+                               "#D9BBF9",
+                               "#ECE0F8",
+                               "#AA9FB1")) +      # modify for custom colors
+  labs(x = "deicer type",                    # x-axis title
+       y = "% of seeds that did not germinate",  # y-axis title
+       title = "Data set section A") +     
+  theme_classic() +                                  # specify theme
+  theme(legend.position = "bottom")                  # legend position 
+
+# create table with % germinated
+summary <- germination_B |>
+  group_by(deicer, treatment_level) |> # group data by treatment
+  count(germination) |>                # count number seeds germinated
+  mutate(percent = n/sum(n)*100)       # calculate proportion
+
+# subset data to show % not germinated ----
+no_germination <- summary |>
+  filter(germination == "no_germination")
+
+# create bar plot with frequency
+ggplot(no_germination, aes(x = deicer,                  # specify categories on x axis
+                        y = percent,
+                        fill = treatment_level)) +   # specify how to group data
+  geom_bar(stat = "identity",                        # length of bar indicates number of observations
+           width = .75,                              # space between groups
+           position = position_dodge(.8, 
+                                     preserve = "single"), # space between bars in group
+           color = "black") +                        # line color of bar
+ scale_fill_manual(values = c("#4E5283", 
+                               "#7871AA", 
+                               "#D9BBF9",
+                               "#ECE0F8",
+                               "#AA9FB1")) +      # modify for custom colors
+  labs(x = "deicer type",                    # x-axis title
+       y = "% of seeds that did not germinate",  # y-axis title
+       title = "Data set section B") +     
+  theme_classic() +                                  # specify theme
+  theme(legend.position = "bottom")                  # legend position 
+
+```
+:::
+
+::: {.callout-tip title="Give it a try"}
+Usually for your report you would chose to either include a table or a visualization that summarizes your data. Here you would also need to decide whether the germination or inhibition version of your figure is more informative.
+
+In either case you would include a descriptive figure or table title/caption that describes how to interpret the figure. As a rule of thumb, you should have enough information in the caption that the reader can understand the figure even without reading the methods/results.
+
+Then you should describe your results referencing your figure/table, however, your reader should be able to have the full picture of your results even without seeing the actual figure/table. A good template to use is to start with the broad pattern and then highlight important details. A good description of results contextualizes them for the reader. For example, instead of just listing out values provide context and help your reader see the patterns by using terms like "higher" "lower", "similar" or highlighting certain results as "notably, ...", "except for...". You have already done all the thinking, guide your reader through what you've found.
+
+Describe your results. Remember, at this point you should not be interpreting them. Consider this thinking out loud in a way where you have a set of notes that you can then edit for your report.
+:::
+
+::: {.callout-note title="Answer" collapse="true"}
+Your description could look something like this:
+
+Broad pattern:
+
+> Mung beans exposed to rock salt had over 70% lower germination success compared to the control.
+
+or
+
+> Both rock salt and the commercial blend show a similar pattern of a dose-dependent relationship where germination success decreases with increasing concentrations.
+
+Details
+
+> Overall, 93% germinated in the control, while only 20% germinated for the highest rock salt concentration (Figure xx).
+
+or
+
+> However, this effect was strong for rock salt (18 - 55% germination success) compared to the commercial blend (40 - 83% germination success).
+
+It's important that we add this context of actual numbers because it is quite different if 100% germinated in the control and 78% in the experimental treatment or something more similar to what we observe here.
+
+Here are some additional examples of what a description could look like:
+
+**Emphasize on "Broad Pattern First, Then Details" formula:**
+
+Overall, germination rates varied among deicer treatments, with rock salt having the strongest negative impact, the cheese brine having the least impact, and the commercial blend showing an intermediate effect. The control group had the highest germination rate (91.67%), indicating baseline germination without deicer exposure.
+
+Among the treatments, rock salt at high concentration had the lowest germination (18.33%), with a dose-dependent increase at medium (46.67%) and low (55.00%) concentrations. The commercial blend also showed a negative effect, but not as severe as rock salt, with germination increasing from 40.00% at high concentration to 60.00% at medium and 83.33% at low.
+
+In contrast, the cheese brine had relatively little impact on germination. Even at the highest concentration, 65.00% of seeds germinated, and the rates at medium (88.33%) and low (86.67%) were similar to the control.
+
+**Emphasis on Highlighting Notable Findings**
+
+Notably, the rock salt treatment had the lowest germination rates, with only 18.33% of seeds germinating at the highest concentration. This is a stark contrast to the control (91.67%) and even the lowest rock salt concentration (55.00%). The commercial blend also reduced germination, but the effect was not as strong, with 40.00% germination at the highest concentration and an increase to 83.33% at the lowest concentration.
+
+Interestingly, the cheese brine had the least effect, with germination at its highest concentration (65.00%) still higher than the rock salt and commercial blend at the same level. Medium and low cheese brine concentrations (88.33% and 86.67%) were nearly identical to the control, suggesting minimal impact.
+
+**Emphasis on Highlighting Patterns with Comparative Terms**
+
+Germination rates were lowest for rock salt, with a strong dose-dependent effect: only 18.33% of seeds germinated at high concentration, but rates increased at medium (46.67%) and low (55.00%) levels. The commercial blend also reduced germination, but its effects were less severe than rock salt, with the highest concentration resulting in 40.00% germination and the lowest concentration nearly matching the control (83.33% vs. 91.67%).
+
+In contrast, the cheese brine had the least impact on germination. Even at the highest concentration (65.00%), germination remained substantially higher than rock salt or the commercial blend at equivalent concentrations. Medium and low concentrations of cheese brine (88.33% and 86.67%) were very similar to the control, indicating a minimal negative effect.
+:::
+
+Descriptive or summary statistics are the important first step to summarizing our findings. However, at this point we don't know if our observed differences in germination success are just due to sampling error or if they actually represent reality. For example let's say that 42 seeds germinate in one treatment and 43 in another - are those numbers actually different from each other or does it fall within the natural variability of germination?
+
+### Test for statistical significance
+
+To test whether differences in the summary statistics are actually different from each other we need to first determine what the distribution of observed germination rates when there is no difference among treatments. We would expect that distribution to look like a normal distribution where the most commonly observed germination rate is closest to the "real value" and the less likely/more extreme values to be less frequently observed. Then we can compare that to our actual observations and determine if our observation falls into that distribution or not. Essentially we want to quantify how likely it is that we would observe our germination rates if there is no effect.
+
+Another way of stating this is to say that we want to make sure that our results are not due to sampling error, i.e. that our sample represents the true popoulation (i.e. all radish seeds) as a whole.
+
+::: {.callout-tip title="Consider this"}
+Discuss what common factors we need consider to avoid bias in your sample due to **sampling error**.
+:::
+
+::: {.callout-note title="Answer" collapse="true"}
+The main causes are:
+
+-   **small sample size**: You would want to make sure that you are snagging enough individuals from each species to ensure that you are capturing the full range of body sizes for each species. The larger you sample size, the more likely you not only have individuals representing that full range, you should also end up with proportionally the same number of individuals in each weight category in your sample as there are in the entire population.
+-   **non-random sampling**: You need to make sure that you are sampling in a non-random manner. If you think the tiny ones are cuter and start picking up those more frequently then you would end up with a biased sample. If you are lazy, and just check the areas near your station, you might end up biasing towards larger ones e.g. because that is a spot where more food is available. If you are trying to spot them from far off and then driving towards them instead of having e.g. a random sampling grid you might only be spotting the larger ones etc.
+-   **outliers** can cause sampling error especially if the sample size is small. This is generally not something you can avoid by your sampling strategy, generally you want to have a sample size that is large enough that you can identify outliers.
+:::
+
+When we are making inferences based on our data set either by generalizing from the sample to the population as a whole or when testing a specific hypothesis based on the data we've collected, we need to make sure that our conclusion are erroneous due to sampling error. Therefore, once we've calculated our descriptive statistics we will generally ask the question "**What is the probability that our results are the results of sampling error and do not reflect reality?**" and then use statistical tests to quantify that probability. The probability of results being due to sampling error increase the smaller our sample size is, the more variability that is observed, and the smaller the difference between metrics\[\^a05_inferent-stats-3\] being compared.
+
+Hypothesis testing is a formal process to make inferences about a population based on sample data. It involves evaluating two competing hypotheses to determine if the results are due to sampling error alone or are representative of the population. The key steps are the same, regardless of the the specific test being applied.
+
+1.  Define your research question or goal.
+2.  Specify what measurements you plan to compare and collect the data.
+3.  State your your null and alternate hypothesis and predict the outcome assuming the null hypothesis is true.
+4.  Specify a significance threshold.
+5.  Generate sampling distributions and calculate your test statistic.
+6.  Get the p-value.
+7.  Interpret the results and draw conclusions.
+
+We have already gone through step 1 and 2 when we designed our experiment.
+
+#### Step 3: State your your null and alternate hypothesis and predict the outcome assuming the null hypothesis is true.
+
+If you go back to the hypothesis you formulated, you would have created an "if-then-because" statement. We've said that the "because" component is your research hypothesis. This is your reasoning of why you expect to see a certain outcome.
+
+The "if-then" component specifies what you would expect to observe in your data set. Now we need to restate this as a statistical hypothesis in the form of a null ($H_{O}$) and alternate ($H_{a}$ or $H_{1}$) hypothesis so we can mathematically test it by quantifying the probability that our results are due to chance alone.
+
+The **null hypothesis** $H_{O}$ states what our measurements will look like when there is no change or no effect in the population, or no relationship or no difference among groups being compared.
+
+At first, stating our hypothesis as "there is no difference" seems a bit odd because that's not normally what we are interested in. However, it is actually quite difficult to prove an idea but much easier to **disprove** and idea. Therefore, we want to formulate a hypothesis that we can falsify. If the sample provides enough evidence against the null hypothesis then we can **reject** the hypothesis, otherwise we **fail to reject** the null hypothesis[^c04_analyze-1].
+
+[^c04_analyze-1]: Be careful not to use phrases like "we proved" or we "accept" the null hypothesis.
+
+The **alternate hypothesis** $H_{a}$ is the complement to the null hypothesis; they should be mutually exclusive in that only one can be true at a time. The alternative hypothesis is a claim that there is an effect in the population. When you formulate your alternative hypothesis you are usually going to use phrases like "there is an effect", "there is a difference", "there is a relationship".
+
+::: {.callout-tip title="Give it a try"}
+You can use a standard way of formulating your null hypothesis by identifying your **dependent** and **independent variable** of your experiment.
+
+For the null hypothesis you will always state that the **Independent variable** does not affect your **dependent variable**.
+
+Similarly, you can use a standard way of formulating your alternate hypothesis by identifying your **dependent** and **independent variable** of your experiment. In this case, you will always state that the **Independent variable** does affect your **dependent variable**.
+
+State your null and alternative hypothesis and predict the outcome if the claim is true.
+:::
+
+::: {.callout-note title="Answer" collapse="true"}
+Your null hypothesis is a claim that there is no effect:
+
+-   $H_{0}$: Deicers do not have an effect on the germination rate of radish seeds.
+-   Prediction: The number of seeds that germinate are not different between the experimental treatments.
+
+The alternative hypothesis is a claim that there is an observed effect.
+
+-   $H_{a}$: Deicers have a negative effect on the germination rate of radish seeds.
+-   Prediction: We will observe differences in germination rates among the treatments.
+:::
+
+#### Step 4: Specify a significance threshold.
+
+Now that we have stated our null hypothesis we can assess the probability of obtaining our observed results if our null hypothesis is true. However, before we do that we need to decide how far off from the null hypothesis we will let our observations be before we reject the null hypothesis.
+
+We do this by specifying the significance level $\alpha$. This is our predetermined threshold for statistical significance.
+
+-   if our p-value is higher than $\alpha$ we fail to reject the null hypothesis and our results are not statistically significant.
+-   if our p-value is smaller than $\alpha$ we reject the null hypothesis and report our results as statistically significant.
+
+Typically, $\alpha$ is set to 0.05 (5%) but for a more conservative test it can be set to a lower value such as 0.01 (1%).
+
+::: {.callout-tip title="Consider this"}
+We will specify our significance threshold $\alpha$ as 0.05.
+
+Explain what this means and why it is important for us to specify this.
+:::
+
+::: {.callout-note title="Answer" collapse="true"}
+This means that if our observed results have a less than 5% probability occurring according to our null distribution we will reject our null hypothesis.
+:::
+
+#### Step 5: Calculate your test statistic and generate sampling distribution and Step 6: Get your p-value.
+
+Now we are ready to calculate our test statistic - we will combine this with getting our p-value.
+
+A test statistic measures how far the empirical observations are from the expectations based on the null hypothesis. Even though the exact test statistic you apply will depend on the data and type of variable you are assessing, they are all based on comparing spread of the data within a category (within-group variance) to how different categories are from each other (between-group variance). For large between-group variance (little/no overlap between groups) the more unlikely it is that the differences between these groups is due to chance alone (small p-value). By contrast, for a high within-group and low between-group variance the more likely the differences you are observing are due to chance alone (high p-value).
+
+For any statistical test we calculating a test-statistic that is specific to the type of metric we are comparing (here that is a frequency). Then we create a null distribution that assumes that there actually is no difference between the categories we are comparing. Essentially, we are shuffling the labels across the data points and re-calculating the test- statistic over and over again to create a distribution. Finally, we will need to see if our and where our observed test statistic falls relative to that distribution.
+
+Typically, a $𝛘^2$ test is used to evaluate the difference between frequencies/categorical variables. The $\chi^{2}$ test statistic will account for sample size and the size of difference in sample frequencies. The smaller the sample size and the difference in frequencies, the more likely our sample frequencies are different due to sampling error and not because the true population frequencies are different.
+
+For a comparison of two categorical variables, you would create a 2x2 table[^c04_analyze-2].
+
+[^c04_analyze-2]: You might remember doing this by hand in Gen Bio one to teste whether your observed phenotypes matches those predicted by a Punnet Square. This is also how you would formally test if a population is in HWE instead of just squinting at it and declaring them different.
+
+|       | Column 1 | Column 2 | Total |
+|-------|----------|----------|-------|
+| Row 1 | f11      | f12      | R1    |
+| Row 2 | f21      | f22      | R2    |
+| Total | C1       | C2       | n     |
+
+for $f_{ij}$ being the observation in the $i$th row and the $j$th column, $C_{1}$, $C_{2}$, $R_{1}$, and $R_{2}$ are the column and row totals and $n$ is the total number of observations.
+
+Then we can calculate $\chi^{2}$ as
+
+$$
+\chi^{2} = \frac{n(f_{11}f_{22}-f_{12}f_{21})^{2}}{C_{1}C_{2}R_{1}R_{2}}
+$$
+
+Instead of doing this by hand we can reformat our data set into a contingency table and use a function that performs those calculations for us.
+
+```{r}
+
+# Convert germination to binary outcome
+data <- germination_ex %>%
+  mutate(germination_binary = ifelse(germination == "germinated", 1, 0))
+
+# Create contingency table
+germination_table <- table(data$treatment, data$germination)
+
+# take a look at contingency table
+germination_table
+
+# Perform Chi-Square test
+chi_test <- chisq.test(germination_table)
+
+# Print results
+print(chi_test)
+
+```
+
+::: {.callout-tip title="Give it a try"}
+Modify the code to perform a $𝛘^2$ test using your data set.
+
+Compare your p-value to the threshold of significance we defined above to determine how to interpret the results of your $𝛘^2$ -test.
+:::
+
+.
+
+::: {.callout-note title="Answer" collapse="true"}
+```{r}
+
+# section A ----
+
+# Convert germination to binary outcome
+data <- germination_A %>%
+  mutate(germination_binary = ifelse(germination == "germinated", 1, 0))
+
+# Create contingency table
+germination_table <- table(data$treatment, data$germination)
+
+# take a look at contingency table
+germination_table
+
+# Perform Chi-Square test
+chi_test <- chisq.test(germination_table)
+
+# Print results
+print(chi_test)
+
+# Section B ----
+
+# Convert germination to binary outcome
+data <- germination_B %>%
+  mutate(germination_binary = ifelse(germination == "germinated", 1, 0))
+
+# Create contingency table
+germination_table <- table(data$treatment, data$germination)
+
+# take a look at contingency table
+germination_table
+
+# Perform Chi-Square test
+chi_test <- chisq.test(germination_table)
+
+# Print results
+print(chi_test)
+
+```
+:::
+
+To give you visualization of what we just did we can use a set of functions that will generate the null distribution and calculate the test statistic and then determine the p-value based on how probable it is that we will observe that test statistic give then null distribution[^c04_analyze-3].
+
+[^c04_analyze-3]: Note: for your report, you do not need to visualize your null distribution we are doing this to help us get a better feel for how statistical tests work. In general you just report whether your results are significant or not, you do not go through the process of defining null and alternative process etc - we go through that in detail so you know what is happening under the hood.
+
+```{r}
+#| label: fig-null-dist-chi-test
+#| fig-cap: "Null distribution of chi-square test statistic assuming presence of plant material has no effect on radish seed growth. Bars indicates permuted null distribution, black line indicates theoretical chi-square distribution. The calculated chi-square test statistic is indicated by the red line. Values observed in the null distribution that are more extreme that the t-statistic calculated for the empirical data set are shaded in red."
+
+# Convert germination to binary outcome
+data <- germination_ex %>%
+  mutate(germination_binary = ifelse(germination == "germinated", 1, 0))
+
+# Summarize germination rates per treatment
+germination_summary <- data %>%
+  group_by(deicer, treatment_level) %>%
+  summarise(germination_rate = mean(germination_binary) * 100)
+
+# calculate observed statistic
+observed_indep_statistic <- data %>%
+  specify(germination ~ treatment) %>%
+  calculate(stat = "Chisq")
+
+# generate the null distribution using randomization
+null_distribution_simulated <- data %>%
+  specify(germination ~ treatment) %>%
+  hypothesize(null = "independence") %>%
+  generate(reps = 5000, type = "permute") %>%
+  calculate(stat = "Chisq")
+
+# visualize both null distributions and the test statistic!
+null_distribution_simulated %>%
+  visualize(method = "both") + 
+  shade_p_value(observed_indep_statistic,
+                direction = "greater")
+
+# calculate the p value from the observed statistic and null distribution
+null_distribution_simulated %>%
+  get_p_value(obs_stat = observed_indep_statistic,
+              direction = "greater")
+
+```
+
+Our last step is to compare our p-value to our $\alpha$ value. However, we are comparing a bunch of different treatments, all we really know at this point is that there are significant differences among ***all*** the different treatments.
+
+In order to make statements whether there are significant differences among specific treatments we need to make pairwise comparisons. We could either do this by comparing each experimental treatment to the control or since we do want to know how the different deicers compare to each other, we can run pairwise comparisons among all treatments.
+
+Before you worry about the amount of comparisons you need to run, here is the power of coding, we can create a `data.frame` that holds all of our possible combinations and then run a loop that takes each pair, runs a $𝛘^2$ test and then extracts the p-value and puts it into a new `data.frame` for us.
+
+To make it easier to compare, we'll print a table that just shows the significant pairwise comparisons. We will use two methods to adjust for multiple comparisons. We need to do this because if you make a whole bunch of comparisons by chance alone some of them are going to be significant.
+
+```{r}
+
+# Convert germination to binary outcome
+data <- germination_ex %>%
+  mutate(germination_binary = ifelse(germination == "germinated", 1, 0))
+
+# Get unique treatment groups
+treatments <- unique(data$treatment)
+
+# Get all possible pairwise comparisons
+pairwise_comparisons <- combn(treatments, 2, simplify = FALSE)
+
+# Initialize a list to store test results
+chi_square_results <- list()
+
+# Loop through each pairwise combination and perform Chi-Square test
+for (pair in pairwise_comparisons) {
+  # Subset data for the two treatments
+  subset_data <- data %>% filter(treatment %in% pair)
+  
+  # Create contingency table
+  germination_table <- table(subset_data$treatment, subset_data$germination)
+  
+  # Perform Chi-Square test
+  chi_test <- chisq.test(germination_table)
+  
+  # Store results
+  chi_square_results[[paste(pair, collapse = " vs. ")]] <- chi_test$p.value
+}
+
+# Convert results to a data frame
+results_df <- data.frame(
+  comparison = names(chi_square_results),
+  p_value = unlist(chi_square_results)    # Extract raw p-values
+)
+
+# Adjust for multiple comparisons
+results_df$bonferroni = p.adjust(results_df$p_value, method = "bonferroni")
+results_df$fdr = p.adjust(results_df$p_value, method = "fdr")
+
+# Print the results table with significant differences
+results_df %>%
+  arrange(p_value) %>%
+  filter(p_value <= 0.05) %>% 
+  kable(row.names = FALSE)
+
+```
+
+::: {.callout-tip title="Give it a try"}
+Modify the code above to run the pairwise comparisons on your data set.
+:::
+
+::: {.callout-note title="Answer" collapse="true"}
+```{r}
+
+## Section A ----
+
+# Convert germination to binary outcome
+data <- germination_A %>%
+  mutate(germination_binary = ifelse(germination == "germinated", 1, 0))
+
+# Get unique treatment groups
+treatments <- unique(data$treatment)
+
+# Get all possible pairwise comparisons
+pairwise_comparisons <- combn(treatments, 2, simplify = FALSE)
+
+# Initialize a list to store test results
+chi_square_results <- list()
+
+# Loop through each pairwise combination and perform Chi-Square test
+for (pair in pairwise_comparisons) {
+  # Subset data for the two treatments
+  subset_data <- data %>% filter(treatment %in% pair)
+  
+  # Create contingency table
+  germination_table <- table(subset_data$treatment, subset_data$germination)
+  
+  # Perform Chi-Square test
+  chi_test <- chisq.test(germination_table)
+  
+  # Store results
+  chi_square_results[[paste(pair, collapse = " vs. ")]] <- chi_test$p.value
+}
+
+# Convert results to a data frame
+results_df <- data.frame(
+  comparison = names(chi_square_results),
+  p_value = unlist(chi_square_results)    # Extract raw p-values
+)
+
+# Adjust for multiple comparisons
+results_df$bonferroni = p.adjust(results_df$p_value, method = "bonferroni")
+results_df$fdr = p.adjust(results_df$p_value, method = "fdr")
+
+# Print the results table with significant differences
+results_df %>%
+  arrange(p_value) %>%
+  filter(p_value <= 0.05) %>% 
+  kable(row.names = FALSE)
+
+## Section B ----
+
+# Convert germination to binary outcome
+data <- germination_ex %>%
+  mutate(germination_binary = ifelse(germination == "germinated", 1, 0))
+
+# Get unique treatment groups
+treatments <- unique(data$treatment)
+
+# Get all possible pairwise comparisons
+pairwise_comparisons <- combn(treatments, 2, simplify = FALSE)
+
+# Initialize a list to store test results
+chi_square_results <- list()
+
+# Loop through each pairwise combination and perform Chi-Square test
+for (pair in pairwise_comparisons) {
+  # Subset data for the two treatments
+  subset_data <- data %>% filter(treatment %in% pair)
+  
+  # Create contingency table
+  germination_table <- table(subset_data$treatment, subset_data$germination)
+  
+  # Perform Chi-Square test
+  chi_test <- chisq.test(germination_table)
+  
+  # Store results
+  chi_square_results[[paste(pair, collapse = " vs. ")]] <- chi_test$p.value
+}
+
+# Convert results to a data frame
+results_df <- data.frame(
+  comparison = names(chi_square_results),
+  p_value = unlist(chi_square_results)    # Extract raw p-values
+)
+
+# Adjust for multiple comparisons
+results_df$bonferroni = p.adjust(results_df$p_value, method = "bonferroni")
+results_df$fdr = p.adjust(results_df$p_value, method = "fdr")
+
+# Print the results table with significant differences
+results_df %>%
+  arrange(p_value) %>%
+  filter(p_value <= 0.05) %>% 
+  kable(row.names = FALSE)
+
+```
+:::
+
+#### Step 7: Interpret the results and draw conclusions.
+
+Our last step is to compare our p-value to our $\alpha$ value and draw conclusions. We have filtered our output of the pairwise comparisons to retain only values equal to or lower than our $\alpha$ value but we will still need to interpret our results. Do they indicate that we should accept our null hypothesis or reject it and accept our alternative hypothesis?
+
+::: {.callout-tip title="Give it a try"}
+Compare your p-value to the threshold of significance we defined above to determine how to interpret the results of your statistical test.
+
+Then update the results you formulated earlier to add this information into your description of the results.
+:::
+
+.
+
+::: {.callout-caution title="Your Answer Here"}
+\[Take some notes\]
+:::
+
+.
+
+::: {.callout-note title="Answer" collapse="true"}
+To determine whether the differences between treatments are statistically significant, follow these steps:
+
+1.  **Identify the p-value**: Each comparison in the table has an associated p-value, which quantifies the probability that the observed difference between treatments occurred by random chance.
+2.  **Compare to the Significance Threshold**: A common threshold for significance is **α = 0.05** (or 5%). If the **p-value is less than 0.05**, the difference between treatments is considered statistically significant, meaning it is unlikely to have occurred due to chance alone.
+3.  **Apply Multiple Comparison Corrections**: Since multiple comparisons were made, we use the **Bonferroni correction** and **False Discovery Rate (FDR) adjustment** to account for the increased likelihood of finding a significant result by chance.
+    -   **Bonferroni correction** is more conservative, adjusting the significance threshold by dividing **α** by the number of comparisons, reducing the chance of false positives.
+    -   **FDR adjustment** controls the proportion of false positives among significant results, balancing sensitivity and specificity.
+4.  **Interpret the Results**:
+    -   If the **raw p-value is below 0.05**, there is strong evidence that the difference between treatments is meaningful but really you should use the adjusted p-values.
+    -   If the **Bonferroni-adjusted p-value** remains below 0.05, the result is significant, even with strict multiple-testing corrections.
+    -   If the **FDR-adjusted p-value** is below 0.05 but the Bonferroni-adjusted value is not, the result is likely significant but should be interpreted with some caution.
+5.  **Update Your Description of Results**: If a treatment comparison is statistically significant, explicitly state this in your results section. If a comparison is **not significant** (p ≥ 0.05 after correction), mention that there is **no strong evidence of a difference** between those treatments.
+
+Here is what your results from above could look like once you have added the results from your statistical tests:
+
+**Emphasize on "Broad Pattern First, Then Details" formula:**
+
+Overall, germination rates varied among deicer treatments, with rock salt having the strongest negative impact, the cheese brine having the least impact, and the commercial blend showing an intermediate effect. The control group had the highest germination rate (92%), indicating baseline germination without deicer exposure.
+
+Among the treatments, rock salt at high concentration had the lowest germination (18%), and statistical comparisons confirmed that this was significantly lower than the control (p \< 0.001, Bonferroni and FDR adjusted). The medium (46%) and low (55%) concentrations of rock salt also significantly reduced germination compared to the control (p \< 0.001 for medium; and low). Rock salt high was also significantly lower than cheese brine medium (p \< 0.001) and low (p \< 0.001), as well as the low commercial blend treatment (p \< 0.001), suggesting a stronger effect on seed germination than other treatments.
+
+The commercial blend also showed a negative effect, but not as severe as rock salt, with germination increasing from 40% at high concentration to 60% at medium and 83% at low. The highest concentration of commercial blend significantly reduced germination compared to the control (p \< 0.001) and was also significantly lower than cheese brine at both medium (p = 0.001) and low (p \< 0.001) concentrations.
+
+In contrast, the cheese brine had relatively little impact on germination. Even at the highest concentration, 65% of seeds germinated, which was significantly higher than rock salt high (p \< 0.001). The medium (88%) and low (86%) concentrations of cheese brine were not significantly different from the control.
+
+**Emphasis on Highlighting Notable Findings**
+
+Notably, the rock salt treatment had the lowest germination rates, with only 18% of seeds germinating at the highest concentration. This is a stark contrast to the control (91%) and even the lowest rock salt concentration (55%). The statistical comparisons confirmed that rock salt high significantly reduced germination compared to the control (p \< 0.001) and to cheese brine at medium and low concentrations (p \< 0.001 for both). Germination rates for rock salt medium and low were also significantly lower than the control (p \< 0.001 for both).
+
+The commercial blend also significantly reduced germination, but its effects were not as strong as rock salt. The highest concentration resulted in 40% germination, which was significantly lower than the control (p \< 0.001) and lower than cheese brine medium (p = 0.001) and cheese brine low (p \< 0.001). However, germination in the commercial blend low treatment (83%) was not significantly different from the control.
+
+Interestingly, the cheese brine had the least effect, with germination at its highest concentration (65%) still significantly higher than rock salt at the same level (p \< 0.001). Medium and low concentrations of cheese brine (88% and 86%) were nearly identical to the control and not significantly different, indicating minimal impact.
+
+**Emphasis on Highlighting Patterns with Comparative Terms**
+
+Germination rates were lowest for rock salt, with a strong dose-dependent effect: only 18% of seeds germinated at high concentration, but rates increased at medium (46%) and low (55%) levels. The highest concentration of rock salt significantly reduced germination compared to the control (p \< 0.001) and was also significantly lower than cheese brine medium and low (p \< 0.001 for both). Even rock salt at its lowest concentration was significantly different from the control (p = 0.001).
+
+The commercial blend also reduced germination, but its effects were less severe than rock salt, with the highest concentration (40%) showing significantly lower germination than the control (p \< 0.0001) and also significantly lower than cheese brine medium (p = 0.001) and low (p \< 0.001). However, germination in the low commercial blend treatment (83%) was not significantly different from the control.
+
+In contrast, the cheese brine had the least impact on germination. Even at the highest concentration (65%), germination remained substantially higher than rock salt (p = 0.0001) and was comparable to the commercial blend medium (p = 0.001). Medium and low concentrations of cheese brine (88% and 86%) were very similar to the control, with no statistically significant difference.
+:::
+
+## Seedling length
+
+### Get your data
+
+Go to the `GoogleSheet` that contains the seedling lengths for your lab and select the tab for your group. Double check that the data has been entered correctly. Then go to `File` -\> `Download` -\> `Tab Separated Values (.tsv)` down load your data as a tab-delimited file. Now, use your `File Explorer` if you are on a Windows computer and `Finder` of you are on a Mac and navigate to the `Downloads` folder. You should see the file you just downloaded there. Rename it to `seedling-length_plant.tsv` depending on the plant you are testing and place it in the `data` folder of your `02_Allelopathy` project folder.
+
+Once you go back to your `Rstudio` window with your `Rproj` loaded you should see the file in your `data` folder in the `Files` pane. Double check that it is there, if not, as you instructor to help you get set up.
+
+Now we are ready to read in our seedling length data as a `data.frame` that we can compute on in `R`.
+
+```{r}
+#| label: read-seedling-length-data
+
+# read in data
+length_ex <- read_delim(here("data", "seedling_length-1.csv"), delim = ",") |>
+  clean_names() |>
+  unite(treatment, deicer, treatment_level,
+        sep = "_", remove = FALSE) |>
+  mutate(treatment_level = factor(treatment_level, 
+                                  levels = c("high", "medium", "low", "trace")))
+
+# read in data
+length_A <- read_delim(here("data", "seedlings_Section-A.csv"), delim = ",") |>
+  clean_names() |>
+  unite(treatment, deicer, treatment_level,
+        sep = "_", remove = FALSE) |>
+  mutate(treatment_level = factor(treatment_level, 
+                                  levels = c("high", "medium", "low", "trace")))
+
+# read in data
+length_B <- read_delim(here("data", "seedlings_Section-B.csv"), delim = ",") |>
+  clean_names() |>
+  unite(treatment, deicer, treatment_level,
+        sep = "_", remove = FALSE) |>
+  mutate(treatment_level = factor(treatment_level, 
+                                  levels = c("high", "medium", "low", "trace")))
+
+# take a look at first few lines
+head(length)
+
+```
+
+Let's take a quick look at the sample sizes and completeness of our data sets. Remember that we are only using data on the seedlings of germinated seeds so our sample sizes should be a lot more variable. This is also why we used a sample size of 60 over three replicates so that even if we had strong inhibition that would still give us a sufficient sample size.
+
+```{r}
+
+# Example data set 
+length_ex %>%
+  group_by(deicer) %>%
+  count() %>%
+  kable()
+
+length_ex %>%
+  group_by(deicer, treatment_level, replicate) %>%
+  count() %>%
+  kable()
+
+length_ex %>%
+  group_by(deicer, treatment_level) %>%
+  count() %>%
+  kable()
+
+```
+
+::: {.callout-tip title="Give it a try"}
+Modify the code above to produce the same summary tables for your data set.
+:::
+
+.
+
+::: {.callout-caution title="Your Answer Here"}
+\[Take some notes\]
+:::
+
+.
+
+::: {.callout-note title="Answer" collapse="true"}
+For section A
+
+```{r}
+
+# Section A data set 
+length_A %>%
+  group_by(deicer) %>%
+  count() %>%
+  kable()
+
+length_A %>%
+  group_by(deicer, treatment_level, replicate) %>%
+  count() %>%
+  kable()
+
+length_A %>%
+  group_by(deicer, treatment_level) %>%
+  count() %>%
+  kable()
+
+```
+
+For section B
+
+```{r}
+
+# Section B data set 
+length_B %>%
+  group_by(deicer) %>%
+  count() %>%
+  kable()
+
+length_B %>%
+  group_by(deicer, treatment_level, replicate) %>%
+  count() %>%
+  kable()
+
+length_B %>%
+  group_by(deicer, treatment_level) %>%
+  count() %>%
+  kable()
+```
+
+There seems to be a mislabeling issue with the CaCl petri dishes but since we are going to combine replicates we can leave it for now.
+:::
+
+### Summarize your results
+
+::: {.callout-tip title="Consider this"}
+Take a look at the `data.frame` object holding your data by clicking on it in the `Environment` pane (bottom left) or using `View(object)`.
+
+Describe how your data is organized:
+
+-   what information is in each row?
+-   what information is in each column?
+
+Assess what type of data you have
+
+-   is it continuous or categorical?
+-   what groups are you comparing?
+
+Then determine which descriptive statistics are appropriate to summarize this data set and how you would visualize your data.
+:::
+
+::: {.callout-note title="Answer" collapse="true"}
+Each row represents one seedling. And each column contains information for one variable.
+
+Your data is continuous; you have a length measurement in millimeters. You have various treatments which you are comparing which are a combination of the deicer type and the concentration level. This is a categorical variable.
+
+You will want to determine the mean and standard deviation of the seedling length for both treatments. It could also be helpful to generate additional summary statistics including median, minimum and maximum values to give yourself an overview of the data.
+
+We can use various visualizations for your data set, the first is that you can visualize the distributions using a histogram or boxplot, the second is that you can visualize the mean and standard deviation using a bar chart or similar.
+:::
+
+We will need to summarize our results to evaluate our findings.
+
+::: {.callout-tip title="Consider this"}
+Suggest 3-4 metrics to summarize your data in a meaningful way that will allow you to describe your results in the context of the hypothesis you are exploring with this experiment.
+
+Explain why you think these would be appropriate data analysis methods.
+:::
+
+::: {.callout-note title="Answer" collapse="true"}
+As we have continuous data, we can use the descriptive statistics that allow us to assess the distribution (histogram), central tendency (mean, median, mode) and variability (variance, standard deviation, range) of our data.
+:::
+
+Let's start by putting together a table with summary statistics.
+
+```{r}
+#| label: tbl-summary-length
+#| tbl-cap: "Summary statistics for seedling length. Mean, median, standard deviation (sd), minimum (min) and maximum (max) length in millimeters for seedlings exposed to deicers at various treatment levels."
+
+
+# calculate summary stats for deicer and treatment_level
+summary <- length_ex |>                              # specify object
+  group_by(deicer, treatment_level) |>            # group by treatment
+  summarize(mean = mean(length_mm),
+            sd = sd(length_mm),
+            min = sd(length_mm),
+            max = max(length_mm),
+            median = median(length_mm))  # calculate summary stats
+
+# print table
+summary |>
+  kable(digits = 1)
+
+```
+
+::: {.callout-tip title="Give it a try"}
+Modify the code above to calculate additional summary statistics for your data set.
+:::
+
+::: {.callout-note title="Answer" collapse="true"}
+Section A data set
+
+```{r}
+
+# calculate summary stats for deicer and treatment_level
+summary <- length_A |>                      # specify object
+  group_by(deicer, treatment_level) |>      # group by treatment
+  summarize(mean = mean(length_mm),
+            sd = sd(length_mm),
+            min = sd(length_mm),
+            max = max(length_mm),
+            median = median(length_mm))     # calculate summary stats
+
+# print table
+summary |>
+  kable(digits = 1)
+
+```
+
+Section B data set
+
+```{r}
+
+# calculate summary stats for deicer and treatment_level
+summary <- length_B |>                      # specify object
+  group_by(deicer, treatment_level) |>      # group by treatment
+  summarize(mean = mean(length_mm),
+            sd = sd(length_mm),
+            min = sd(length_mm),
+            max = max(length_mm),
+            median = median(length_mm))     # calculate summary stats
+
+# print table
+summary |>
+  kable(digits = 1)
+
+```
+:::
+
+Again, data visualizations are an important tool to summarize and present your data. Let's start by visualizing our data with a box plot which emphasize the distribution of our values.
+
+```{r}
+#| label: fig-length-histogram
+#| fig-cap: "Seedling length distribution after 1 week for radish seeds explosed to various deicers for different concentrations."
+
+# make box plots
+ggplot(length_ex,                                   # specify object to plot
+       aes(x = deicer,                              # column on x-axis
+           y = length_mm,                           # column on y-axis
+           fill = treatment_level)) +              # column to group by
+  geom_boxplot(position = position_dodge2(preserve = "single")) + # plot type
+  scale_fill_manual(values = c("#4E5283", 
+                               "#7871AA", 
+                               "#D9BBF9",
+                               "#AA9FB1")) +         # modify for custom colors
+  labs(x = "deicer",                                 # x-axis title
+      y = "seedling length [mm]") +                  # y-axis title
+  theme_classic() +                                  # specify theme
+  theme(legend.position = "bottom")                  # legend position 
+
+```
+
+A **boxplot** or box-and-whisker plot is a graphical summary of a dataset that helps visualize its distribution, variability, and potential outliers. Boxplots are useful for comparing distributions across different groups, making them a powerful tool for visualizing overall patterns in data. A shorter box means less variability, while a longer box indicates more spread in the middle 50% of the data. If the median is centered in the box, the data is symmetrical; if it’s closer to one side, the data is skewed. Outliers suggest unusual values that may need further investigation.
+
+Here’s how to interpret it:
+
+1.  **Box (Interquartile Range, IQR):** The **box** represents the **middle 50% of the data** (the **interquartile range, or IQR**), spanning from the **first quartile (Q1, 25th percentile)** to the **third quartile (Q3, 75th percentile)**. The **line inside the box** marks the **median (Q2, 50th percentile)**—the middle value of the dataset.
+
+2.  **Whiskers (Data Spread):** The **whiskers** extend to the **smallest and largest values** within a reasonable range (typically 1.5 × IQR from Q1 and Q3). If whiskers are **longer on one side**, it suggests **skewness** (asymmetry in the data distribution).
+
+3.  **Outliers (Unusual Data Points): Dots or asterisks outside the whiskers** indicate **potential outliers**, meaning values that are unusually high or low compared to the rest of the data.
+
+::: {.callout-tip title="Give it a try"}
+Modify the code to produce box plots for your own data set.
+:::
+
+::: {.callout-note title="Answer" collapse="true"}
+Section A data set
+
+```{r}
+
+# make box plots
+ggplot(length_A,                                   # specify object to plot
+       aes(x = deicer,                              # column on x-axis
+           y = length_mm,                           # column on y-axis
+           fill = treatment_level)) +              # column to group by
+  geom_boxplot(position = position_dodge2(preserve = "single")) + # plot type
+  scale_fill_manual(values = c("#4E5283", 
+                               "#7871AA", 
+                               "#D9BBF9",
+                               "#AA9FB1")) +         # modify for custom colors
+  labs(x = "deicer",                                 # x-axis title
+      y = "seedling length [mm]") +                  # y-axis title
+  theme_classic() +                                  # specify theme
+  theme(legend.position = "bottom")                  # legend position 
+
+```
+
+Section B data set
+
+```{r}
+
+# make box plots
+ggplot(length_B,                                   # specify object to plot
+       aes(x = deicer,                              # column on x-axis
+           y = length_mm,                           # column on y-axis
+           fill = treatment_level)) +              # column to group by
+  geom_boxplot(position = position_dodge2(preserve = "single")) + # plot type
+  scale_fill_manual(values = c("#4E5283", 
+                               "#7871AA", 
+                               "#D9BBF9",
+                               "#AA9FB1")) +         # modify for custom colors
+  labs(x = "deicer",                                 # x-axis title
+      y = "seedling length [mm]") +                  # y-axis title
+  theme_classic() +                                  # specify theme
+  theme(legend.position = "bottom")                  # legend position 
+
+```
+:::
+
+Alternatively, we could create a bar plot where the height is scaled relative to the mean. This also allows us to add error bars that are scaled to the length of the standard deviation[^c04_analyze-4]. Bar plots take up a lot of "ink" and so an alternative is to create a plot using a point range. In that case the mean is represented by a point and the standard deviation by lines extending out from that point.
+
+[^c04_analyze-4]: This is a classic plot for experiments with multiple treatments
+
+```{r}
+#| label: fig-length-bar
+#| fig-cap: "Mean seedling length and standard deviation after 1 week for radish seeds explosed to deicers at various treatment levels."
+
+# plot mean and standard deviation
+summary <- length_ex %>%
+  group_by(deicer, treatment_level) %>%
+  summarise(mean = mean(length_mm),
+            sd = sd(length_mm))
+
+ggplot(summary) +
+  geom_pointrange(aes(x = treatment_level,
+                      y = mean,
+                      ymin = mean-sd,
+                      ymax = mean+sd,
+                      color = treatment_level),
+                  size = 1.2) +
+  facet_grid(. ~ deicer, scales = "free_x") +
+  scale_color_manual(values = c("#4E5283", 
+                               "#7871AA", 
+                               "#D9BBF9",
+                               "#AA9FB1")) +
+  labs(x = "deicer treatment",
+       y = "seedling length [mm]") +
+  theme_bw() +
+  theme(legend.position = "bottom")
+
+```
+
+::: {.callout-tip title="Give it a try"}
+Modify the code above to produce a plot for your data set.
+:::
+
+::: {.callout-note title="Answer" collapse="true"}
+Section A
+
+```{r}
+
+# plot mean and standard deviation
+summary <- length_A %>%
+  group_by(deicer, treatment_level) %>%
+  summarise(mean = mean(length_mm),
+            sd = sd(length_mm))
+
+ggplot(summary) +
+  geom_pointrange(aes(x = treatment_level,
+                      y = mean,
+                      ymin = mean-sd,
+                      ymax = mean+sd,
+                      color = treatment_level),
+                  size = 1.2) +
+  facet_grid(. ~ deicer, scales = "free_x") +
+  scale_color_manual(values = c("#4E5283", 
+                               "#7871AA", 
+                               "#D9BBF9",
+                               "#AA9FB1")) +
+  labs(x = "better x-axis title",
+       y = "better y-axis title") +
+  theme_bw() +
+  theme(legend.position = "bottom")
+```
+
+Section B
+
+```{r}
+
+# plot mean and standard deviation
+summary <- length_B %>%
+  group_by(deicer, treatment_level) %>%
+  summarise(mean = mean(length_mm),
+            sd = sd(length_mm))
+
+ggplot(summary) +
+  geom_pointrange(aes(x = treatment_level,
+                      y = mean,
+                      ymin = mean-sd,
+                      ymax = mean+sd,
+                      color = treatment_level),
+                  size = 1.2) +
+  facet_grid(. ~ deicer, scales = "free_x") +
+  scale_color_manual(values = c("#4E5283", 
+                               "#7871AA", 
+                               "#D9BBF9",
+                               "#AA9FB1")) +
+  labs(x = "better x-axis title",
+       y = "better y-axis title") +
+  theme_bw() +
+  theme(legend.position = "bottom")
+```
+:::
+
+::: {.callout-tip title="Give it a try"}
+Describe your results. Make sure that you are being specific and adding context to make it easy for your reader to identify the key patterns. Consider this thinking out loud in a way where you have a set of notes that you can then edit for your report.
+
+As rule of thumb, you should describe your results so that your reader has all the key information they need even without seeing the data tables. Make sure that you describe broad patterns before you report notable highlights. As you work through your description, interpretation, and discussion you may need to come back to your original description and revise it because you'll have a better idea of what your discussion will look like and which highlights you want to mention here so that you can pick up on them again at a later point.
+
+Remember, at this point you should not be interpreting your results!
+:::
+
+::: {.callout-note title="Answer" collapse="true"}
+Your description could look something like this:
+
+Broad pattern:
+
+> Overall, seedling growth was lower for radish seeds exposed to deicer X compared to the control.
+
+Details
+
+> Mean seedling growth after 1 week was xx +/- xx mm for plants exposed to deicer X compared to a mean length of yyy +/- yy mm in the control. Similarly, the variability in seedling length was higher in exposed radish seeds (range = zz -zz mm) compared to the control (range = zz- zz mm).
+
+In this case, you would not need to include table because you've included all the values, rather you might chose to include figure that effectively summarizes your data that you would then reference here.
+
+Here are some examples for our mung bean data set.
+
+**Emphasis on "Broad Patterns First, Then Notable Highlights" pattern of description**
+
+Overall, seedling length varied across treatments, with higher deicer concentrations generally leading to shorter seedlings. The control group had the longest seedlings, with a mean of 11.2 cm. In contrast, the highest concentrations of commercial blend and rock salt resulted in the shortest seedlings, with means of 3.7 cm and 4.0 cm, respectively.
+
+Among the cheese brine treatments, seedlings in the high concentration group were shorter (mean = 7.6 cm) compared to the medium (10.4 cm) and low (10.5 cm) treatments, which were similar to the control. A similar trend was observed in the commercial blend and rock salt treatments, where seedlings were substantially shorter at high concentrations but increased in length at medium and low levels. For example, rock salt at high concentration resulted in a mean seedling length of 4.0 cm, but at medium concentration, the mean increased to 6.4 cm, and at low concentration, seedlings were comparable to the control (10.5 cm).
+
+**Emphasis on "Describing Patterns with Context and Comparisons"**
+
+The data indicate that high concentrations of all deicers negatively impacted seedling growth, while lower concentrations had less effect. Seedlings in the control treatment had the greatest median length (11.5 cm), while the shortest seedlings were observed in the high concentration commercial blend (median = 3.5 cm) and rock salt (median = 3.5 cm) treatments.
+
+The cheese brine treatment followed a dose-dependent trend, where seedlings in the high concentration group were notably shorter (mean = 7.6 cm) compared to those in the medium and low concentration groups (10.4 cm and 10.5 cm, respectively). The commercial blend also followed this pattern, though the effect was more pronounced, with the high concentration reducing seedling length to 3.7 cm on average.
+
+Rock salt had a similar negative effect at high concentrations (mean = 4.0 cm) but showed some recovery at medium concentration (6.4 cm) and full recovery at low concentration, where the mean length (10.5 cm) was nearly identical to the control.
+
+**Emphasis on "Notable Findings"**
+
+Seedling growth was strongly affected by deicer type and concentration. Notably, the highest concentrations of commercial blend and rock salt had the most severe impact, reducing mean seedling length to 3.7 cm and 4.0 cm, respectively. In contrast, cheese brine had a less pronounced effect, with the high concentration resulting in a mean length of 7.6 cm.
+
+Interestingly, at low concentrations, seedlings exposed to all deicers had lengths comparable to the control (10.5–10.6 cm vs. 11.2 cm in the control), suggesting that at lower doses, deicers may not significantly inhibit growth. However, at medium and high concentrations, all treatments except cheese brine caused substantial reductions in seedling length.
+:::
+
+Again, our set of summary statistics and data visualization enable us to present the patterns in our data set. However, at this point we cannot make statement whether our observed differences in seedling lengths are within the range of variability in growth we would expect to see even if the deicer does not have an effect on growth.
+
+### Test for significance
+
+For a pairwise comparison between two means we would apply a $t$-test to evaluate the difference between means. However in this case we have multiple treatments that we want to compare and so we would use an ANOVA (analysis of variance). Similar to our germination data that will only tell us if there is significant variance in the data set overall and we will need to follow this with pairwise comparisons.
+
+#### Step 3: State your your null and alternate hypothesis and predict the outcome assuming the null hypothesis is true.
+
+::: {.callout-tip title="Give it a try"}
+State your null and alternative hypothesis and predict the outcome if each claim is true.
+:::
+
+::: {.callout-note title="Answer" collapse="true"}
+Your null hypothesis is a claim that there is no effect:
+
+-   $H_{0}$: Presence of deicers does not have an effect on the growth rate of radish seeds.
+-   Prediction: The seedling length does not differ between the experimental treatments.
+
+The alternative hypothesis is a claim that there is an observed effect.
+
+-   $H_{0}$: Presence of deicers has a negative effect on the growth rate of radish seeds.
+-   Prediction: The seedling length for seeds exposed to plant X will be lower compared to the control.
+:::
+
+#### Step 4: Specify a significance threshold.
+
+::: {.callout-tip title="Consider this"}
+We will specify our significance threshold $\alpha$ as 0.05.
+
+Explain what this means and why it is important for us to specify this.
+:::
+
+::: {.callout-note title="Answer" collapse="true"}
+This means that if our observed results have a less than 5% probability occurring according to our null distribution we will reject our null hypothesis.
+:::
+
+#### Step 5: Calculate your test statistic and generate sampling distribution and Step 6: Get your p-value.
+
+Let's perform the analysis of variance. To do this we need to specify the columns containing dependent variable and the independent variable using a "formula notation" (column names separated by a `~` ) as well as the object containing our data.
+
+```{r}
+
+# Perform ANOVA
+anova_ex <- aov(length_mm ~ treatment, data = length_ex)
+
+# View summary of ANOVA results
+summary(anova_ex)
+
+```
+
+**Interpreting the ANOVA Output**
+
+-    **"Df" (Degrees of Freedom):** Shows how many groups and observations are in the analysis.
+-   **"Sum Sq" (Sum of Squares):** Measures total variation in the data.
+-   **"Mean Sq" (Mean Square):** Sum of squares divided by degrees of freedom.
+-   **"F value":** The test statistic; higher values indicate greater differences between groups.
+-   **"Pr(\>F)" (p-value):** If **p \< 0.05**, we reject the null hypothesis and conclude that at least one treatment level has a significantly different mean.
+
+::: {.callout-tip title="Give it a try"}
+Modify the code above to perform an ANOVA on your data set.
+:::
+
+::: {.callout-note title="Answer" collapse="true"}
+Section A:
+
+```{r}
+
+# Perform ANOVA
+anova_A <- aov(length_mm ~ treatment, data = length_A)
+
+# View summary of ANOVA results
+summary(anova_A)
+
+```
+
+Section B:
+
+```{r}
+
+# Perform ANOVA
+anova_B <- aov(length_mm ~ treatment, data = length_B)
+
+# View summary of ANOVA results
+summary(anova_B)
+
+```
+:::
+
+As our p-values are below the specified threshold level of 0.05 we now know that at least one treatment has a significantly different mean. Next, we will perform post-hoc Tukey tests so that we can determine which pairwise comparisons are significant. If a pairwise comparison has **p \< 0.05**, those two treatment levels have a statistically significant difference in seedling length. This approach allows us to determine whether deicer type and treatment level influences seedling length and, if so, which specific treatments cause the differences.
+
+Again we will then filter our output so that we have a much smaller table that only shows pairs that are significantly different.
+
+```{r}
+
+# Post-hoc test to compare treatment levels
+tukey_df <- tidy(TukeyHSD(anova_ex))
+
+# look at first few rows
+tukey_df %>%
+  head() %>%
+  kable()
+
+# print table with significant pairwise comparisons
+tukey_df %>%
+  filter(adj.p.value <= 0.05) %>%
+  kable()
+
+# print table with pairwise comparisons that are not significantly different
+tukey_df %>%
+  filter(adj.p.value >= 0.05) %>%
+  kable()
+
+```
+
+::: {.callout-tip title="Give it a try"}
+Modify the code above to run pairwise Tukey Tests on your data set.
+:::
+
+::: {.callout-note title="Answer" collapse="true"}
+Section A
+
+```{r}
+
+# Post-hoc test to compare treatment levels
+tukey_df <- tidy(TukeyHSD(anova_A))
+
+# look at first few rows
+tukey_df %>%
+  head() %>%
+  kable()
+
+# print table with significant pairwise comparisons
+tukey_df %>%
+  filter(adj.p.value <= 0.05) %>%
+  kable()
+
+# print table with pairwise comparisons that are not significantly different
+tukey_df %>%
+  filter(adj.p.value >= 0.05) %>%
+  kable()
+```
+
+Section B
+
+```{r}
+
+# Post-hoc test to compare treatment levels
+tukey_df <- tidy(TukeyHSD(anova_A))
+
+# look at first few rows
+tukey_df %>%
+  head() %>%
+  kable()
+
+# print table with significant pairwise comparisons
+tukey_df %>%
+  filter(adj.p.value <= 0.05) %>%
+  kable()
+
+# print table with pairwise comparisons that are not significantly different
+tukey_df %>%
+  filter(adj.p.value >= 0.05) %>%
+  kable()
+```
+:::
+
+#### Step 7: Interpret the results and draw conclusions.
+
+::: {.callout-tip title="Give it a try"}
+Compare your p-value to the threshold of significance we defined above to determine how to interpret the results of your ANOVA and Tukey post-hoc tests.
+
+Then update the results you formulated earlier to add this information into your description of the results.
+:::
+
+::: {.callout-note title="Answer" collapse="true"}
+Here's an example of a description of results including ANOVA and Tukey Test Results.
+
+Overall, seedling length varied across treatments, with higher deicer concentrations generally leading to shorter seedlings (ANOVA, p \< 0.05). The control group had the longest seedlings (mean = 11.2 cm), while the highest concentrations of commercial blend and rock salt resulted in the shortest seedlings (means = 3.7 cm and 4.0 cm, respectively). Tukey post-hoc tests confirmed that these reductions were statistically significant compared to the control (p \< 0.0001).
+
+Among the cheese brine treatments, seedlings in the high concentration group were significantly shorter (mean = 7.6 cm) than those in the medium (10.4 cm, p = 0.002) and low (10.5 cm, p = 0.001) treatments, which were not significantly different from the control. A similar trend was observed for commercial blend and rock salt treatments, where high concentrations resulted in significant reductions (p \< 0.0001), but seedling length increased at medium and low levels. For example, rock salt at high concentration led to a mean seedling length of 4.0 cm, but at medium concentration, the mean increased to 6.4 cm (p = 0.008), and at low concentration, seedlings were comparable to the control (10.5 cm, p = 0.45, not significant).
+
+These results suggest a dose-dependent effect, where high concentrations of all deicers significantly inhibited growth, while lower concentrations had a reduced or negligible impact. Notably, cheese brine had a less severe effect compared to commercial blend and rock salt, as seedlings at high concentration were still significantly longer than those in the commercial blend high and rock salt high treatments (p = 0.0002 and p = 0.0005, respectively).
+:::
+
+Remember, if your results are not statistically significant, you still need to write a set of conclusions! Even though we seem to think that "negative results" are "bad", "negative" just means that we did not observe an effect - but that is also a result because you can now exclude one possible explanation for your observation and move on to test the next one.
