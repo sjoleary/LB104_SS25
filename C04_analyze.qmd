@@ -1,5 +1,19 @@
 # Analyze your data
 
+```{r}
+#| label: setup
+#| include: false
+
+# set options
+knitr::opts_chunk$set(
+  tidy = FALSE, 
+  message = FALSE,
+	warning = FALSE)
+
+options(htmltools.dir.version = FALSE)
+
+```
+
 After completing this set of activities, you should be able to:
 
 -   assess what information is contained in a data set.
@@ -133,14 +147,6 @@ Create a copy of the code and then modify it to produce a similar table that sho
 Then produce a version of each of the two tables for the other two data sets.
 :::
 
-.
-
-::: {.callout-caution title="Your Answer Here"}
-\[Take some notes\]
-:::
-
-.
-
 ::: {.callout-note title="Answer" collapse="true"}
 You can choose any set of columns to group by (remember to not use quotation marks and separate them by a comma) as long as you type the column name in exactly:
 
@@ -253,14 +259,6 @@ germination_ex %>%
 Modify the code to create similar tables for your data sets.
 :::
 
-.
-
-::: {.callout-caution title="Your Answer Here"}
-\[Take some notes\]
-:::
-
-.
-
 ::: {.callout-note title="Answer" collapse="true"}
 ```{r}
 
@@ -302,11 +300,11 @@ summary <- germination_ex |>
   mutate(percent = n/sum(n)*100)       # calculate proportion
 
 # subset data to show % not germinated ----
-no_germination <- summary |>
+germination <- summary |>
   filter(germination == "germinated")
 
 # create bar plot with frequency
-ggplot(no_germination, aes(x = deicer,                  # specify categories on x axis
+ggplot(germination, aes(x = deicer,                  # specify categories on x axis
                         y = percent,
                         fill = treatment_level)) +   # specify how to group data
   geom_bar(stat = "identity",                        # length of bar indicates number of observations
@@ -957,14 +955,6 @@ Compare your p-value to the threshold of significance we defined above to determ
 Then update the results you formulated earlier to add this information into your description of the results.
 :::
 
-.
-
-::: {.callout-caution title="Your Answer Here"}
-\[Take some notes\]
-:::
-
-.
-
 ::: {.callout-note title="Answer" collapse="true"}
 To determine whether the differences between treatments are statistically significant, follow these steps:
 
@@ -1075,14 +1065,6 @@ length_ex %>%
 ::: {.callout-tip title="Give it a try"}
 Modify the code above to produce the same summary tables for your data set.
 :::
-
-.
-
-::: {.callout-caution title="Your Answer Here"}
-\[Take some notes\]
-:::
-
-.
 
 ::: {.callout-note title="Answer" collapse="true"}
 For section A
@@ -1264,11 +1246,11 @@ A **boxplot** or box-and-whisker plot is a graphical summary of a dataset that h
 
 Here’s how to interpret it:
 
-1.  **Box (Interquartile Range, IQR):** The **box** represents the **middle 50% of the data** (the **interquartile range, or IQR**), spanning from the **first quartile (Q1, 25th percentile)** to the **third quartile (Q3, 75th percentile)**. The **line inside the box** marks the **median (Q2, 50th percentile)**—the middle value of the dataset.
+1.  **Box (Interquartile Range, IQR):** The box represents the middle 50% of the data (the interquartile range, or IQR), spanning from the first quartile (Q1, 25th percentile) to the third quartile (Q3, 75th percentile). The line inside the box marks the median (Q2, 50th percentile)—the middle value of the dataset.
 
-2.  **Whiskers (Data Spread):** The **whiskers** extend to the **smallest and largest values** within a reasonable range (typically 1.5 × IQR from Q1 and Q3). If whiskers are **longer on one side**, it suggests **skewness** (asymmetry in the data distribution).
+2.  **Whiskers (Data Spread):** The whiskers extend to the smallest and largest values within a reasonable range (typically 1.5 × IQR from Q1 and Q3). If whiskers are longer on one side, it suggests skewness (asymmetry in the data distribution).
 
-3.  **Outliers (Unusual Data Points): Dots or asterisks outside the whiskers** indicate **potential outliers**, meaning values that are unusually high or low compared to the rest of the data.
+3.  **Outliers (Unusual Data Points):** Dots or asterisks outside the whiskers indicate potential outliers, meaning values that are unusually high or low compared to the rest of the data.
 
 ::: {.callout-tip title="Give it a try"}
 Modify the code to produce box plots for your own data set.
@@ -1509,7 +1491,7 @@ summary(anova_ex)
 
 **Interpreting the ANOVA Output**
 
--    **"Df" (Degrees of Freedom):** Shows how many groups and observations are in the analysis.
+-   **"Df" (Degrees of Freedom):** Shows how many groups and observations are in the analysis.
 -   **"Sum Sq" (Sum of Squares):** Measures total variation in the data.
 -   **"Mean Sq" (Mean Square):** Sum of squares divided by degrees of freedom.
 -   **"F value":** The test statistic; higher values indicate greater differences between groups.
