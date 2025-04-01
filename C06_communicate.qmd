@@ -37,7 +37,9 @@ A key piece of advice is to write *through* your experiment as to *writing it up
 
 **Your method section should describe your study design, how you collected, processed, and analyzed the data.**
 
-Start with your methods section to describe how you conducted your study, which treatments you included (explanatory variables), sample size, replicates etc. Describe specifically how you gathered and analyzed your data (response variables). Remember that it should be sufficiently detailed so your study could be repeated by somebody else and reproduce the same results - but should also be written as a paragraph not as a step-by-step lab protocol.
+[^c06_communicate-1]Start with your methods section to describe how you conducted your study, which treatments you included (explanatory variables), sample size, replicates etc. Describe specifically how you gathered and analyzed your data (response variables). Remember that it should be sufficiently detailed so your study could be repeated by somebody else and reproduce the same results - but should also be written as a paragraph not as a step-by-step lab protocol.
+
+[^c06_communicate-1]: Note that this transition is the last few sentences of your Introduction section - it summarizes your question/hypothesis, your objectives, and how you achieved them (that's your methods).
 
 #### Summary/Transition
 
@@ -77,9 +79,9 @@ Go back to your notes/assignments and review your initial draft of your summary 
 
 #### Experimental Design & Data Analysis
 
-The next step is write your methods section that elaborates on your summary[^c06_communicate-1]. It can be helpful to structure your method section with subheadings to include important components of your study.
+The next step is write your methods section that elaborates on your summary[^c06_communicate-2]. It can be helpful to structure your method section with subheadings to include important components of your study.
 
-[^c06_communicate-1]: Well, at this point we'll make our first notes that we can then use as an outline to write our report.
+[^c06_communicate-2]: Well, at this point we'll make our first notes that we can then use as an outline to write our report.
 
 **Study area/Site description or Laboratory Setting/Experimental Conditions**
 
@@ -132,9 +134,9 @@ Your results section should include a written description along with data visual
 
 #### Describe your results
 
-Now it is time to describe your results. It will be helpful to your reader if you follow the same structure as your methods, i.e. if your methods collecting germination data you want to describe those first. Your results should not be "reading aloud a table" (or figure) and just listing out values, rather the written description allows you to give context to your results ("increased", "wider", "smaller") and guide the reader through your results that you have spent a lot of time thinking about but are new to them. To achieve this, it can be helpful to use a formula of "*broad observation - highlight notable details*"[^c06_communicate-2].
+Now it is time to describe your results. It will be helpful to your reader if you follow the same structure as your methods, i.e. if your methods collecting germination data you want to describe those first. Your results should not be "reading aloud a table" (or figure) and just listing out values, rather the written description allows you to give context to your results ("increased", "wider", "smaller") and guide the reader through your results that you have spent a lot of time thinking about but are new to them. To achieve this, it can be helpful to use a formula of "*broad observation - highlight notable details*"[^c06_communicate-3].
 
-[^c06_communicate-2]: Reference the [The Academic Phrasebank](https://www.phrasebank.manchester.ac.uk/) for help in how to express these patterns.
+[^c06_communicate-3]: Reference the [The Academic Phrasebank](https://www.phrasebank.manchester.ac.uk/) for help in how to express these patterns.
 
 ::: {.callout-tip title="Give it a try"}
 Refer to the '*describe and interpret your results'* section of your lab manual and identify the individual components (variables) you will need to include. Then, for each make a note on what the broad trend is as well as notable highlights; use bullet points that you can then easily write up. You may have already compiled this information in your notes, then just add them here.
@@ -186,30 +188,30 @@ A good discussion will build on your summary/transition statement to write an ef
 
 In addition to ending with a clear set of conclusions you should include these four components:
 
--   Interpret your results and compare them to your expectations and other studies[^c06_communicate-3]:
+-   Interpret your results and compare them to your expectations and other studies[^c06_communicate-4]:
     -   Did your results match your predictions?
     -   Do your results support your hypothesis? How do you interpret them in that context?
     -   Why do you think you ended up with these results?
     -   Are your results consistent with similar studies/your classmates results? Different? Why?
--   Discuss constraints/limitations, inconsistencies, other possible explanations[^c06_communicate-4]
+-   Discuss constraints/limitations, inconsistencies, other possible explanations[^c06_communicate-5]
     -   Acknowledge and discuss constraints, point out shortcomings and any caveats for how your data should be interpreted.
     -   Explain unexpected results.
     -   If results are inconsistent/ambiguous why are you confident you are interpreting them way you are?
     -   Are the other possible explanations? Other reasons of why you may have ended up with the results you did?
     -   Are there any errors, assumptions, ambiguities etc that could have impacted your results? Why you are still confident interpreting you data as you are?
     -   How might you redesign the experiment for more clear results?
--   Discuss implications of your results[^c06_communicate-5].
+-   Discuss implications of your results[^c06_communicate-6].
     -   How do your results contribute to answering your overarching research question?
     -   Why is your study important? What do we know now that we didn't before?
 -   Future steps
     -   What questions where generated?
     -   What is the next step to even better understand your overarching research question?
 
-[^c06_communicate-3]: In this semester we will generally keep the "compare to other studies very small, don't worry, you won't have to go on an extended literature search.
+[^c06_communicate-4]: In this semester we will generally keep the "compare to other studies very small, don't worry, you won't have to go on an extended literature search.
 
-[^c06_communicate-4]: This is still really specific to your study.
+[^c06_communicate-5]: This is still really specific to your study.
 
-[^c06_communicate-5]: Now you are broadening your scope to the broader context in which you asked your question
+[^c06_communicate-6]: Now you are broadening your scope to the broader context in which you asked your question
 
 Remember to wrap up your discussion with a firm conclusion that summarizes the key findings and the interpretation of your study.
 
@@ -231,13 +233,13 @@ Think of your introduction as the funnel or top piece of an hourglass that start
 
 -   Introduce the broad topic/general research question you are asking, including why this is an important question to be asking. Give a brief overview of the current state of understanding of the research question. Make sure you introduce any key terms/concepts to set up the context of a large question/scientific field or overarching theme.
 -   Increasingly narrow your scope down to the specific focus of your study. Describe why your question is relevant and how it furthers the understanding of this question: Even though you cannot fully answer the big question you laid out, you can contribute to part of the answer by filling a knowledge gap or clarifying existing conflicting results.
--   Clearly state the purpose of your research, you should state what your hypothesis is, what you expect to find and why, and how you are testing this[^c06_communicate-6].
+-   Clearly state the purpose of your research, you should state what your hypothesis is, what you expect to find and why, and how you are testing this[^c06_communicate-7].
 
-[^c06_communicate-6]: No details about your methods/results yet at this point, just brief "how".
+[^c06_communicate-7]: No details about your methods/results yet at this point, just brief "how".
 
-You should always have at least two paragraphs. The first, sets up the broad context[^c06_communicate-7].
+You should always have at least two paragraphs. The first, sets up the broad context[^c06_communicate-8].
 
-[^c06_communicate-7]: For a lab report you can likely do this in a single paragraph, in a longer research paper you will likely then take several following paragraphs to flesh out relevant background information
+[^c06_communicate-8]: For a lab report you can likely do this in a single paragraph, in a longer research paper you will likely then take several following paragraphs to flesh out relevant background information
 
 ::: {.callout-tip title="Give it a try"}
 We have previously identified our "big question" to "How do humans impact ecosystems by building and maintaining roads?".
@@ -287,13 +289,13 @@ For this lab report we are sticking very close to our study with very brief intr
 
 For the most part our introduction and discussion contain the two types of information that we do not need to cite, **general common knowledge** and **field-specific common knowledge**. General common knowledge are facts that are considered to be in the public domain. With field-specific knowledge it becomes a bit more tricky, and so when in doubt, attribute the original source.
 
-Typically, we document **another authors specific words and phrases** and **information and ideas** with citations pointing towards the original author (primary literature or grey literature[^c06_communicate-8]) or works that have analyzed, synthesized, and interpreted primary research (secondary literature[^c06_communicate-9]). Papers in the humanities and literary analysis frequently use direct quotations because that is essentially your data and you need to present it to support your analysis of specific words and phrases. In the social and natural sciences we **summarize, paraphrase** [^c06_communicate-10] and then **attribute** the specific pieces of information (frequently data/results, or examples/case studies) and individual ideas/arguments, methods, theories, processes etc. to the original author.
+Typically, we document **another authors specific words and phrases** and **information and ideas** with citations pointing towards the original author (primary literature or grey literature[^c06_communicate-9]) or works that have analyzed, synthesized, and interpreted primary research (secondary literature[^c06_communicate-10]). Papers in the humanities and literary analysis frequently use direct quotations because that is essentially your data and you need to present it to support your analysis of specific words and phrases. In the social and natural sciences we **summarize, paraphrase** [^c06_communicate-11] and then **attribute** the specific pieces of information (frequently data/results, or examples/case studies) and individual ideas/arguments, methods, theories, processes etc. to the original author.
 
-[^c06_communicate-8]: Primary literature refers to original research findings published in a peer-reviewed journal, grey literature is information not published through traditional journals that have undergone some sort of review/fact checking like government reports or internal company documents.
+[^c06_communicate-9]: Primary literature refers to original research findings published in a peer-reviewed journal, grey literature is information not published through traditional journals that have undergone some sort of review/fact checking like government reports or internal company documents.
 
-[^c06_communicate-9]: Secondary literature typically appears as review articles or textbooks and summarizes primary literature for a specific topic. Review articles can sometimes fall into both primary and secondary literature. A review article that synthesizes other work to produce something new or formalize a certain argument/theory for the first time is frequently considered primary literature.
+[^c06_communicate-10]: Secondary literature typically appears as review articles or textbooks and summarizes primary literature for a specific topic. Review articles can sometimes fall into both primary and secondary literature. A review article that synthesizes other work to produce something new or formalize a certain argument/theory for the first time is frequently considered primary literature.
 
-[^c06_communicate-10]: There should be no direct quotations in your lab report!
+[^c06_communicate-11]: There should be no direct quotations in your lab report!
 
 Recall, that you read two briefs in preparation for our first lab. You should cite these when you discuss the issues surrouding the use of deicing. Additionally your lab manual gave you some information on different components of deicers and how they may impact soil and seeds. For general ecology information you can also cite your textbook.
 

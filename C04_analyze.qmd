@@ -316,8 +316,8 @@ ggplot(germination, aes(x = deicer,                  # specify categories on x a
                                "#7871AA", 
                                "#D9BBF9",
                                "#AA9FB1")) +      # modify for custom colors
-  labs(x = "deicer type",                    # x-axis title
-       y = "% of seeds that did not germinate") +                  # y-axis title
+  labs(x = "treatment",                    # x-axis title
+       y = "% germination") +                  # y-axis title
   theme_classic() +                                  # specify theme
   theme(legend.position = "bottom")                  # legend position 
 
@@ -355,7 +355,7 @@ ggplot(no_germination, aes(x = deicer,                  # specify categories on 
                                "#ECE0F8",
                                "#AA9FB1")) +      # modify for custom colors
   labs(x = "deicer type",                    # x-axis title
-       y = "% of seeds that did not germinate",  # y-axis title
+       y = "% germination",  # y-axis title
        title = "Data set section A") +     
   theme_classic() +                                  # specify theme
   theme(legend.position = "bottom")                  # legend position 
@@ -385,7 +385,7 @@ ggplot(no_germination, aes(x = deicer,                  # specify categories on 
                                "#ECE0F8",
                                "#AA9FB1")) +      # modify for custom colors
   labs(x = "deicer type",                    # x-axis title
-       y = "% of seeds that did not germinate",  # y-axis title
+       y = "% germination",  # y-axis title
        title = "Data set section B") +     
   theme_classic() +                                  # specify theme
   theme(legend.position = "bottom")                  # legend position 
@@ -1272,7 +1272,8 @@ ggplot(length_A,                                   # specify object to plot
                                "#D9BBF9",
                                "#AA9FB1")) +         # modify for custom colors
   labs(x = "deicer",                                 # x-axis title
-      y = "seedling length [mm]") +                  # y-axis title
+      y = "seedling length [mm]",
+      title = "Section A") +                  # y-axis title
   theme_classic() +                                  # specify theme
   theme(legend.position = "bottom")                  # legend position 
 
@@ -1293,7 +1294,8 @@ ggplot(length_B,                                   # specify object to plot
                                "#D9BBF9",
                                "#AA9FB1")) +         # modify for custom colors
   labs(x = "deicer",                                 # x-axis title
-      y = "seedling length [mm]") +                  # y-axis title
+      y = "seedling length [mm]",
+      title = "Section B") +                  # y-axis title
   theme_classic() +                                  # specify theme
   theme(legend.position = "bottom")                  # legend position 
 
@@ -1361,7 +1363,8 @@ ggplot(summary) +
                                "#D9BBF9",
                                "#AA9FB1")) +
   labs(x = "better x-axis title",
-       y = "better y-axis title") +
+       y = "better y-axis title",
+       title = "Section A") +
   theme_bw() +
   theme(legend.position = "bottom")
 ```
@@ -1389,7 +1392,8 @@ ggplot(summary) +
                                "#D9BBF9",
                                "#AA9FB1")) +
   labs(x = "better x-axis title",
-       y = "better y-axis title") +
+       y = "better y-axis title",
+       title = "Section B") +
   theme_bw() +
   theme(legend.position = "bottom")
 ```
