@@ -2,4 +2,129 @@
 
 After completing this set of activities, you should be able to:
 
+-   Describe the morphological differences between fructicose, foliose, and crustose lichens and classify lichens you encounter in the field in these three categories.
+-   Define what a bioindicator species is and describe key characteristics that make organisms good bioindicators.
+-   Formulate a hypothesis of important abiotic and biotic variables determining presence/absence, distribution, and type of lichen present in local microhabitats.
 
+## Introduction {#sec-introduction}
+
+### Lichens are ubiquitous {#sec-lichens-are-ubiquitous}
+
+Lichens are unique organisms because they are composed of two organisms in a symbiotic relationship. The lichen organism is composed of a fungus (typically an ascomycete) and an alga (typically a green algae, but also some cyanobacteria). This “arrangement” has resulted in a diverse assemblage of about 25,000 species. Each species of lichen has a fungus unique to that species, but a species of alga may occur in several different lichens. The algae, through photosynthesis, provides the nourishment for the lichen. The fungus, through decomposition of the substrate, provides chemicals necessary for the growth of the alga and the lichen, and helps to retain moisture.
+
+Lichens are very widespread (ubiquitous) in nature, including habitats where no other organisms can grow. They can be found on bare soil, tree trunks, and rocks; from deserts to alpine peaks, and from hot dry climates to polar areas. Lichens have an extremely important role to play in soil formation. During primary succession, they “pave” the way for the establishment of other plants, they are often called “pioneer” species.
+
+::: {.callout-tip title="Consider this"}
+Argue why lichens are better suited than plants to colonize bare substrates such as rocks.
+:::
+
+::: {.callout-note title="Answer" collapse="true"}
+Lichens are better than plants at absorbing water and nutrients in harsh environments because of the fungal component
+:::
+
+::: {.callout-tip title="Consider this"}
+Argue why lichens are better suited than fungi to colonize bare substrates such as rocks.
+:::
+
+::: {.callout-note title="Answer" collapse="true"}
+Lichens are betters than fungi at obtaining carbohydrate (food) in harsh environments because of the photosynthesizing algal component.
+:::
+
+### Lichens are classified in three morphospecies groups {#sec-lichens-are-classified-in-three-morpho-species-groups}
+
+Lichens are classified into three major groups according to their growth habits. **Crustose** lichens are encrusted in rocks or wood, **fruticose** lichens are branched and emergent from the substrate, and **foliose** lichens are membranous and leaf like.
+
+::: {.callout-tip title="Give it a try"}
+Let's take a closer look at the three major groups of lichens you will encounter during lab.
+
+Examine the indicated specimen to create a set of sketches with labeled and annotated key features. Each of your sketches should be approximately 1/2 page. You will use these sketches as a reference to identify lichen in the field so make sure that you are familiar with the key features.
+
+You will be asked to upload images of your sketches - you can sketch them on paper and take pictures, or for you high-tech digital notetakers sketch them on a tablet. Remember to give you sketches a descriptive title including the magnification used using the caption field.
+
+If you are using an iPhone very likely your default output is HEIC which is an apple-specific high efficiency file format. They are great if you are keeping pictures on your phone - not so great when you are sharing them, especially cross platform. You can make a small change on your iPhone options to create a readily shareable and outside-of-apple-products-usable file format.
+
+1.  Open the Camera section in the Settings app
+
+2.  Under Formats, select "most compatible" instead of "high efficiency"
+
+Now, when you take a new photo or video it will be saved as JPEG instead of HEIF/HEIC.
+:::
+
+**Ascocarp lichen cross section.**
+
+1.  Obtain a compound microscope and examine slide 375 (ascocarp cross-section).
+2.  Make a sketch labeling and annotating **fungal** **hyphae** and **algae** along with other key features.
+
+**Foliose lichen**
+
+1.  Visually examine the foliose lichen on display without magnification.
+2.  Under low magnification using a dissection microscope examine key features.
+3.  Make a sketch labeling/annotating key features that make it distinct from the other morphotypes.
+
+**Fructicose lichen**
+
+1.  Visually examine the foliose lichen on display without magnification.
+2.  Under low magnification using a dissection microscope examine key features.
+3.  Make a sketch labeling/annotating key features that make it distinct from the other morphotypes.
+
+**Crustose lichen**
+
+1.  Visually examine the foliose lichen on display without magnification.
+2.  Under low magnification using a dissection microscope examine key features.
+3.  Make a sketch labeling/annotating key features that make it distinct from the other morphotypes.
+
+### Lichens as bioindicators {#sec-lichens-as-bioindicators}
+
+::: {.callout-tip title="Consider this"}
+Together with your lab partner write out a definition of a bioindicator species and discuss why they might be more useful than directly measuring variables like pollution.
+
+List 3-5 characteristics of lichens and explain why these feature make them good bioindicators.
+:::
+
+::: {.callout-caution title="Your Answer Here"}
+\[Take some notes\]
+:::
+
+## Generate a local hypothesis {#sec-generate-a-local-hypothesis}
+
+We have already explored relationships between lichen presence and abundance and abiotic and biotic factors at continental scales.
+
+::: {.callout-tip title="Consider this"}
+Refer back to last weeks lab and consider the key habitat requirements of lichens which include water, air, nutrients, light, and substrate type.
+
+Together with your lab partner create a list of abiotic and biotic variables that may affect the presence and abundance of lichens, in general, or the type of lichens present in a specific habitat.
+
+Last week, we explored large-scale patterns at a continental scale. Take a look at your list and consider what variables might additionally be important at a local scale. Specifically, consider the Manchester area which contains a range of different microhabitats (you can also refer to the National Land Cover Database classifications) and brainstorm which variables might play an important role in determining the presence/absence or type of lichens found on trees across campus.
+
+Organize your list by whether these variables are abiotic or biotic and determine if there are other categories that you can use to organize/categorize your variables.
+
+Take some notes on your discussion with your lab partner and be prepared to share your thoughts with your lab section.
+:::
+
+::: {.callout-caution title="Your Answer Here"}
+\[Delete this line and replace it with your brainstorming results\]
+:::
+
+Next week, we will perform a lichen survey.
+
+::: {.callout-tip title="Consider this"}
+Together with your lab partner, look over the field sampling protocol and make a note of any component of the field sampling protocol that you are unsure of.
+
+Compare the variables that we will be measuring to the list that you just generated above that you think can play a key role in determining presence/absence, distribution, and type of lichen present on in urban environments. If necessary add additional variables to that list.
+
+Consider the fact that there are parameters that you might be interested in that we are not measuring directly. Take a look at the data we are collecting and describe what the metrics are that we are measuring indirectly by including these potential explanatory variables.
+:::
+
+Now you are ready to generate two local hypotheses that you would like to test with the data that we will generate next week. We will combine data across sections so that we can make comparisons across different microhabitats.
+
+::: {.callout-tip title="Give it a try"}
+Together with your lab partner **identify two local research hypotheses** that you would like to test based off of the list of variables that you generated and the information about what parameters we will measure. Make sure that we are gathering the data that will actually allow you to assess your hypothesis!
+
+Consider the information from our continental-level assessment from last week along with information from the results from previous lichen surveys.
+
+Use the if-then-because format to state your hypothesis. Then, sketch a figure t hat demonstrates how you will visualize your data and what you expect that figure to look like if your hypothesis is correct.
+:::
+
+::: {.callout-caution title="Your Answer Here"}
+\[Take some notes\]
+:::
