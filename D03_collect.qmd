@@ -141,17 +141,18 @@ Before you head out, make sure you have gathered all the necessary equipment.
 
 ## Upload your images and digitize your datasheets {#sec-upload-your-images-and-digitize-your-datasheets}
 
-### **Upload you images to the shared google drive** {#sec-upload-you-images-to-the-shared-google-drive}
+### Upload you images to the shared google drive {#sec-upload-you-images-to-the-shared-google-drive}
 
-After you return from the field make sure to upload the photos you took in the field in our shared google drive in the `results` folder under the corresponding `section-letter > group-#` folder. We are assuming that your pictures are in the sequence tree 1 - xx and in the specified sequence of photo 1 - 3. Please rename your photos with the file name `section-letter_grp-#_tree-#_photo-#.jpq`
+After you return from the field make sure to upload the photos you took in the field in our shared google drive in the `data` folder under the corresponding `section-letter > group-#` folder. We are assuming that your pictures are in the sequence tree 1 - xx and in the specified sequence of photo 1 - 3. Please rename your photos with the file name `section-letter_grp-#_tree-#_photo-#.jpq`
 
 ### Enter your data in the shared spreadsheet {#sec-enter-your-data-in-the-shared-spreadsheet}
 
 ::: {.callout-warning title="Heads up"}
-We are going to share the data set across all sections so each group can compare differences across microhabitats. In order to give us time to QC/QA the data so it's ready to go for the labs next week. Please complete your data entry within **48 hours of returning from the field**.
+We are going to share the data set across all sections so each group can compare differences across microhabitats. In order to give us time to QC/QA the data so it's ready to go for the labs next week. Please complete your data entry within **48 hours of returning from the field**; data taken during Easter break should be entered by 4/21 at 9am.
 :::
 
 Open the shared spreadsheet in the `data` folder named `lichen-survey` and enter your data from the spreadsheets. Hover over each column header to see the notes on how to enter information.
+
 
 ## Determine the bark pH
 
